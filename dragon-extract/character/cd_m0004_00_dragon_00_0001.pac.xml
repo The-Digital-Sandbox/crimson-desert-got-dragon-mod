@@ -1,0 +1,865 @@
+﻿<SkinnedMeshPropertyCommon ReflectObjectXMLDataVersion="9"/>
+<ModelPropertyList>
+	<ModelProperty Index="0" Version="Reflection">
+		<SkinnedMeshProperty ReflectObjectXMLDataVersion="9" _pbdSimulationMaterialName="wing">
+			<Vector Name="_subMeshResources" IdBase="2144" isOverrided="true">
+				<SkinnedMeshMaterialWrapper ItemID="2137" _subMeshName="cd_m0004_00_dragon_eyeright_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshStandard">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_eye_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_eye_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_eye_0001_sp.dds"/>
+							</MaterialParameterTexture>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="2138" _subMeshName="cd_m0004_00_dragon_eyeleft_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshStandard">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_eye_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_eye_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_eye_0001_sp.dds"/>
+							</MaterialParameterTexture>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="2139" _subMeshName="cd_m0004_00_dragon_body_0001_02" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshBlendHeight">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_heightTexture" ItemID="4" _name="_heightTexture" Index="3">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterFloat StringItemID="_screenSpaceDisplacementScale" ItemID="3" _name="_screenSpaceDisplacementScale" _value="0.490000" Index="4"/>
+							<MaterialParameterTexture StringItemID="_maskTexture" ItemID="2" _name="_maskTexture" Index="5">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_m.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskR" ItemID="1028073018359806" _name="_detailDiffuseMaskR" Index="6">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskR" ItemID="2341195301781502" _name="_detailNormalMaskR" Index="7">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskR" ItemID="2477341709172734" _name="_detailHeightMaskR" Index="8">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskR" ItemID="3806852434362366" _name="_detailMaterialMaskR" Index="9">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskG" ItemID="3547446084894718" _name="_detailDiffuseMaskG" Index="10">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskG" ItemID="4185113797591038" _name="_detailNormalMaskG" Index="11">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskG" ItemID="552493925793790" _name="_detailHeightMaskG" Index="12">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskG" ItemID="2857745963286526" _name="_detailMaterialMaskG" Index="13">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskB" ItemID="339208423079934" _name="_detailDiffuseMaskB" Index="14">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskB" ItemID="2187181978288126" _name="_detailNormalMaskB" Index="15">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskB" ItemID="3555280570810366" _name="_detailHeightMaskB" Index="16">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskB" ItemID="2987548997582846" _name="_detailMaterialMaskB" Index="17">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterBitFlag32 StringItemID="_colorBlendingFlag" ItemID="1263404788482046" _name="_colorBlendingFlag" _value="4095" Index="18"/>
+							<MaterialParameterByte4 StringItemID="_dyeingGlobalOpacity" ItemID="685773182468094" _name="_dyeingGlobalOpacity" _value="4363046" Index="19"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty0" ItemID="2380709743296510" _name="_dyeingTransformProperty0" _value="4369" Index="20"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty1" ItemID="2427310400602110" _name="_dyeingTransformProperty1" _value="9252" Index="21"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty3" ItemID="3193012944371710" _name="_dyeingTransformProperty3" _value="19532" Index="22"/>
+							<MaterialParameterFloat StringItemID="_detailScreenSpaceDisplacementScale" ItemID="3900249546424318" _name="_detailScreenSpaceDisplacementScale" _value="0.097000" Index="23"/>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="2140" _subMeshName="cd_m0004_00_dragon_back_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshBlendHeight">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_back_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_back_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_back_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_heightTexture" ItemID="4" _name="_heightTexture" Index="3">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_back_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterFloat StringItemID="_screenSpaceDisplacementScale" ItemID="3" _name="_screenSpaceDisplacementScale" _value="0.240000" Index="4"/>
+							<MaterialParameterTexture StringItemID="_maskTexture" ItemID="2" _name="_maskTexture" Index="5">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_back_0001_m.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskR" ItemID="1028073018359806" _name="_detailDiffuseMaskR" Index="6">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskR" ItemID="2341195301781502" _name="_detailNormalMaskR" Index="7">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskR" ItemID="2477341709172734" _name="_detailHeightMaskR" Index="8">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskR" ItemID="3806852434362366" _name="_detailMaterialMaskR" Index="9">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskG" ItemID="3547446084894718" _name="_detailDiffuseMaskG" Index="10">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskG" ItemID="4185113797591038" _name="_detailNormalMaskG" Index="11">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskG" ItemID="552493925793790" _name="_detailHeightMaskG" Index="12">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskG" ItemID="2857745963286526" _name="_detailMaterialMaskG" Index="13">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskB" ItemID="339208423079934" _name="_detailDiffuseMaskB" Index="14">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskB" ItemID="2187181978288126" _name="_detailNormalMaskB" Index="15">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskB" ItemID="3555280570810366" _name="_detailHeightMaskB" Index="16">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskB" ItemID="2987548997582846" _name="_detailMaterialMaskB" Index="17">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterBitFlag32 StringItemID="_colorBlendingFlag" ItemID="1263404788482046" _name="_colorBlendingFlag" _value="4095" Index="18"/>
+							<MaterialParameterByte4 StringItemID="_dyeingGlobalOpacity" ItemID="685773182468094" _name="_dyeingGlobalOpacity" _value="3687968" Index="19"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty0" ItemID="2380709743296510" _name="_dyeingTransformProperty0" _value="9252" Index="20"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty1" ItemID="2427310400602110" _name="_dyeingTransformProperty1" _value="17219" Index="21"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty3" ItemID="3193012944371710" _name="_dyeingTransformProperty3" _value="16448" Index="22"/>
+							<MaterialParameterFloat StringItemID="_detailScreenSpaceDisplacementScale" ItemID="3900249546424318" _name="_detailScreenSpaceDisplacementScale" _value="0.088000" Index="23"/>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="2141" _subMeshName="cd_m0004_00_dragon_body_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshBlendHeight">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_heightTexture" ItemID="4" _name="_heightTexture" Index="3">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterFloat StringItemID="_screenSpaceDisplacementScale" ItemID="3" _name="_screenSpaceDisplacementScale" _value="0.490000" Index="4"/>
+							<MaterialParameterTexture StringItemID="_maskTexture" ItemID="2" _name="_maskTexture" Index="5">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_m.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskR" ItemID="1028073018359806" _name="_detailDiffuseMaskR" Index="6">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskR" ItemID="2341195301781502" _name="_detailNormalMaskR" Index="7">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskR" ItemID="2477341709172734" _name="_detailHeightMaskR" Index="8">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskR" ItemID="3806852434362366" _name="_detailMaterialMaskR" Index="9">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskG" ItemID="3547446084894718" _name="_detailDiffuseMaskG" Index="10">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskG" ItemID="4185113797591038" _name="_detailNormalMaskG" Index="11">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskG" ItemID="552493925793790" _name="_detailHeightMaskG" Index="12">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskG" ItemID="2857745963286526" _name="_detailMaterialMaskG" Index="13">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskB" ItemID="339208423079934" _name="_detailDiffuseMaskB" Index="14">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskB" ItemID="2187181978288126" _name="_detailNormalMaskB" Index="15">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskB" ItemID="3555280570810366" _name="_detailHeightMaskB" Index="16">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskB" ItemID="2987548997582846" _name="_detailMaterialMaskB" Index="17">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterBitFlag32 StringItemID="_colorBlendingFlag" ItemID="1263404788482046" _name="_colorBlendingFlag" _value="4095" Index="18"/>
+							<MaterialParameterByte4 StringItemID="_dyeingGlobalOpacity" ItemID="685773182468094" _name="_dyeingGlobalOpacity" _value="4363046" Index="19"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty0" ItemID="2380709743296510" _name="_dyeingTransformProperty0" _value="4369" Index="20"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty1" ItemID="2427310400602110" _name="_dyeingTransformProperty1" _value="9252" Index="21"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty3" ItemID="3193012944371710" _name="_dyeingTransformProperty3" _value="19532" Index="22"/>
+							<MaterialParameterFloat StringItemID="_detailScreenSpaceDisplacementScale" ItemID="3900249546424318" _name="_detailScreenSpaceDisplacementScale" _value="0.097000" Index="23"/>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="2142" _subMeshName="cd_m0004_00_dragon_leg_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshBlendHeight">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_leg_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_leg_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_leg_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_heightTexture" ItemID="4" _name="_heightTexture" Index="3">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_leg_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterFloat StringItemID="_screenSpaceDisplacementScale" ItemID="3" _name="_screenSpaceDisplacementScale" _value="0.666000" Index="4"/>
+							<MaterialParameterTexture StringItemID="_maskTexture" ItemID="2" _name="_maskTexture" Index="5">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_leg_0001_m.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskR" ItemID="1028073018359806" _name="_detailDiffuseMaskR" Index="6">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskR" ItemID="2341195301781502" _name="_detailNormalMaskR" Index="7">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskR" ItemID="2477341709172734" _name="_detailHeightMaskR" Index="8">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskR" ItemID="3806852434362366" _name="_detailMaterialMaskR" Index="9">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskG" ItemID="3547446084894718" _name="_detailDiffuseMaskG" Index="10">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskG" ItemID="4185113797591038" _name="_detailNormalMaskG" Index="11">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskG" ItemID="552493925793790" _name="_detailHeightMaskG" Index="12">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskG" ItemID="2857745963286526" _name="_detailMaterialMaskG" Index="13">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskB" ItemID="339208423079934" _name="_detailDiffuseMaskB" Index="14">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskB" ItemID="2187181978288126" _name="_detailNormalMaskB" Index="15">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskB" ItemID="3555280570810366" _name="_detailHeightMaskB" Index="16">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskB" ItemID="2987548997582846" _name="_detailMaterialMaskB" Index="17">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterBitFlag32 StringItemID="_colorBlendingFlag" ItemID="1263404788482046" _name="_colorBlendingFlag" _value="4095" Index="18"/>
+							<MaterialParameterByte4 StringItemID="_dyeingGlobalOpacity" ItemID="685773182468094" _name="_dyeingGlobalOpacity" _value="6988068" Index="19"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty0" ItemID="2380709743296510" _name="_dyeingTransformProperty0" _value="14649" Index="20"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty1" ItemID="2427310400602110" _name="_dyeingTransformProperty1" _value="19789" Index="21"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty3" ItemID="3193012944371710" _name="_dyeingTransformProperty3" _value="20817" Index="22"/>
+							<MaterialParameterFloat StringItemID="_detailScreenSpaceDisplacementScale" ItemID="3900249546424318" _name="_detailScreenSpaceDisplacementScale" _value="0.231000" Index="23"/>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="2143" _subMeshName="cd_m0004_00_dragon_wing_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshBlendHeight">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_wing_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_wing_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_wing_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_heightTexture" ItemID="4" _name="_heightTexture" Index="3">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_wing_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterFloat StringItemID="_screenSpaceDisplacementScale" ItemID="3" _name="_screenSpaceDisplacementScale" _value="0.408000" Index="4"/>
+							<MaterialParameterTexture StringItemID="_maskTexture" ItemID="2" _name="_maskTexture" Index="5">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_wing_0001_m.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskR" ItemID="1028073018359806" _name="_detailDiffuseMaskR" Index="6">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskR" ItemID="2341195301781502" _name="_detailNormalMaskR" Index="7">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskR" ItemID="2477341709172734" _name="_detailHeightMaskR" Index="8">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskR" ItemID="3806852434362366" _name="_detailMaterialMaskR" Index="9">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskG" ItemID="3547446084894718" _name="_detailDiffuseMaskG" Index="10">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskG" ItemID="4185113797591038" _name="_detailNormalMaskG" Index="11">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskG" ItemID="552493925793790" _name="_detailHeightMaskG" Index="12">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskG" ItemID="2857745963286526" _name="_detailMaterialMaskG" Index="13">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskB" ItemID="339208423079934" _name="_detailDiffuseMaskB" Index="14">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskB" ItemID="2187181978288126" _name="_detailNormalMaskB" Index="15">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskB" ItemID="3555280570810366" _name="_detailHeightMaskB" Index="16">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskB" ItemID="2987548997582846" _name="_detailMaterialMaskB" Index="17">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterByte4 StringItemID="_dyeingPropertyBlend" ItemID="3323518988058622" _name="_dyeingPropertyBlend" _value="2139127679" Index="18"/>
+							<MaterialParameterBitFlag32 StringItemID="_colorBlendingFlag" ItemID="1263404788482046" _name="_colorBlendingFlag" _value="4095" Index="19"/>
+							<MaterialParameterByte4 StringItemID="_dyeingGlobalOpacity" ItemID="685773182468094" _name="_dyeingGlobalOpacity" _value="5357103" Index="20"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty0" ItemID="2380709743296510" _name="_dyeingTransformProperty0" _value="7453" Index="21"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty1" ItemID="2427310400602110" _name="_dyeingTransformProperty1" _value="30069" Index="22"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty3" ItemID="3193012944371710" _name="_dyeingTransformProperty3" _value="10280" Index="23"/>
+							<MaterialParameterFloat StringItemID="_detailScreenSpaceDisplacementScale" ItemID="3900249546424318" _name="_detailScreenSpaceDisplacementScale" _value="0.097000" Index="24"/>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="2144" _subMeshName="cd_m0004_00_dragon_head_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshBlendHeight">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_head_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_head_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_head_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_heightTexture" ItemID="4" _name="_heightTexture" Index="3">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_head_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterFloat StringItemID="_screenSpaceDisplacementScale" ItemID="3" _name="_screenSpaceDisplacementScale" _value="0.500000" Index="4"/>
+							<MaterialParameterTexture StringItemID="_maskTexture" ItemID="2" _name="_maskTexture" Index="5">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_head_0001_m.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskR" ItemID="1028073018359806" _name="_detailDiffuseMaskR" Index="6">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskR" ItemID="2341195301781502" _name="_detailNormalMaskR" Index="7">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskR" ItemID="2477341709172734" _name="_detailHeightMaskR" Index="8">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskR" ItemID="3806852434362366" _name="_detailMaterialMaskR" Index="9">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskG" ItemID="3547446084894718" _name="_detailDiffuseMaskG" Index="10">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskG" ItemID="4185113797591038" _name="_detailNormalMaskG" Index="11">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskG" ItemID="552493925793790" _name="_detailHeightMaskG" Index="12">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskG" ItemID="2857745963286526" _name="_detailMaterialMaskG" Index="13">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskB" ItemID="339208423079934" _name="_detailDiffuseMaskB" Index="14">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskB" ItemID="2187181978288126" _name="_detailNormalMaskB" Index="15">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskB" ItemID="3555280570810366" _name="_detailHeightMaskB" Index="16">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskB" ItemID="2987548997582846" _name="_detailMaterialMaskB" Index="17">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterBitFlag32 StringItemID="_colorBlendingFlag" ItemID="1263404788482046" _name="_colorBlendingFlag" _value="4095" Index="18"/>
+							<MaterialParameterByte4 StringItemID="_dyeingGlobalOpacity" ItemID="685773182468094" _name="_dyeingGlobalOpacity" _value="12811" Index="19"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty0" ItemID="2380709743296510" _name="_dyeingTransformProperty0" _value="5654" Index="20"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty1" ItemID="2427310400602110" _name="_dyeingTransformProperty1" _value="10280" Index="21"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty3" ItemID="3193012944371710" _name="_dyeingTransformProperty3" _value="4369" Index="22"/>
+							<MaterialParameterFloat StringItemID="_detailScreenSpaceDisplacementScale" ItemID="3900249546424318" _name="_detailScreenSpaceDisplacementScale" _value="0.050000" Index="23"/>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+			</Vector>
+		</SkinnedMeshProperty>
+	</ModelProperty>
+	<ModelProperty Index="1" Version="Reflection">
+		<SkinnedMeshProperty ReflectObjectXMLDataVersion="9" _pbdSimulationMaterialName="wing">
+			<Vector Name="_subMeshResources" IdBase="267" isOverrided="true">
+				<SkinnedMeshMaterialWrapper ItemID="260" _subMeshName="cd_m0004_00_dragon_eyeright_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshStandard">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_eye_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_eye_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_eye_0001_sp.dds"/>
+							</MaterialParameterTexture>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="261" _subMeshName="cd_m0004_00_dragon_eyeleft_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshStandard">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_eye_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_eye_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_eye_0001_sp.dds"/>
+							</MaterialParameterTexture>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="262" _subMeshName="cd_m0004_00_dragon_body_0001_02" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshBlendHeight">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_heightTexture" ItemID="4" _name="_heightTexture" Index="3">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterFloat StringItemID="_screenSpaceDisplacementScale" ItemID="3" _name="_screenSpaceDisplacementScale" _value="0.490000" Index="4"/>
+							<MaterialParameterTexture StringItemID="_maskTexture" ItemID="2" _name="_maskTexture" Index="5">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_m.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskR" ItemID="1028073018359806" _name="_detailDiffuseMaskR" Index="6">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskR" ItemID="2341195301781502" _name="_detailNormalMaskR" Index="7">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskR" ItemID="2477341709172734" _name="_detailHeightMaskR" Index="8">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskR" ItemID="3806852434362366" _name="_detailMaterialMaskR" Index="9">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskG" ItemID="3547446084894718" _name="_detailDiffuseMaskG" Index="10">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_landspider_bismuthqueen_0005.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskG" ItemID="4185113797591038" _name="_detailNormalMaskG" Index="11">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_landspider_bismuthqueen_0005_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskG" ItemID="552493925793790" _name="_detailHeightMaskG" Index="12">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_landspider_bismuthqueen_0005_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskG" ItemID="2857745963286526" _name="_detailMaterialMaskG" Index="13">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_landspider_bismuthqueen_0005_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskB" ItemID="339208423079934" _name="_detailDiffuseMaskB" Index="14">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskB" ItemID="2187181978288126" _name="_detailNormalMaskB" Index="15">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskB" ItemID="3555280570810366" _name="_detailHeightMaskB" Index="16">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskB" ItemID="2987548997582846" _name="_detailMaterialMaskB" Index="17">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterByte4 StringItemID="_dyeingPropertyBlend" ItemID="3323518988058622" _name="_dyeingPropertyBlend" _value="2139094911" Index="18"/>
+							<MaterialParameterBitFlag32 StringItemID="_colorBlendingFlag" ItemID="1263404788482046" _name="_colorBlendingFlag" _value="4095" Index="19"/>
+							<MaterialParameterByte4 StringItemID="_dyeingGlobalOpacity" ItemID="685773182468094" _name="_dyeingGlobalOpacity" _value="4346662" Index="20"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty0" ItemID="2380709743296510" _name="_dyeingTransformProperty0" _value="4369" Index="21"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty1" ItemID="2427310400602110" _name="_dyeingTransformProperty1" _value="6682" Index="22"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty3" ItemID="3193012944371710" _name="_dyeingTransformProperty3" _value="19532" Index="23"/>
+							<MaterialParameterFloat StringItemID="_detailScreenSpaceDisplacementScale" ItemID="3900249546424318" _name="_detailScreenSpaceDisplacementScale" _value="0.097000" Index="24"/>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="263" _subMeshName="cd_m0004_00_dragon_back_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshBlendHeight">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_back_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_back_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_back_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_heightTexture" ItemID="4" _name="_heightTexture" Index="3">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_back_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterFloat StringItemID="_screenSpaceDisplacementScale" ItemID="3" _name="_screenSpaceDisplacementScale" _value="0.240000" Index="4"/>
+							<MaterialParameterTexture StringItemID="_maskTexture" ItemID="2" _name="_maskTexture" Index="5">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_back_0001_01_m.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskR" ItemID="1028073018359806" _name="_detailDiffuseMaskR" Index="6">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_landspider_bismuthqueen_0005.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskR" ItemID="2341195301781502" _name="_detailNormalMaskR" Index="7">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_landspider_bismuthqueen_0005_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskR" ItemID="2477341709172734" _name="_detailHeightMaskR" Index="8">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_landspider_bismuthqueen_0005_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskR" ItemID="3806852434362366" _name="_detailMaterialMaskR" Index="9">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_landspider_bismuthqueen_0005_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskG" ItemID="3547446084894718" _name="_detailDiffuseMaskG" Index="10">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskG" ItemID="4185113797591038" _name="_detailNormalMaskG" Index="11">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskG" ItemID="552493925793790" _name="_detailHeightMaskG" Index="12">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskG" ItemID="2857745963286526" _name="_detailMaterialMaskG" Index="13">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskB" ItemID="339208423079934" _name="_detailDiffuseMaskB" Index="14">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskB" ItemID="2187181978288126" _name="_detailNormalMaskB" Index="15">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskB" ItemID="3555280570810366" _name="_detailHeightMaskB" Index="16">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskB" ItemID="2987548997582846" _name="_detailMaterialMaskB" Index="17">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterColor StringItemID="_dyeingColorMaskR" ItemID="1366228713078782" _name="_dyeingColorMaskR" _value="#000000ff" Index="18"/>
+							<MaterialParameterByte4 StringItemID="_dyeingPropertyBlend" ItemID="3323518988058622" _name="_dyeingPropertyBlend" _value="2139062271" Index="19"/>
+							<MaterialParameterBitFlag32 StringItemID="_colorBlendingFlag" ItemID="1263404788482046" _name="_colorBlendingFlag" _value="4095" Index="20"/>
+							<MaterialParameterByte4 StringItemID="_dyeingGlobalOpacity" ItemID="685773182468094" _name="_dyeingGlobalOpacity" _value="3687975" Index="21"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty0" ItemID="2380709743296510" _name="_dyeingTransformProperty0" _value="11308" Index="22"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty1" ItemID="2427310400602110" _name="_dyeingTransformProperty1" _value="17219" Index="23"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty3" ItemID="3193012944371710" _name="_dyeingTransformProperty3" _value="16448" Index="24"/>
+							<MaterialParameterFloat StringItemID="_detailScreenSpaceDisplacementScale" ItemID="3900249546424318" _name="_detailScreenSpaceDisplacementScale" _value="0.088000" Index="25"/>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="264" _subMeshName="cd_m0004_00_dragon_body_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshBlendHeight">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_heightTexture" ItemID="4" _name="_heightTexture" Index="3">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterFloat StringItemID="_screenSpaceDisplacementScale" ItemID="3" _name="_screenSpaceDisplacementScale" _value="0.490000" Index="4"/>
+							<MaterialParameterTexture StringItemID="_maskTexture" ItemID="2" _name="_maskTexture" Index="5">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_body_0001_m.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskR" ItemID="1028073018359806" _name="_detailDiffuseMaskR" Index="6">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskR" ItemID="2341195301781502" _name="_detailNormalMaskR" Index="7">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskR" ItemID="2477341709172734" _name="_detailHeightMaskR" Index="8">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskR" ItemID="3806852434362366" _name="_detailMaterialMaskR" Index="9">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskG" ItemID="3547446084894718" _name="_detailDiffuseMaskG" Index="10">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskG" ItemID="4185113797591038" _name="_detailNormalMaskG" Index="11">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskG" ItemID="552493925793790" _name="_detailHeightMaskG" Index="12">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskG" ItemID="2857745963286526" _name="_detailMaterialMaskG" Index="13">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskB" ItemID="339208423079934" _name="_detailDiffuseMaskB" Index="14">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskB" ItemID="2187181978288126" _name="_detailNormalMaskB" Index="15">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskB" ItemID="3555280570810366" _name="_detailHeightMaskB" Index="16">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskB" ItemID="2987548997582846" _name="_detailMaterialMaskB" Index="17">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterBitFlag32 StringItemID="_colorBlendingFlag" ItemID="1263404788482046" _name="_colorBlendingFlag" _value="4095" Index="18"/>
+							<MaterialParameterByte4 StringItemID="_dyeingGlobalOpacity" ItemID="685773182468094" _name="_dyeingGlobalOpacity" _value="4363046" Index="19"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty0" ItemID="2380709743296510" _name="_dyeingTransformProperty0" _value="4369" Index="20"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty1" ItemID="2427310400602110" _name="_dyeingTransformProperty1" _value="9252" Index="21"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty3" ItemID="3193012944371710" _name="_dyeingTransformProperty3" _value="19532" Index="22"/>
+							<MaterialParameterFloat StringItemID="_detailScreenSpaceDisplacementScale" ItemID="3900249546424318" _name="_detailScreenSpaceDisplacementScale" _value="0.097000" Index="23"/>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="265" _subMeshName="cd_m0004_00_dragon_leg_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshBlendHeight">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_leg_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_leg_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_leg_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_heightTexture" ItemID="4" _name="_heightTexture" Index="3">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_leg_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterFloat StringItemID="_screenSpaceDisplacementScale" ItemID="3" _name="_screenSpaceDisplacementScale" _value="0.666000" Index="4"/>
+							<MaterialParameterTexture StringItemID="_maskTexture" ItemID="2" _name="_maskTexture" Index="5">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_leg_0001_m.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskR" ItemID="1028073018359806" _name="_detailDiffuseMaskR" Index="6">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskR" ItemID="2341195301781502" _name="_detailNormalMaskR" Index="7">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskR" ItemID="2477341709172734" _name="_detailHeightMaskR" Index="8">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskR" ItemID="3806852434362366" _name="_detailMaterialMaskR" Index="9">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskG" ItemID="3547446084894718" _name="_detailDiffuseMaskG" Index="10">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskG" ItemID="4185113797591038" _name="_detailNormalMaskG" Index="11">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskG" ItemID="552493925793790" _name="_detailHeightMaskG" Index="12">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskG" ItemID="2857745963286526" _name="_detailMaterialMaskG" Index="13">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskB" ItemID="339208423079934" _name="_detailDiffuseMaskB" Index="14">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskB" ItemID="2187181978288126" _name="_detailNormalMaskB" Index="15">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskB" ItemID="3555280570810366" _name="_detailHeightMaskB" Index="16">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskB" ItemID="2987548997582846" _name="_detailMaterialMaskB" Index="17">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterBitFlag32 StringItemID="_colorBlendingFlag" ItemID="1263404788482046" _name="_colorBlendingFlag" _value="4095" Index="18"/>
+							<MaterialParameterByte4 StringItemID="_dyeingGlobalOpacity" ItemID="685773182468094" _name="_dyeingGlobalOpacity" _value="6988068" Index="19"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty0" ItemID="2380709743296510" _name="_dyeingTransformProperty0" _value="14649" Index="20"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty1" ItemID="2427310400602110" _name="_dyeingTransformProperty1" _value="19789" Index="21"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty3" ItemID="3193012944371710" _name="_dyeingTransformProperty3" _value="20817" Index="22"/>
+							<MaterialParameterFloat StringItemID="_detailScreenSpaceDisplacementScale" ItemID="3900249546424318" _name="_detailScreenSpaceDisplacementScale" _value="0.231000" Index="23"/>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="266" _subMeshName="cd_m0004_00_dragon_wing_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshBlendHeight">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_wing_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_wing_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_wing_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_heightTexture" ItemID="4" _name="_heightTexture" Index="3">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_wing_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterFloat StringItemID="_screenSpaceDisplacementScale" ItemID="3" _name="_screenSpaceDisplacementScale" _value="0.408000" Index="4"/>
+							<MaterialParameterTexture StringItemID="_maskTexture" ItemID="2" _name="_maskTexture" Index="5">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_wing_0001_m.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskR" ItemID="1028073018359806" _name="_detailDiffuseMaskR" Index="6">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskR" ItemID="2341195301781502" _name="_detailNormalMaskR" Index="7">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskR" ItemID="2477341709172734" _name="_detailHeightMaskR" Index="8">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskR" ItemID="3806852434362366" _name="_detailMaterialMaskR" Index="9">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskG" ItemID="3547446084894718" _name="_detailDiffuseMaskG" Index="10">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskG" ItemID="4185113797591038" _name="_detailNormalMaskG" Index="11">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskG" ItemID="552493925793790" _name="_detailHeightMaskG" Index="12">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskG" ItemID="2857745963286526" _name="_detailMaterialMaskG" Index="13">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskB" ItemID="339208423079934" _name="_detailDiffuseMaskB" Index="14">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskB" ItemID="2187181978288126" _name="_detailNormalMaskB" Index="15">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskB" ItemID="3555280570810366" _name="_detailHeightMaskB" Index="16">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskB" ItemID="2987548997582846" _name="_detailMaterialMaskB" Index="17">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0003_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterByte4 StringItemID="_dyeingPropertyBlend" ItemID="3323518988058622" _name="_dyeingPropertyBlend" _value="2139127679" Index="18"/>
+							<MaterialParameterBitFlag32 StringItemID="_colorBlendingFlag" ItemID="1263404788482046" _name="_colorBlendingFlag" _value="4095" Index="19"/>
+							<MaterialParameterByte4 StringItemID="_dyeingGlobalOpacity" ItemID="685773182468094" _name="_dyeingGlobalOpacity" _value="5357103" Index="20"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty0" ItemID="2380709743296510" _name="_dyeingTransformProperty0" _value="7453" Index="21"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty1" ItemID="2427310400602110" _name="_dyeingTransformProperty1" _value="30069" Index="22"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty3" ItemID="3193012944371710" _name="_dyeingTransformProperty3" _value="10280" Index="23"/>
+							<MaterialParameterFloat StringItemID="_detailScreenSpaceDisplacementScale" ItemID="3900249546424318" _name="_detailScreenSpaceDisplacementScale" _value="0.097000" Index="24"/>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+				<SkinnedMeshMaterialWrapper ItemID="267" _subMeshName="cd_m0004_00_dragon_head_0001" _jiggleWindWeight="0">
+					<Material Name="_resourceMaterial" _materialName="SkinnedMeshBlendHeight">
+						<Vector Name="_permutations"/>
+						<Vector Name="_parameters">
+							<MaterialParameterTexture StringItemID="_baseColorTexture" ItemID="7" _name="_baseColorTexture" Index="0">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_head_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_normalTexture" ItemID="6" _name="_normalTexture" Index="1">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_head_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_materialTexture" ItemID="5" _name="_materialTexture" Index="2">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_head_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_heightTexture" ItemID="4" _name="_heightTexture" Index="3">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_head_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterFloat StringItemID="_screenSpaceDisplacementScale" ItemID="3" _name="_screenSpaceDisplacementScale" _value="0.500000" Index="4"/>
+							<MaterialParameterTexture StringItemID="_maskTexture" ItemID="2" _name="_maskTexture" Index="5">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_m0004_00_dragon_head_0001_m.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskR" ItemID="1028073018359806" _name="_detailDiffuseMaskR" Index="6">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskR" ItemID="2341195301781502" _name="_detailNormalMaskR" Index="7">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskR" ItemID="2477341709172734" _name="_detailHeightMaskR" Index="8">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskR" ItemID="3806852434362366" _name="_detailMaterialMaskR" Index="9">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskG" ItemID="3547446084894718" _name="_detailDiffuseMaskG" Index="10">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskG" ItemID="4185113797591038" _name="_detailNormalMaskG" Index="11">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskG" ItemID="552493925793790" _name="_detailHeightMaskG" Index="12">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskG" ItemID="2857745963286526" _name="_detailMaterialMaskG" Index="13">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0001_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailDiffuseMaskB" ItemID="339208423079934" _name="_detailDiffuseMaskB" Index="14">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailNormalMaskB" ItemID="2187181978288126" _name="_detailNormalMaskB" Index="15">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_n.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailHeightMaskB" ItemID="3555280570810366" _name="_detailHeightMaskB" Index="16">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_disp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterTexture StringItemID="_detailMaterialMaskB" ItemID="2987548997582846" _name="_detailMaterialMaskB" Index="17">
+								<ResourceReferencePath_ITexture Name="_value" _path="character/texture/cd_texturelayer_dragon_0002_sp.dds"/>
+							</MaterialParameterTexture>
+							<MaterialParameterBitFlag32 StringItemID="_colorBlendingFlag" ItemID="1263404788482046" _name="_colorBlendingFlag" _value="4095" Index="18"/>
+							<MaterialParameterByte4 StringItemID="_dyeingGlobalOpacity" ItemID="685773182468094" _name="_dyeingGlobalOpacity" _value="12811" Index="19"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty0" ItemID="2380709743296510" _name="_dyeingTransformProperty0" _value="5654" Index="20"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty1" ItemID="2427310400602110" _name="_dyeingTransformProperty1" _value="10280" Index="21"/>
+							<MaterialParameterByte4 StringItemID="_dyeingTransformProperty3" ItemID="3193012944371710" _name="_dyeingTransformProperty3" _value="4369" Index="22"/>
+							<MaterialParameterFloat StringItemID="_detailScreenSpaceDisplacementScale" ItemID="3900249546424318" _name="_detailScreenSpaceDisplacementScale" _value="0.050000" Index="23"/>
+						</Vector>
+					</Material>
+				</SkinnedMeshMaterialWrapper>
+			</Vector>
+		</SkinnedMeshProperty>
+	</ModelProperty>
+</ModelPropertyList>
+

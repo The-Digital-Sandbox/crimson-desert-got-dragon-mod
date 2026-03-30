@@ -1,0 +1,1652 @@
+0000ACEC:0329/174856  Ninja Ripper 2.13 x64
+0000ACEC:0329/174856  © blackninja, 2026
+
+0000ACEC:0329/174856  Operating System: Version=10.0.26200 ServicePack=0.0 
+0000ACEC:0329/174856  Process Id: 20936
+0000ACEC:0329/174856  Program: C:\Windows\System32\DataExchangeHost.exe
+0000ACEC:0329/174856  Command line: C:\Windows\System32\DataExchangeHost.exe -Embedding
+0000ACEC:0329/174856  Working directory: C:\WINDOWS\system32
+
+0000ACEC:0329/174856  DXGI Hook: Wrapper
+0000ACEC:0329/174856  WARNING: Loaded wrapper dll detected: C:\WINDOWS\system32\dxcapturereplay.dll
+0000ACEC:0329/174856  WARNING: Loaded wrapper dll detected: C:\Windows\System32\d3d11.dll
+0000ACEC:0329/174856  WARNING: Loaded wrapper dll detected: C:\Windows\System32\dxgi.dll
+0000ACEC:0329/174856  Frame  Rip Key: BackSpace
+0000ACEC:0329/174856  Forced Rip Key: Insert
+0000ACEC:0329/174856  Export hooked: CreateProcessInternalW Target=[KERNELBASE.dll+af410]
+0000ACEC:0329/174856  Export hooked: CreateProcessInternalA Target=[KERNELBASE.dll+aedc0]
+0000ACEC:0329/174856  Export hooked: CreateProcessAsUserW Target=[ADVAPI32.dll+309c0]
+0000ACEC:0329/174856  Export hooked: CreateProcessWithLogonW Target=[ADVAPI32.dll+5aef0]
+0000ACEC:0329/174856  Export hooked: CreateProcessWithTokenW Target=[ADVAPI32.dll+29480]
+0000ACEC:0329/174856  Export hooked: SetTokenInformation Target=[ADVAPI32.dll+34720]
+0000ACEC:0329/174856  Module loaded. Base: 00007FF9B6790000 C:\WINDOWS\system32\d3d11.dll
+0000ACEC:0329/174856  Export hooked: D3D11CreateDevice Target=[d3d11.dll+84170]
+0000ACEC:0329/174856  Export hooked: D3D11CreateDeviceAndSwapChain Target=[d3d11.dll+82880]
+0000ACEC:0329/174856  Module loaded. Base: 00007FF9B78C0000 C:\WINDOWS\system32\dxgi.dll
+0000ACEC:0329/174856  Export hooked: CreateDXGIFactory Target=[dxgi.dll+4dca0]
+0000ACEC:0329/174856  Export hooked: CreateDXGIFactory1 Target=[dxgi.dll+4ddd0]
+0000ACEC:0329/174856  Export hooked: CreateDXGIFactory2 Target=[dxgi.dll+529f0]
+0000ACEC:0329/174856  Wrapper logger changed
+0000ACEC:0329/174856  D3D env initialize
+0000ACEC:0329/174856  LdrLoad("C:\Windows\System32\d3dcompiler_47.dll") Base: 00007FF9B5680000
+0000ACEC:0329/174856  d3dcompiler_47.dll loaded: C:\Windows\System32\d3dcompiler_47.dll
+0000ACEC:0329/174856  D3D11 env initialize
+0000ACEC:0329/174856  [d3d11.dll+8286c] --> D3D11CreateDeviceAndSwapChain(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppSwapChain=0000000000000000 ppImmediateContext=0000000000000000)
+0000ACEC:0329/174856  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: D3D11CreateDeviceAndSwapChain()
+0000ACEC:0329/174856  LazyAttachToMonitor()
+0000ACEC:0329/174856  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000ACEC:0329/174856  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000ACEC:0329/174856  LazyAttachToMonitor()
+0000ACEC:0329/174856  <-- CreateDXGIFactory2() pFactory=0000028082B00E40 HRESULT=0
+0000ACEC:0329/174856  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000ACEC:0329/174856  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000ACEC:0329/174856  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000ACEC:0329/174856  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000ACEC:0329/174857  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000ACEC:0329/174857  <-- D3D11CreateDeviceAndSwapChain() pDevice=0000028081F1E170 pImmediateContext=0000000000000000 pSwapChain=0000000000000000 HRESULT=0
+0000ACEC:0329/174857  LazyAttachToMonitor()
+0000ACEC:0329/174857  LazyAttachToMonitor()
+0000ACEC:0329/174857  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000ACEC:0329/174857  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000ACEC:0329/174857  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000ACEC:0329/174857  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000ACEC:0329/174857  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/175032  LdrUnload("C:\WINDOWS\system32\dataexchange.dll")
+00003768:0329/175810  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00003768:0329/175810  LazyAttachToMonitor()
+00003768:0329/175810  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00003768:0329/175810  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00003768:0329/175810  LazyAttachToMonitor()
+00003768:0329/175810  <-- CreateDXGIFactory2() pFactory=0000028082AFEB60 HRESULT=0
+00003768:0329/175810  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00003768:0329/175810  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00003768:0329/175810  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00003768:0329/175810  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00003768:0329/175810  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00003768:0329/175810  <-- D3D11CreateDevice() pDevice=0000028081EB39B0 pImmediateContext=0000000000000000 HRESULT=0
+00003768:0329/175810  LazyAttachToMonitor()
+00003768:0329/175810  LazyAttachToMonitor()
+0000AF24:0329/175810  LazyAttachToMonitor()
+0000AF24:0329/175810  LazyAttachToMonitor()
+00003768:0329/175810  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+00003768:0329/175810  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+00003768:0329/175810  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+00003768:0329/175810  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+00003768:0329/175810  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+00003768:0329/175810  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+00003768:0329/175810  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+00003768:0329/175810  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+00003768:0329/175810  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+00003768:0329/175810  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+00003768:0329/175810  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+00003768:0329/175810  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+00003768:0329/175810  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+00003768:0329/175810  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+00003768:0329/175810  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+00003768:0329/175810  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+00005508:0329/175810  LdrLoad("C:\WINDOWS\system32\mssprxy.dll") Base: 00007FF942650000
+00005508:0329/175810  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+00003768:0329/175810  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003768:0329/175810  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003768:0329/175810  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003768:0329/175810  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000AF24:0329/175810  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000AF24:0329/175810  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000AF24:0329/175810  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000AF24:0329/175810  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000AF24:0329/175810  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/175932  LdrUnload("C:\WINDOWS\system32\mssprxy.dll")
+00003B10:0329/175932  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00002BCC:0329/182846  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00002BCC:0329/182846  LazyAttachToMonitor()
+00002BCC:0329/182846  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00002BCC:0329/182846  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00002BCC:0329/182846  LazyAttachToMonitor()
+00002BCC:0329/182846  <-- CreateDXGIFactory2() pFactory=0000028081F2B020 HRESULT=0
+00002BCC:0329/182846  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00002BCC:0329/182846  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00002BCC:0329/182846  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00002BCC:0329/182846  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00002BCC:0329/182846  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00002BCC:0329/182846  <-- D3D11CreateDevice() pDevice=0000028082155B80 pImmediateContext=0000000000000000 HRESULT=0
+00002BCC:0329/182846  LazyAttachToMonitor()
+00002BCC:0329/182846  LazyAttachToMonitor()
+00000DF4:0329/182846  LazyAttachToMonitor()
+00000DF4:0329/182846  LazyAttachToMonitor()
+00002BCC:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00002BCC:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00002BCC:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+00002BCC:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+00002BCC:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+00002BCC:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+00002BCC:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+00002BCC:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+00002BCC:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+00002BCC:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+00002BC0:0329/182846  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+00002BCC:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00002BCC:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00002BCC:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00002BCC:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\system32\policymanager.dll") Base: 00007FF9B6C30000
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\System32\coml2.dll") Base: 00007FF9BD220000
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\system32\mssvp.dll") Base: 00007FF965340000
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\system32\SearchIndexerCore.dll") Base: 00007FF98EDF0000
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\system32\tquery.dll") Base: 00007FF98EA50000
+00000DF4:0329/182846  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00000DF4:0329/182846  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00000DF4:0329/182846  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00000DF4:0329/182846  LdrUnload("C:\Windows\System32\WINMM.dll")
+00000DF4:0329/182846  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B608:0329/182846  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B608:0329/182846  LdrLoad("C:\Windows\System32\MrmCoreR.dll") Base: 00007FF995410000
+0000B608:0329/182846  LdrLoad("C:\Windows\System32\srvcli.dll") Base: 00007FF99AB00000
+0000B608:0329/182846  LdrLoad("C:\Windows\System32\netutils.dll") Base: 00007FF9B8850000
+0000B608:0329/182846  LdrLoad("C:\Windows\System32\iertutil.dll") Base: 00007FF99B650000
+0000B608:0329/182916  LdrUnload("C:\WINDOWS\system32\mssvp.dll")
+0000B608:0329/182916  LdrUnload("C:\WINDOWS\system32\policymanager.dll")
+0000B608:0329/182916  LdrUnload("C:\WINDOWS\System32\coml2.dll")
+0000B608:0329/182916  LdrUnload("C:\Windows\System32\MrmCoreR.dll")
+0000B608:0329/182916  LdrUnload("C:\Windows\System32\iertutil.dll")
+0000B608:0329/182916  LdrUnload("C:\Windows\System32\srvcli.dll")
+0000B608:0329/182916  LdrUnload("C:\Windows\System32\netutils.dll")
+00003B10:0329/183032  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00003B10:0329/183032  LdrUnload("C:\WINDOWS\system32\tquery.dll")
+00003B10:0329/183032  LdrUnload("C:\WINDOWS\system32\SearchIndexerCore.dll")
+00001A3C:0329/183754  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00001A3C:0329/183754  LazyAttachToMonitor()
+00001A3C:0329/183754  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00001A3C:0329/183754  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00001A3C:0329/183754  LazyAttachToMonitor()
+00001A3C:0329/183754  <-- CreateDXGIFactory2() pFactory=0000028082B01220 HRESULT=0
+00001A3C:0329/183754  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00001A3C:0329/183754  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00001A3C:0329/183754  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00001A3C:0329/183754  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00001A3C:0329/183754  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00001A3C:0329/183754  <-- D3D11CreateDevice() pDevice=00000280821556B0 pImmediateContext=0000000000000000 HRESULT=0
+00001A3C:0329/183754  LazyAttachToMonitor()
+00001A3C:0329/183754  LazyAttachToMonitor()
+00008EF4:0329/183754  LazyAttachToMonitor()
+00008EF4:0329/183754  LazyAttachToMonitor()
+00001A3C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001A3C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000AB28:0329/183754  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+00001A3C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001A3C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001A3C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001A3C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\system32\policymanager.dll") Base: 00007FF9B6C30000
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\System32\coml2.dll") Base: 00007FF9BD220000
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\system32\mssvp.dll") Base: 00007FF965340000
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00008EF4:0329/183754  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\system32\SearchIndexerCore.dll") Base: 00007FF98EDF0000
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\system32\tquery.dll") Base: 00007FF98EA50000
+00008EF4:0329/183754  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00008EF4:0329/183754  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00008EF4:0329/183754  LdrUnload("C:\Windows\System32\WINMM.dll")
+00008EF4:0329/183754  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183754  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B88C:0329/183754  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B88C:0329/183824  LdrUnload("C:\WINDOWS\system32\mssvp.dll")
+0000B88C:0329/183824  LdrUnload("C:\WINDOWS\system32\policymanager.dll")
+0000B88C:0329/183824  LdrUnload("C:\WINDOWS\System32\coml2.dll")
+0000B43C:0329/183928  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000B43C:0329/183928  LazyAttachToMonitor()
+0000B43C:0329/183928  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000B43C:0329/183928  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000B43C:0329/183928  LazyAttachToMonitor()
+0000B43C:0329/183928  <-- CreateDXGIFactory2() pFactory=0000028081F2C380 HRESULT=0
+0000B43C:0329/183928  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000B43C:0329/183928  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000B43C:0329/183928  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000B43C:0329/183928  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000B43C:0329/183928  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000B43C:0329/183928  <-- D3D11CreateDevice() pDevice=0000028082155410 pImmediateContext=0000000000000000 HRESULT=0
+0000B43C:0329/183928  LazyAttachToMonitor()
+0000B43C:0329/183928  LazyAttachToMonitor()
+00003ED8:0329/183928  LazyAttachToMonitor()
+00003ED8:0329/183928  LazyAttachToMonitor()
+0000B43C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B43C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B43C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B43C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B43C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B43C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\system32\policymanager.dll") Base: 00007FF9B6C30000
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\System32\coml2.dll") Base: 00007FF9BD220000
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\system32\mssvp.dll") Base: 00007FF965340000
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003ED8:0329/183928  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003ED8:0329/183928  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00003ED8:0329/183928  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00003ED8:0329/183928  LdrUnload("C:\Windows\System32\WINMM.dll")
+00003ED8:0329/183928  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000530C:0329/183928  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000530C:0329/183928  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000530C:0329/183958  LdrUnload("C:\WINDOWS\system32\mssvp.dll")
+0000530C:0329/183958  LdrUnload("C:\WINDOWS\system32\policymanager.dll")
+0000530C:0329/183958  LdrUnload("C:\WINDOWS\System32\coml2.dll")
+00003B10:0329/184032  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00003B10:0329/184032  LdrUnload("C:\WINDOWS\system32\tquery.dll")
+00003B10:0329/184032  LdrUnload("C:\WINDOWS\system32\SearchIndexerCore.dll")
+000041F0:0329/184059  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+000041F0:0329/184059  LazyAttachToMonitor()
+000041F0:0329/184059  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+000041F0:0329/184059  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+000041F0:0329/184059  LazyAttachToMonitor()
+000041F0:0329/184059  <-- CreateDXGIFactory2() pFactory=0000028082AFEF40 HRESULT=0
+000041F0:0329/184059  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+000041F0:0329/184059  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+000041F0:0329/184059  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+000041F0:0329/184059  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+000041F0:0329/184059  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+000041F0:0329/184059  <-- D3D11CreateDevice() pDevice=00000280C65DC280 pImmediateContext=0000000000000000 HRESULT=0
+000041F0:0329/184059  LazyAttachToMonitor()
+000041F0:0329/184059  LazyAttachToMonitor()
+0000224C:0329/184059  LazyAttachToMonitor()
+0000224C:0329/184059  LazyAttachToMonitor()
+000041F0:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+000041F0:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+000041F0:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+000041F0:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+000041F0:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+000041F0:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+000041F0:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+000041F0:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+000041F0:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+000041F0:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+00004724:0329/184059  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+000041F0:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+000041F0:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+000041F0:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+000041F0:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\system32\policymanager.dll") Base: 00007FF9B6C30000
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\System32\coml2.dll") Base: 00007FF9BD220000
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\system32\mssvp.dll") Base: 00007FF965340000
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\system32\SearchIndexerCore.dll") Base: 00007FF98EDF0000
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\system32\tquery.dll") Base: 00007FF98EA50000
+0000224C:0329/184059  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000224C:0329/184059  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000224C:0329/184059  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000224C:0329/184059  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000224C:0329/184059  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184059  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A1FC:0329/184059  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A1FC:0329/184129  LdrUnload("C:\WINDOWS\system32\mssvp.dll")
+0000A1FC:0329/184129  LdrUnload("C:\WINDOWS\system32\policymanager.dll")
+0000A1FC:0329/184129  LdrUnload("C:\WINDOWS\System32\coml2.dll")
+00003B10:0329/184232  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00003B10:0329/184232  LdrUnload("C:\WINDOWS\system32\tquery.dll")
+00003B10:0329/184232  LdrUnload("C:\WINDOWS\system32\SearchIndexerCore.dll")
+00009854:0329/190712  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00009854:0329/190712  LazyAttachToMonitor()
+00009854:0329/190712  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00009854:0329/190712  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00009854:0329/190712  LazyAttachToMonitor()
+00009854:0329/190712  <-- CreateDXGIFactory2() pFactory=0000028082AFEF40 HRESULT=0
+00009854:0329/190712  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00009854:0329/190712  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00009854:0329/190712  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00009854:0329/190712  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00009854:0329/190712  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00009854:0329/190712  <-- D3D11CreateDevice() pDevice=0000028082154D10 pImmediateContext=0000000000000000 HRESULT=0
+00009854:0329/190712  LazyAttachToMonitor()
+00009854:0329/190712  LazyAttachToMonitor()
+000034D4:0329/190712  LazyAttachToMonitor()
+000034D4:0329/190712  LazyAttachToMonitor()
+00009854:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00009854:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00009854:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+00009854:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+00009854:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+00009854:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+00009854:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+00009854:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+00009854:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+00009854:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+0000AAE8:0329/190712  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+00009854:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+000034D4:0329/190712  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00009854:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00009854:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+000034D4:0329/190712  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00009854:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+000034D4:0329/190712  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+000034D4:0329/190712  LdrUnload("C:\Windows\System32\WINMM.dll")
+000034D4:0329/190712  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\system32\policymanager.dll") Base: 00007FF9B6C30000
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\System32\coml2.dll") Base: 00007FF9BD220000
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\system32\mssvp.dll") Base: 00007FF965340000
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\system32\SearchIndexerCore.dll") Base: 00007FF98EDF0000
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\system32\tquery.dll") Base: 00007FF98EA50000
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190712  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006CC4:0329/190712  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006CC4:0329/190742  LdrUnload("C:\WINDOWS\system32\mssvp.dll")
+00006CC4:0329/190742  LdrUnload("C:\WINDOWS\system32\policymanager.dll")
+00006CC4:0329/190742  LdrUnload("C:\WINDOWS\System32\coml2.dll")
+00003B10:0329/190832  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00003B10:0329/190832  LdrUnload("C:\WINDOWS\system32\tquery.dll")
+00003B10:0329/190832  LdrUnload("C:\WINDOWS\system32\SearchIndexerCore.dll")
+0000A470:0329/190853  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000A470:0329/190853  LazyAttachToMonitor()
+0000A470:0329/190853  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000A470:0329/190853  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000A470:0329/190853  LazyAttachToMonitor()
+0000A470:0329/190853  <-- CreateDXGIFactory2() pFactory=0000028082B00680 HRESULT=0
+0000A470:0329/190853  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000A470:0329/190853  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000A470:0329/190853  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000A470:0329/190853  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000A470:0329/190853  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000A470:0329/190853  <-- D3D11CreateDevice() pDevice=00000280821566E0 pImmediateContext=0000000000000000 HRESULT=0
+0000A470:0329/190853  LazyAttachToMonitor()
+0000A470:0329/190853  LazyAttachToMonitor()
+0000BA20:0329/190853  LazyAttachToMonitor()
+0000BA20:0329/190853  LazyAttachToMonitor()
+0000A470:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A470:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00004698:0329/190853  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+0000A470:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A470:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A470:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000A470:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\system32\policymanager.dll") Base: 00007FF9B6C30000
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\System32\coml2.dll") Base: 00007FF9BD220000
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\system32\mssvp.dll") Base: 00007FF965340000
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000BA20:0329/190853  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\system32\SearchIndexerCore.dll") Base: 00007FF98EDF0000
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\system32\tquery.dll") Base: 00007FF98EA50000
+0000BA20:0329/190853  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000BA20:0329/190853  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000BA20:0329/190853  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000BA20:0329/190853  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190853  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000ABC4:0329/190853  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000ABC4:0329/190923  LdrUnload("C:\WINDOWS\system32\mssvp.dll")
+0000ABC4:0329/190923  LdrUnload("C:\WINDOWS\system32\policymanager.dll")
+0000ABC4:0329/190923  LdrUnload("C:\WINDOWS\System32\coml2.dll")
+00003B10:0329/191032  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00003B10:0329/191032  LdrUnload("C:\WINDOWS\system32\tquery.dll")
+00003B10:0329/191032  LdrUnload("C:\WINDOWS\system32\SearchIndexerCore.dll")
+00009034:0329/194014  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00009034:0329/194014  LazyAttachToMonitor()
+00009034:0329/194014  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00009034:0329/194014  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00009034:0329/194014  LazyAttachToMonitor()
+00009034:0329/194014  <-- CreateDXGIFactory2() pFactory=0000028082B00680 HRESULT=0
+00009034:0329/194014  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00009034:0329/194014  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00009034:0329/194014  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00009034:0329/194014  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00009034:0329/194014  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00009034:0329/194014  <-- D3D11CreateDevice() pDevice=00000280821558E0 pImmediateContext=0000000000000000 HRESULT=0
+00009034:0329/194014  LazyAttachToMonitor()
+00009034:0329/194014  LazyAttachToMonitor()
+0000BBCC:0329/194014  LazyAttachToMonitor()
+0000BBCC:0329/194014  LazyAttachToMonitor()
+00009034:0329/194014  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00009034:0329/194014  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00009034:0329/194014  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+00009034:0329/194014  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+00009034:0329/194014  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+00009034:0329/194014  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+00009034:0329/194014  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+00009034:0329/194014  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+00009034:0329/194014  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+00009034:0329/194014  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+0000AF5C:0329/194014  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+00009034:0329/194014  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00009034:0329/194014  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00009034:0329/194014  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00009034:0329/194014  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\system32\policymanager.dll") Base: 00007FF9B6C30000
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\System32\coml2.dll") Base: 00007FF9BD220000
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\system32\mssvp.dll") Base: 00007FF965340000
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000BBCC:0329/194015  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000BBCC:0329/194015  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000BBCC:0329/194015  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000BBCC:0329/194015  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000BBCC:0329/194015  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+0000B624:0329/194015  LdrLoad("C:\WINDOWS\system32\mssprxy.dll") Base: 00007FF942650000
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\system32\SearchIndexerCore.dll") Base: 00007FF98EDF0000
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\system32\tquery.dll") Base: 00007FF98EA50000
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194015  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194015  LdrLoad("C:\Windows\System32\MrmCoreR.dll") Base: 00007FF995410000
+00001C64:0329/194015  LdrLoad("C:\Windows\System32\srvcli.dll") Base: 00007FF99AB00000
+00001C64:0329/194015  LdrLoad("C:\Windows\System32\netutils.dll") Base: 00007FF9B8850000
+00001C64:0329/194015  LdrLoad("C:\Windows\System32\iertutil.dll") Base: 00007FF99B650000
+00009BA0:0329/194022  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00009BA0:0329/194022  LazyAttachToMonitor()
+00009BA0:0329/194022  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00009BA0:0329/194022  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00009BA0:0329/194022  LazyAttachToMonitor()
+00009BA0:0329/194022  <-- CreateDXGIFactory2() pFactory=0000028082F35940 HRESULT=0
+00009BA0:0329/194022  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00009BA0:0329/194022  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00009BA0:0329/194022  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00009BA0:0329/194022  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00009BA0:0329/194022  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00009BA0:0329/194022  <-- D3D11CreateDevice() pDevice=00000280C687BB40 pImmediateContext=0000000000000000 HRESULT=0
+00009BA0:0329/194022  LazyAttachToMonitor()
+00009BA0:0329/194022  LazyAttachToMonitor()
+0000BBCC:0329/194023  LazyAttachToMonitor()
+0000BBCC:0329/194023  LazyAttachToMonitor()
+00009BA0:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00009BA0:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00009BA0:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00009BA0:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00009BA0:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00009BA0:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000BBCC:0329/194023  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000BBCC:0329/194023  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000BBCC:0329/194023  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000BBCC:0329/194023  LdrUnload("C:\Windows\System32\WINMM.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000BBCC:0329/194023  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194023  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001C64:0329/194023  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001C64:0329/194053  LdrUnload("C:\WINDOWS\system32\mssvp.dll")
+00001C64:0329/194053  LdrUnload("C:\WINDOWS\system32\policymanager.dll")
+00001C64:0329/194053  LdrUnload("C:\WINDOWS\System32\coml2.dll")
+00001C64:0329/194053  LdrUnload("C:\Windows\System32\MrmCoreR.dll")
+00001C64:0329/194053  LdrUnload("C:\Windows\System32\iertutil.dll")
+00001C64:0329/194053  LdrUnload("C:\Windows\System32\srvcli.dll")
+00001C64:0329/194053  LdrUnload("C:\Windows\System32\netutils.dll")
+00003B10:0329/194133  LdrUnload("C:\WINDOWS\system32\mssprxy.dll")
+00003B10:0329/194133  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00003B10:0329/194133  LdrUnload("C:\WINDOWS\system32\tquery.dll")
+00003B10:0329/194133  LdrUnload("C:\WINDOWS\system32\SearchIndexerCore.dll")
+00001098:0329/200140  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00001098:0329/200140  LazyAttachToMonitor()
+00001098:0329/200140  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00001098:0329/200140  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00001098:0329/200140  LazyAttachToMonitor()
+00001098:0329/200140  <-- CreateDXGIFactory2() pFactory=0000028082AFEF40 HRESULT=0
+00001098:0329/200140  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00001098:0329/200140  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00001098:0329/200140  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00001098:0329/200140  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00001098:0329/200140  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00001098:0329/200140  <-- D3D11CreateDevice() pDevice=0000028082FE7080 pImmediateContext=0000000000000000 HRESULT=0
+00001098:0329/200140  LazyAttachToMonitor()
+00001098:0329/200140  LazyAttachToMonitor()
+0000A8D4:0329/200141  LazyAttachToMonitor()
+0000A8D4:0329/200141  LazyAttachToMonitor()
+00001098:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001098:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001098:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+00001098:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+00001098:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+00001098:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+00001098:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+00001098:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+00001098:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+00001098:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+00003DF8:0329/200141  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+00001098:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001098:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00001098:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00001098:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A8D4:0329/200141  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000A8D4:0329/200141  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000A8D4:0329/200141  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000A8D4:0329/200141  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000A8D4:0329/200141  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\system32\policymanager.dll") Base: 00007FF9B6C30000
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\System32\coml2.dll") Base: 00007FF9BD220000
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\system32\mssvp.dll") Base: 00007FF965340000
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\system32\SearchIndexerCore.dll") Base: 00007FF98EDF0000
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\system32\tquery.dll") Base: 00007FF98EA50000
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006900:0329/200141  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00006900:0329/200141  LazyAttachToMonitor()
+00006900:0329/200141  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00006900:0329/200141  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00006900:0329/200141  LazyAttachToMonitor()
+00006900:0329/200141  <-- CreateDXGIFactory2() pFactory=0000028083076280 HRESULT=0
+00006900:0329/200141  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00006900:0329/200141  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00006900:0329/200141  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00006900:0329/200141  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00006900:0329/200141  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00006900:0329/200141  <-- D3D11CreateDevice() pDevice=00000280C687B440 pImmediateContext=0000000000000000 HRESULT=0
+00006900:0329/200141  LazyAttachToMonitor()
+00006900:0329/200141  LazyAttachToMonitor()
+00003D8C:0329/200141  LazyAttachToMonitor()
+00003D8C:0329/200141  LazyAttachToMonitor()
+00006900:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006900:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006900:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006900:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00006900:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00006900:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003D8C:0329/200141  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003D8C:0329/200141  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003D8C:0329/200141  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00003D8C:0329/200141  LdrUnload("C:\Windows\System32\WINMM.dll")
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003D8C:0329/200141  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003CA4:0329/200141  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+00003CA4:0329/200141  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00003CA4:0329/200211  LdrUnload("C:\WINDOWS\system32\mssvp.dll")
+00003CA4:0329/200211  LdrUnload("C:\WINDOWS\system32\policymanager.dll")
+00003CA4:0329/200211  LdrUnload("C:\WINDOWS\System32\coml2.dll")
+00003B10:0329/200333  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00003B10:0329/200333  LdrUnload("C:\WINDOWS\system32\tquery.dll")
+00003B10:0329/200333  LdrUnload("C:\WINDOWS\system32\SearchIndexerCore.dll")
+000024FC:0329/200616  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+000024FC:0329/200616  LazyAttachToMonitor()
+000024FC:0329/200616  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+000024FC:0329/200616  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+000024FC:0329/200616  LazyAttachToMonitor()
+000024FC:0329/200616  <-- CreateDXGIFactory2() pFactory=0000028082C89030 HRESULT=0
+000024FC:0329/200616  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+000024FC:0329/200616  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+000024FC:0329/200616  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+000024FC:0329/200616  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+000024FC:0329/200616  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+000024FC:0329/200616  <-- D3D11CreateDevice() pDevice=00000280830FC780 pImmediateContext=0000000000000000 HRESULT=0
+000024FC:0329/200616  LazyAttachToMonitor()
+000024FC:0329/200616  LazyAttachToMonitor()
+0000221C:0329/200617  LazyAttachToMonitor()
+0000221C:0329/200617  LazyAttachToMonitor()
+000024FC:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+000024FC:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+00007720:0329/200617  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+000024FC:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+000024FC:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+000024FC:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+000024FC:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\system32\policymanager.dll") Base: 00007FF9B6C30000
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\System32\coml2.dll") Base: 00007FF9BD220000
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\system32\mssvp.dll") Base: 00007FF965340000
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000221C:0329/200617  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000221C:0329/200617  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\system32\SearchIndexerCore.dll") Base: 00007FF98EDF0000
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\system32\tquery.dll") Base: 00007FF98EA50000
+0000221C:0329/200617  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000221C:0329/200617  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000221C:0329/200617  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B620:0329/200617  LdrLoad("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll") Base: 00007FF992A10000
+0000B620:0329/200617  LdrUnload("C:\WINDOWS\SYSTEM32\windows.system.launcher.dll")
+0000B620:0329/200647  LdrUnload("C:\WINDOWS\system32\mssvp.dll")
+0000B620:0329/200647  LdrUnload("C:\WINDOWS\system32\policymanager.dll")
+0000B620:0329/200647  LdrUnload("C:\WINDOWS\System32\coml2.dll")
+00003B10:0329/200733  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00003B10:0329/200733  LdrUnload("C:\WINDOWS\system32\tquery.dll")
+00003B10:0329/200733  LdrUnload("C:\WINDOWS\system32\SearchIndexerCore.dll")
+0000BA6C:0329/204121  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000BA6C:0329/204121  LazyAttachToMonitor()
+0000BA6C:0329/204121  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000BA6C:0329/204121  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000BA6C:0329/204121  LazyAttachToMonitor()
+0000BA6C:0329/204121  <-- CreateDXGIFactory2() pFactory=0000028083074B40 HRESULT=0
+0000BA6C:0329/204121  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000BA6C:0329/204121  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000BA6C:0329/204121  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000BA6C:0329/204121  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000BA6C:0329/204121  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000BA6C:0329/204121  <-- D3D11CreateDevice() pDevice=0000028083008600 pImmediateContext=0000000000000000 HRESULT=0
+0000BA6C:0329/204121  LazyAttachToMonitor()
+0000BA6C:0329/204121  LazyAttachToMonitor()
+0000AAF8:0329/204121  LazyAttachToMonitor()
+0000AAF8:0329/204121  LazyAttachToMonitor()
+0000BA6C:0329/204121  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+0000BA6C:0329/204121  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+0000BA6C:0329/204121  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+0000BA6C:0329/204121  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+0000BA6C:0329/204121  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+0000BA6C:0329/204121  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+0000BA6C:0329/204121  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+0000BA6C:0329/204121  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+0000BA6C:0329/204121  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+0000BA6C:0329/204121  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+0000BA6C:0329/204121  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+0000BA6C:0329/204121  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+0000BA6C:0329/204121  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+0000BA6C:0329/204121  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+0000BA6C:0329/204121  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+0000BA6C:0329/204121  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+0000BA6C:0329/204121  LdrLoad("C:\Windows\System32\Windows.System.Launcher.dll") Base: 00007FF992A10000
+000085BC:0329/204121  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+0000AAF8:0329/204121  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000AAF8:0329/204121  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000AAF8:0329/204121  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000AAF8:0329/204121  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000AAF8:0329/204121  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+0000AB1C:0329/204121  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000AB1C:0329/204121  LazyAttachToMonitor()
+0000AB1C:0329/204121  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000AB1C:0329/204121  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000AB1C:0329/204121  LazyAttachToMonitor()
+0000AB1C:0329/204121  <-- CreateDXGIFactory2() pFactory=0000028082C87CD0 HRESULT=0
+0000AB1C:0329/204121  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000B094:0329/204121  LdrLoad("C:\WINDOWS\system32\IconCodecService.dll") Base: 00007FF97D2E0000
+0000B094:0329/204121  LdrLoad("C:\WINDOWS\SYSTEM32\policymanager.dll") Base: 00007FF9B6C30000
+0000AB1C:0329/204121  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000AB1C:0329/204121  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000AB1C:0329/204121  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000AB1C:0329/204121  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000AB1C:0329/204121  <-- D3D11CreateDevice() pDevice=00000280C6774B00 pImmediateContext=0000000000000000 HRESULT=0
+0000AB1C:0329/204121  LazyAttachToMonitor()
+0000AB1C:0329/204121  LazyAttachToMonitor()
+0000AAF8:0329/204121  LazyAttachToMonitor()
+0000AAF8:0329/204121  LazyAttachToMonitor()
+0000AAF8:0329/204121  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000AAF8:0329/204121  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000AAF8:0329/204121  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000AAF8:0329/204121  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000AAF8:0329/204121  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/204233  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00005354:0329/205453  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00005354:0329/205453  LazyAttachToMonitor()
+00005354:0329/205453  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00005354:0329/205453  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00005354:0329/205453  LazyAttachToMonitor()
+00005354:0329/205453  <-- CreateDXGIFactory2() pFactory=0000028083075AC0 HRESULT=0
+00005354:0329/205453  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00005354:0329/205453  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00005354:0329/205453  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00005354:0329/205453  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00005354:0329/205453  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00005354:0329/205453  <-- D3D11CreateDevice() pDevice=00000280C6792970 pImmediateContext=0000000000000000 HRESULT=0
+00005354:0329/205453  LazyAttachToMonitor()
+00005354:0329/205453  LazyAttachToMonitor()
+00002A48:0329/205453  LazyAttachToMonitor()
+00002A48:0329/205453  LazyAttachToMonitor()
+00005354:0329/205453  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+00005354:0329/205453  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+00005354:0329/205453  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+00005354:0329/205453  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+00005354:0329/205453  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+00005354:0329/205453  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+00005354:0329/205453  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+00005354:0329/205453  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+00005354:0329/205453  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+00005354:0329/205453  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+00005354:0329/205453  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+00005354:0329/205453  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+00005354:0329/205453  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+00005354:0329/205453  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+00005354:0329/205453  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+00005354:0329/205453  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+0000BAFC:0329/205453  LdrLoad("C:\WINDOWS\system32\mssprxy.dll") Base: 00007FF942650000
+0000BAFC:0329/205453  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+00002A48:0329/205453  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00002A48:0329/205453  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00002A48:0329/205453  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00002A48:0329/205453  LdrUnload("C:\Windows\System32\WINMM.dll")
+00002A48:0329/205453  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+000041FC:0329/205453  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+000041FC:0329/205453  LazyAttachToMonitor()
+000041FC:0329/205453  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+000041FC:0329/205453  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+000041FC:0329/205453  LazyAttachToMonitor()
+000041FC:0329/205453  <-- CreateDXGIFactory2() pFactory=0000028082C87CD0 HRESULT=0
+000041FC:0329/205453  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+000041FC:0329/205453  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+000041FC:0329/205453  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+000041FC:0329/205453  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+000041FC:0329/205453  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+000041FC:0329/205453  <-- D3D11CreateDevice() pDevice=00000280C65DC7C0 pImmediateContext=0000000000000000 HRESULT=0
+000041FC:0329/205453  LazyAttachToMonitor()
+000041FC:0329/205453  LazyAttachToMonitor()
+00002A48:0329/205453  LazyAttachToMonitor()
+00002A48:0329/205453  LazyAttachToMonitor()
+0000B68C:0329/205453  LdrLoad("C:\WINDOWS\SYSTEM32\PhotoMetadataHandler.dll") Base: 00007FF9868C0000
+0000AAAC:0329/205453  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000AAAC:0329/205453  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000AAAC:0329/205453  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000AAAC:0329/205453  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000AAAC:0329/205453  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/205633  LdrUnload("C:\WINDOWS\system32\mssprxy.dll")
+00003B10:0329/205633  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+0000B26C:0329/212116  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000B26C:0329/212116  LazyAttachToMonitor()
+0000B26C:0329/212116  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000B26C:0329/212116  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000B26C:0329/212116  LazyAttachToMonitor()
+0000B26C:0329/212116  <-- CreateDXGIFactory2() pFactory=0000028082C897F0 HRESULT=0
+0000B26C:0329/212116  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000B26C:0329/212116  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000B26C:0329/212116  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000B26C:0329/212116  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000B26C:0329/212116  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000B26C:0329/212116  <-- D3D11CreateDevice() pDevice=0000028082165B50 pImmediateContext=0000000000000000 HRESULT=0
+0000B26C:0329/212116  LazyAttachToMonitor()
+0000B26C:0329/212116  LazyAttachToMonitor()
+0000BDA0:0329/212116  LazyAttachToMonitor()
+0000BDA0:0329/212116  LazyAttachToMonitor()
+0000B26C:0329/212116  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+0000B26C:0329/212116  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+0000B26C:0329/212116  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+0000B26C:0329/212116  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+0000B26C:0329/212116  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+0000B26C:0329/212116  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+0000B26C:0329/212116  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+0000B26C:0329/212116  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+0000B26C:0329/212116  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+0000B26C:0329/212116  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+0000B26C:0329/212116  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+0000B26C:0329/212116  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+0000B26C:0329/212116  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+0000B26C:0329/212116  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+0000B26C:0329/212116  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+0000B26C:0329/212116  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+00004C38:0329/212116  LdrLoad("C:\WINDOWS\system32\mssprxy.dll") Base: 00007FF942650000
+00004C38:0329/212116  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+0000BDA0:0329/212116  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000BDA0:0329/212116  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000BDA0:0329/212116  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000BDA0:0329/212116  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000BDA0:0329/212116  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+0000B3E4:0329/212116  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000B3E4:0329/212116  LazyAttachToMonitor()
+0000B3E4:0329/212116  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000B3E4:0329/212116  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000B3E4:0329/212116  LazyAttachToMonitor()
+0000B3E4:0329/212116  <-- CreateDXGIFactory2() pFactory=0000028083074760 HRESULT=0
+0000B3E4:0329/212116  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000B3E4:0329/212116  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000B3E4:0329/212116  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000B3E4:0329/212116  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000B3E4:0329/212116  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000B3E4:0329/212116  <-- D3D11CreateDevice() pDevice=0000028083095BA0 pImmediateContext=0000000000000000 HRESULT=0
+0000B3E4:0329/212116  LazyAttachToMonitor()
+0000B3E4:0329/212116  LazyAttachToMonitor()
+0000BDA0:0329/212116  LazyAttachToMonitor()
+0000BDA0:0329/212116  LazyAttachToMonitor()
+0000BDFC:0329/212117  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000BDFC:0329/212117  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000BDFC:0329/212117  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000BDFC:0329/212117  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000BDFC:0329/212117  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/212234  LdrUnload("C:\WINDOWS\system32\mssprxy.dll")
+00003B10:0329/212234  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+0000BB70:0329/213204  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000BB70:0329/213204  LazyAttachToMonitor()
+0000BB70:0329/213204  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000BB70:0329/213204  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000BB70:0329/213204  LazyAttachToMonitor()
+0000BB70:0329/213204  <-- CreateDXGIFactory2() pFactory=0000028083077DA0 HRESULT=0
+0000BB70:0329/213204  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000BB70:0329/213204  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000BB70:0329/213204  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000BB70:0329/213204  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000BB70:0329/213204  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000BB70:0329/213204  <-- D3D11CreateDevice() pDevice=0000028082E0C540 pImmediateContext=0000000000000000 HRESULT=0
+0000BB70:0329/213204  LazyAttachToMonitor()
+0000BB70:0329/213204  LazyAttachToMonitor()
+0000B888:0329/213204  LazyAttachToMonitor()
+0000B888:0329/213204  LazyAttachToMonitor()
+0000BB70:0329/213204  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+0000BB70:0329/213204  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+0000BB70:0329/213204  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+0000BB70:0329/213204  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+0000BB70:0329/213204  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+0000BB70:0329/213204  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+0000BB70:0329/213204  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+0000BB70:0329/213204  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+00005178:0329/213204  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+00000504:0329/213204  LdrLoad("C:\Windows\System32\MrmCoreR.dll") Base: 00007FF995410000
+00000504:0329/213204  LdrLoad("C:\Windows\System32\srvcli.dll") Base: 00007FF99AB00000
+00000504:0329/213204  LdrLoad("C:\Windows\System32\netutils.dll") Base: 00007FF9B8850000
+00000504:0329/213204  LdrLoad("C:\Windows\System32\iertutil.dll") Base: 00007FF99B650000
+0000B888:0329/213204  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000B888:0329/213204  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000B888:0329/213204  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000B888:0329/213204  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000B888:0329/213204  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00000504:0329/213234  LdrUnload("C:\Windows\System32\MrmCoreR.dll")
+00000504:0329/213234  LdrUnload("C:\Windows\System32\iertutil.dll")
+00000504:0329/213234  LdrUnload("C:\Windows\System32\srvcli.dll")
+00000504:0329/213234  LdrUnload("C:\Windows\System32\netutils.dll")
+00003B10:0329/213334  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00002B74:0329/214316  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00002B74:0329/214316  LazyAttachToMonitor()
+00002B74:0329/214316  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00002B74:0329/214316  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00002B74:0329/214316  LazyAttachToMonitor()
+00002B74:0329/214316  <-- CreateDXGIFactory2() pFactory=0000028082C89BD0 HRESULT=0
+00002B74:0329/214316  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00002B74:0329/214316  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00002B74:0329/214316  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00002B74:0329/214316  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00002B74:0329/214316  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00002B74:0329/214316  <-- D3D11CreateDevice() pDevice=0000028083ACBFA0 pImmediateContext=0000000000000000 HRESULT=0
+00002B74:0329/214316  LazyAttachToMonitor()
+00002B74:0329/214316  LazyAttachToMonitor()
+0000BC24:0329/214316  LazyAttachToMonitor()
+0000BC24:0329/214316  LazyAttachToMonitor()
+0000BBC4:0329/214316  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+0000BC24:0329/214316  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000BC24:0329/214316  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000BC24:0329/214316  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000BC24:0329/214316  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000BC24:0329/214316  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B74:0329/214324  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00003B74:0329/214324  LazyAttachToMonitor()
+00003B74:0329/214324  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00003B74:0329/214324  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00003B74:0329/214324  LazyAttachToMonitor()
+00003B74:0329/214324  <-- CreateDXGIFactory2() pFactory=0000028083074F20 HRESULT=0
+00003B74:0329/214324  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00003B74:0329/214324  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00003B74:0329/214324  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00003B74:0329/214324  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00003B74:0329/214324  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00003B74:0329/214324  <-- D3D11CreateDevice() pDevice=0000028083A498B0 pImmediateContext=0000000000000000 HRESULT=0
+00003B74:0329/214324  LazyAttachToMonitor()
+00003B74:0329/214324  LazyAttachToMonitor()
+0000BFF8:0329/214324  LazyAttachToMonitor()
+0000BFF8:0329/214324  LazyAttachToMonitor()
+00009C4C:0329/214324  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00009C4C:0329/214324  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00009C4C:0329/214324  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00009C4C:0329/214324  LdrUnload("C:\Windows\System32\WINMM.dll")
+00009C4C:0329/214324  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00005384:0329/214327  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00005384:0329/214327  LazyAttachToMonitor()
+00005384:0329/214327  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00005384:0329/214327  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00005384:0329/214327  LazyAttachToMonitor()
+00005384:0329/214327  <-- CreateDXGIFactory2() pFactory=0000028083074760 HRESULT=0
+00005384:0329/214327  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00005384:0329/214327  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00005384:0329/214327  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00005384:0329/214327  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00005384:0329/214327  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00005384:0329/214327  <-- D3D11CreateDevice() pDevice=0000028081F33D50 pImmediateContext=0000000000000000 HRESULT=0
+00005384:0329/214327  LazyAttachToMonitor()
+00005384:0329/214327  LazyAttachToMonitor()
+00009C4C:0329/214327  LazyAttachToMonitor()
+00009C4C:0329/214327  LazyAttachToMonitor()
+00009C4C:0329/214327  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00009C4C:0329/214327  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00009C4C:0329/214327  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00009C4C:0329/214327  LdrUnload("C:\Windows\System32\WINMM.dll")
+00009C4C:0329/214327  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/214434  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00002544:0329/214738  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00002544:0329/214738  LazyAttachToMonitor()
+00002544:0329/214738  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00002544:0329/214738  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00002544:0329/214738  LazyAttachToMonitor()
+00002544:0329/214738  <-- CreateDXGIFactory2() pFactory=0000028083075AC0 HRESULT=0
+00002544:0329/214738  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00002544:0329/214738  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00002544:0329/214738  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00002544:0329/214738  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00002544:0329/214738  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00002544:0329/214738  <-- D3D11CreateDevice() pDevice=00000280C6791EE0 pImmediateContext=0000000000000000 HRESULT=0
+00002544:0329/214738  LazyAttachToMonitor()
+00002544:0329/214738  LazyAttachToMonitor()
+0000738C:0329/214738  LazyAttachToMonitor()
+0000738C:0329/214738  LazyAttachToMonitor()
+00002544:0329/214738  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+00002544:0329/214738  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+00002544:0329/214738  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+00002544:0329/214738  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+00002544:0329/214738  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+00002544:0329/214738  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+00002544:0329/214738  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+00002544:0329/214738  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+00000DD8:0329/214738  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+0000738C:0329/214738  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000738C:0329/214738  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000738C:0329/214738  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000738C:0329/214738  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000738C:0329/214738  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/214934  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+0000AD44:0329/215028  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000AD44:0329/215028  LazyAttachToMonitor()
+0000AD44:0329/215028  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000AD44:0329/215028  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000AD44:0329/215028  LazyAttachToMonitor()
+0000AD44:0329/215028  <-- CreateDXGIFactory2() pFactory=0000028082C89BD0 HRESULT=0
+0000AD44:0329/215028  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000AD44:0329/215028  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000AD44:0329/215028  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000AD44:0329/215028  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000AD44:0329/215028  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000AD44:0329/215028  <-- D3D11CreateDevice() pDevice=0000028081F3EB80 pImmediateContext=0000000000000000 HRESULT=0
+0000AD44:0329/215028  LazyAttachToMonitor()
+0000AD44:0329/215028  LazyAttachToMonitor()
+00003FD4:0329/215028  LazyAttachToMonitor()
+00003FD4:0329/215028  LazyAttachToMonitor()
+0000ADE8:0329/215028  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+00003FD4:0329/215028  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00003FD4:0329/215028  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00003FD4:0329/215028  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00003FD4:0329/215028  LdrUnload("C:\Windows\System32\WINMM.dll")
+00003FD4:0329/215028  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00008930:0329/215105  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00008930:0329/215105  LazyAttachToMonitor()
+00008930:0329/215105  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00008930:0329/215105  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00008930:0329/215105  LazyAttachToMonitor()
+00008930:0329/215105  <-- CreateDXGIFactory2() pFactory=0000028083074B40 HRESULT=0
+00008930:0329/215105  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00008930:0329/215105  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00008930:0329/215105  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00008930:0329/215105  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00008930:0329/215105  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00008930:0329/215106  <-- D3D11CreateDevice() pDevice=0000028083B9E530 pImmediateContext=0000000000000000 HRESULT=0
+00008930:0329/215106  LazyAttachToMonitor()
+00008930:0329/215106  LazyAttachToMonitor()
+00003FD4:0329/215106  LazyAttachToMonitor()
+00003FD4:0329/215106  LazyAttachToMonitor()
+00003FD4:0329/215106  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00003FD4:0329/215106  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00003FD4:0329/215106  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00003FD4:0329/215106  LdrUnload("C:\Windows\System32\WINMM.dll")
+00003FD4:0329/215106  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/215234  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+0000BB40:0329/215316  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000BB40:0329/215316  LazyAttachToMonitor()
+0000BB40:0329/215316  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000BB40:0329/215316  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000BB40:0329/215316  LazyAttachToMonitor()
+0000BB40:0329/215316  <-- CreateDXGIFactory2() pFactory=0000028082C88490 HRESULT=0
+0000BB40:0329/215316  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000BB40:0329/215316  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000BB40:0329/215316  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000BB40:0329/215316  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000BB40:0329/215316  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000BB40:0329/215316  <-- D3D11CreateDevice() pDevice=0000028083BB7E30 pImmediateContext=0000000000000000 HRESULT=0
+0000BB40:0329/215316  LazyAttachToMonitor()
+0000BB40:0329/215316  LazyAttachToMonitor()
+0000BC54:0329/215316  LazyAttachToMonitor()
+0000BC54:0329/215316  LazyAttachToMonitor()
+0000AC50:0329/215316  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+0000BC54:0329/215316  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000BC54:0329/215316  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000BC54:0329/215316  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000BC54:0329/215316  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000BC54:0329/215316  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00009A84:0329/215430  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00009A84:0329/215430  LazyAttachToMonitor()
+00009A84:0329/215430  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00009A84:0329/215430  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00009A84:0329/215430  LazyAttachToMonitor()
+00009A84:0329/215430  <-- CreateDXGIFactory2() pFactory=00000280830779C0 HRESULT=0
+00009A84:0329/215430  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00009A84:0329/215430  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00009A84:0329/215430  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00009A84:0329/215430  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00009A84:0329/215430  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00009A84:0329/215430  <-- D3D11CreateDevice() pDevice=000002808327EAF0 pImmediateContext=0000000000000000 HRESULT=0
+00009A84:0329/215430  LazyAttachToMonitor()
+00009A84:0329/215430  LazyAttachToMonitor()
+00002818:0329/215430  LazyAttachToMonitor()
+00002818:0329/215430  LazyAttachToMonitor()
+00002818:0329/215430  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00002818:0329/215430  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00002818:0329/215430  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00002818:0329/215430  LdrUnload("C:\Windows\System32\WINMM.dll")
+00002818:0329/215430  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+0000BC38:0329/215440  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000BC38:0329/215440  LazyAttachToMonitor()
+0000BC38:0329/215440  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000BC38:0329/215440  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000BC38:0329/215440  LazyAttachToMonitor()
+0000BC38:0329/215440  <-- CreateDXGIFactory2() pFactory=0000028082C8A390 HRESULT=0
+0000BC38:0329/215440  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000BC38:0329/215440  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000BC38:0329/215440  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000BC38:0329/215440  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000BC38:0329/215440  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000BC38:0329/215440  <-- D3D11CreateDevice() pDevice=00000280830FC9B0 pImmediateContext=0000000000000000 HRESULT=0
+0000BC38:0329/215440  LazyAttachToMonitor()
+0000BC38:0329/215440  LazyAttachToMonitor()
+00002818:0329/215440  LazyAttachToMonitor()
+00002818:0329/215440  LazyAttachToMonitor()
+00002818:0329/215440  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00002818:0329/215440  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00002818:0329/215440  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00002818:0329/215440  LdrUnload("C:\Windows\System32\WINMM.dll")
+00002818:0329/215440  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+0000768C:0329/215633  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000768C:0329/215633  LazyAttachToMonitor()
+0000768C:0329/215633  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000768C:0329/215633  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000768C:0329/215633  LazyAttachToMonitor()
+0000768C:0329/215633  <-- CreateDXGIFactory2() pFactory=0000028082C87510 HRESULT=0
+0000768C:0329/215633  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000768C:0329/215633  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000768C:0329/215633  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000768C:0329/215633  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000768C:0329/215633  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000768C:0329/215633  <-- D3D11CreateDevice() pDevice=0000028082E26CD0 pImmediateContext=0000000000000000 HRESULT=0
+0000768C:0329/215633  LazyAttachToMonitor()
+0000768C:0329/215633  LazyAttachToMonitor()
+0000BE64:0329/215633  LazyAttachToMonitor()
+0000BE64:0329/215633  LazyAttachToMonitor()
+0000BE64:0329/215633  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000BE64:0329/215633  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000BE64:0329/215633  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000BE64:0329/215633  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000BE64:0329/215633  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+0000B6E4:0329/215658  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000B6E4:0329/215658  LazyAttachToMonitor()
+0000B6E4:0329/215658  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000B6E4:0329/215658  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000B6E4:0329/215658  LazyAttachToMonitor()
+0000B6E4:0329/215658  <-- CreateDXGIFactory2() pFactory=00000280830779C0 HRESULT=0
+0000B6E4:0329/215658  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000B6E4:0329/215658  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000B6E4:0329/215658  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000B6E4:0329/215658  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000B6E4:0329/215658  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000B6E4:0329/215658  <-- D3D11CreateDevice() pDevice=0000028083287CB0 pImmediateContext=0000000000000000 HRESULT=0
+0000B6E4:0329/215658  LazyAttachToMonitor()
+0000B6E4:0329/215658  LazyAttachToMonitor()
+0000BE64:0329/215658  LazyAttachToMonitor()
+0000BE64:0329/215658  LazyAttachToMonitor()
+0000BE64:0329/215658  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000BE64:0329/215658  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000BE64:0329/215658  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000BE64:0329/215658  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000BE64:0329/215658  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/215834  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00006D54:0329/215910  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00006D54:0329/215910  LazyAttachToMonitor()
+00006D54:0329/215910  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00006D54:0329/215910  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00006D54:0329/215910  LazyAttachToMonitor()
+00006D54:0329/215910  <-- CreateDXGIFactory2() pFactory=0000028083077DA0 HRESULT=0
+00006D54:0329/215910  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00006D54:0329/215910  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00006D54:0329/215910  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00006D54:0329/215910  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00006D54:0329/215910  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00006D54:0329/215910  <-- D3D11CreateDevice() pDevice=0000028081F33730 pImmediateContext=0000000000000000 HRESULT=0
+00006D54:0329/215910  LazyAttachToMonitor()
+00006D54:0329/215910  LazyAttachToMonitor()
+0000829C:0329/215911  LazyAttachToMonitor()
+0000829C:0329/215911  LazyAttachToMonitor()
+00009EFC:0329/215911  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+0000829C:0329/215911  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000829C:0329/215911  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000829C:0329/215911  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000829C:0329/215911  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000829C:0329/215911  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00007768:0329/215922  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00007768:0329/215922  LazyAttachToMonitor()
+00007768:0329/215922  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00007768:0329/215922  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00007768:0329/215922  LazyAttachToMonitor()
+00007768:0329/215922  <-- CreateDXGIFactory2() pFactory=0000028082C87510 HRESULT=0
+00007768:0329/215922  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00007768:0329/215922  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00007768:0329/215922  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00007768:0329/215922  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00007768:0329/215922  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00007768:0329/215922  <-- D3D11CreateDevice() pDevice=0000028082B5E770 pImmediateContext=0000000000000000 HRESULT=0
+00007768:0329/215922  LazyAttachToMonitor()
+00007768:0329/215922  LazyAttachToMonitor()
+0000829C:0329/215922  LazyAttachToMonitor()
+0000829C:0329/215922  LazyAttachToMonitor()
+0000829C:0329/215922  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000829C:0329/215922  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000829C:0329/215922  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000829C:0329/215922  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000829C:0329/215922  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/220034  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+0000A514:0329/220301  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+0000A514:0329/220301  LazyAttachToMonitor()
+0000A514:0329/220301  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+0000A514:0329/220301  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+0000A514:0329/220301  LazyAttachToMonitor()
+0000A514:0329/220301  <-- CreateDXGIFactory2() pFactory=0000028082C87CD0 HRESULT=0
+0000A514:0329/220301  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+0000A514:0329/220301  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+0000A514:0329/220301  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+0000A514:0329/220301  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+0000A514:0329/220301  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+0000A514:0329/220301  <-- D3D11CreateDevice() pDevice=0000028081F33DC0 pImmediateContext=0000000000000000 HRESULT=0
+0000A514:0329/220301  LazyAttachToMonitor()
+0000A514:0329/220301  LazyAttachToMonitor()
+000093F0:0329/220301  LazyAttachToMonitor()
+000093F0:0329/220301  LazyAttachToMonitor()
+0000A514:0329/220301  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+0000A514:0329/220301  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+0000A514:0329/220301  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+0000A514:0329/220301  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+0000A514:0329/220301  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+0000A514:0329/220301  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+0000A514:0329/220301  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+0000A514:0329/220301  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+0000B504:0329/220301  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+000093F0:0329/220301  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+000093F0:0329/220301  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+000093F0:0329/220301  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+000093F0:0329/220301  LdrUnload("C:\Windows\System32\WINMM.dll")
+000093F0:0329/220301  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/220434  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00006FA4:0329/220501  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00006FA4:0329/220501  LazyAttachToMonitor()
+00006FA4:0329/220501  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00006FA4:0329/220501  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00006FA4:0329/220501  LazyAttachToMonitor()
+00006FA4:0329/220501  <-- CreateDXGIFactory2() pFactory=0000028083074F20 HRESULT=0
+00006FA4:0329/220501  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00006FA4:0329/220501  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00006FA4:0329/220501  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00006FA4:0329/220501  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00006FA4:0329/220501  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00006FA4:0329/220501  <-- D3D11CreateDevice() pDevice=0000028082F54580 pImmediateContext=0000000000000000 HRESULT=0
+00006FA4:0329/220501  LazyAttachToMonitor()
+00006FA4:0329/220501  LazyAttachToMonitor()
+00006AA4:0329/220501  LazyAttachToMonitor()
+00006AA4:0329/220501  LazyAttachToMonitor()
+0000AC04:0329/220501  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+00006AA4:0329/220501  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00006AA4:0329/220501  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00006AA4:0329/220501  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00006AA4:0329/220501  LdrUnload("C:\Windows\System32\WINMM.dll")
+00006AA4:0329/220501  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/220634  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00003D64:0329/220823  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00003D64:0329/220823  LazyAttachToMonitor()
+00003D64:0329/220823  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00003D64:0329/220823  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00003D64:0329/220823  LazyAttachToMonitor()
+00003D64:0329/220823  <-- CreateDXGIFactory2() pFactory=0000028082C8AB50 HRESULT=0
+00003D64:0329/220823  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00003D64:0329/220823  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00003D64:0329/220823  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00003D64:0329/220823  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00003D64:0329/220823  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00003D64:0329/220823  <-- D3D11CreateDevice() pDevice=00000280821556B0 pImmediateContext=0000000000000000 HRESULT=0
+00003D64:0329/220823  LazyAttachToMonitor()
+00003D64:0329/220823  LazyAttachToMonitor()
+0000BC24:0329/220823  LazyAttachToMonitor()
+0000BC24:0329/220823  LazyAttachToMonitor()
+00003248:0329/220823  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+0000BC24:0329/220823  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000BC24:0329/220823  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000BC24:0329/220823  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000BC24:0329/220823  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000BC24:0329/220823  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/220934  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00007698:0329/221017  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00007698:0329/221017  LazyAttachToMonitor()
+00007698:0329/221017  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00007698:0329/221017  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00007698:0329/221017  LazyAttachToMonitor()
+00007698:0329/221017  <-- CreateDXGIFactory2() pFactory=0000028083078180 HRESULT=0
+00007698:0329/221017  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00007698:0329/221017  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00007698:0329/221017  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00007698:0329/221017  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00007698:0329/221017  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00007698:0329/221017  <-- D3D11CreateDevice() pDevice=0000028082B05D10 pImmediateContext=0000000000000000 HRESULT=0
+00007698:0329/221017  LazyAttachToMonitor()
+00007698:0329/221017  LazyAttachToMonitor()
+00009EFC:0329/221017  LazyAttachToMonitor()
+00009EFC:0329/221017  LazyAttachToMonitor()
+0000A978:0329/221017  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+00009EFC:0329/221017  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00009EFC:0329/221017  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00009EFC:0329/221017  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00009EFC:0329/221017  LdrUnload("C:\Windows\System32\WINMM.dll")
+00009EFC:0329/221017  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00004AF0:0329/221109  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00004AF0:0329/221109  LazyAttachToMonitor()
+00004AF0:0329/221109  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00004AF0:0329/221109  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00004AF0:0329/221109  LazyAttachToMonitor()
+00004AF0:0329/221109  <-- CreateDXGIFactory2() pFactory=0000028082C87CD0 HRESULT=0
+00004AF0:0329/221109  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00004AF0:0329/221109  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00004AF0:0329/221109  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00004AF0:0329/221109  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00004AF0:0329/221109  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00004AF0:0329/221110  <-- D3D11CreateDevice() pDevice=0000028082B048F0 pImmediateContext=0000000000000000 HRESULT=0
+00004AF0:0329/221110  LazyAttachToMonitor()
+00004AF0:0329/221110  LazyAttachToMonitor()
+00009EFC:0329/221110  LazyAttachToMonitor()
+00009EFC:0329/221110  LazyAttachToMonitor()
+00009EFC:0329/221110  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00009EFC:0329/221110  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00009EFC:0329/221110  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00009EFC:0329/221110  LdrUnload("C:\Windows\System32\WINMM.dll")
+00009EFC:0329/221110  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00009030:0329/221111  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00009030:0329/221111  LazyAttachToMonitor()
+00009030:0329/221111  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00009030:0329/221111  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00009030:0329/221111  LazyAttachToMonitor()
+00009030:0329/221111  <-- CreateDXGIFactory2() pFactory=0000028083077DA0 HRESULT=0
+00009030:0329/221111  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00009030:0329/221111  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00009030:0329/221111  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00009030:0329/221111  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00009030:0329/221111  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00009030:0329/221111  <-- D3D11CreateDevice() pDevice=0000028083E153A0 pImmediateContext=0000000000000000 HRESULT=0
+00009030:0329/221111  LazyAttachToMonitor()
+00009030:0329/221111  LazyAttachToMonitor()
+00009EFC:0329/221111  LazyAttachToMonitor()
+00009EFC:0329/221111  LazyAttachToMonitor()
+00009EFC:0329/221111  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+00009EFC:0329/221111  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+00009EFC:0329/221111  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+00009EFC:0329/221111  LdrUnload("C:\Windows\System32\WINMM.dll")
+00009EFC:0329/221111  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/221234  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00004260:0329/221252  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00004260:0329/221252  LazyAttachToMonitor()
+00004260:0329/221252  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00004260:0329/221252  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00004260:0329/221252  LazyAttachToMonitor()
+00004260:0329/221252  <-- CreateDXGIFactory2() pFactory=0000028083075300 HRESULT=0
+00004260:0329/221252  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00004260:0329/221252  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00004260:0329/221252  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00004260:0329/221252  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00004260:0329/221252  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00004260:0329/221252  <-- D3D11CreateDevice() pDevice=0000028083F02F80 pImmediateContext=0000000000000000 HRESULT=0
+00004260:0329/221252  LazyAttachToMonitor()
+00004260:0329/221252  LazyAttachToMonitor()
+0000ABB0:0329/221252  LazyAttachToMonitor()
+0000ABB0:0329/221252  LazyAttachToMonitor()
+000025A4:0329/221252  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+0000ABB0:0329/221252  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000ABB0:0329/221252  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000ABB0:0329/221252  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000ABB0:0329/221252  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000ABB0:0329/221252  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/221434  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+000037BC:0329/223241  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+000037BC:0329/223241  LazyAttachToMonitor()
+000037BC:0329/223241  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+000037BC:0329/223241  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+000037BC:0329/223241  LazyAttachToMonitor()
+000037BC:0329/223241  <-- CreateDXGIFactory2() pFactory=0000028082C87510 HRESULT=0
+000037BC:0329/223241  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+000037BC:0329/223241  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+000037BC:0329/223241  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+000037BC:0329/223241  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+000037BC:0329/223241  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+000037BC:0329/223241  <-- D3D11CreateDevice() pDevice=0000028081FA0850 pImmediateContext=0000000000000000 HRESULT=0
+000037BC:0329/223241  LazyAttachToMonitor()
+000037BC:0329/223241  LazyAttachToMonitor()
+0000B1C8:0329/223241  LazyAttachToMonitor()
+0000B1C8:0329/223241  LazyAttachToMonitor()
+000037BC:0329/223241  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+000037BC:0329/223241  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+000037BC:0329/223241  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+000037BC:0329/223241  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+000037BC:0329/223241  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+000037BC:0329/223241  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+000037BC:0329/223241  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+000037BC:0329/223241  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+000037BC:0329/223241  LdrLoad("C:\WINDOWS\SYSTEM32\srvcli.dll") Base: 00007FF99AB00000
+000037BC:0329/223241  LdrLoad("C:\WINDOWS\SYSTEM32\netutils.dll") Base: 00007FF9B8850000
+000037BC:0329/223241  LdrLoad("C:\WINDOWS\SYSTEM32\iertutil.dll") Base: 00007FF99B650000
+000037BC:0329/223241  LdrLoad("C:\WINDOWS\SYSTEM32\urlmon.dll") Base: 00007FF99B980000
+000037BC:0329/223241  LdrUnload("C:\WINDOWS\SYSTEM32\urlmon.dll")
+000037BC:0329/223241  LdrUnload("C:\WINDOWS\SYSTEM32\iertutil.dll")
+000037BC:0329/223241  LdrUnload("C:\WINDOWS\SYSTEM32\srvcli.dll")
+000037BC:0329/223241  LdrUnload("C:\WINDOWS\SYSTEM32\netutils.dll")
+000092EC:0329/223241  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+0000B1C8:0329/223241  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000B1C8:0329/223241  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000B1C8:0329/223241  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000B1C8:0329/223241  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000B1C8:0329/223241  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/223434  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00005B58:0329/224014  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00005B58:0329/224014  LazyAttachToMonitor()
+00005B58:0329/224014  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00005B58:0329/224014  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00005B58:0329/224014  LazyAttachToMonitor()
+00005B58:0329/224014  <-- CreateDXGIFactory2() pFactory=0000028083074F20 HRESULT=0
+00005B58:0329/224014  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00005B58:0329/224014  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00005B58:0329/224014  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00005B58:0329/224014  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00005B58:0329/224014  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00005B58:0329/224014  <-- D3D11CreateDevice() pDevice=00000280822847D0 pImmediateContext=0000000000000000 HRESULT=0
+00005B58:0329/224014  LazyAttachToMonitor()
+00005B58:0329/224014  LazyAttachToMonitor()
+0000C1C0:0329/224014  LazyAttachToMonitor()
+0000C1C0:0329/224014  LazyAttachToMonitor()
+0000BEDC:0329/224014  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+0000C1C0:0329/224014  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000C1C0:0329/224014  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000C1C0:0329/224014  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000C1C0:0329/224014  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000C1C0:0329/224014  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00008698:0329/224023  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00008698:0329/224023  LazyAttachToMonitor()
+00008698:0329/224023  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00008698:0329/224023  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00008698:0329/224023  LazyAttachToMonitor()
+00008698:0329/224023  <-- CreateDXGIFactory2() pFactory=0000028082C89BD0 HRESULT=0
+00008698:0329/224023  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00008698:0329/224023  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00008698:0329/224023  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00008698:0329/224023  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00008698:0329/224023  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00008698:0329/224023  <-- D3D11CreateDevice() pDevice=00000280C65DC3D0 pImmediateContext=0000000000000000 HRESULT=0
+00008698:0329/224023  LazyAttachToMonitor()
+00008698:0329/224023  LazyAttachToMonitor()
+0000C1C0:0329/224023  LazyAttachToMonitor()
+0000C1C0:0329/224023  LazyAttachToMonitor()
+0000C1C0:0329/224023  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000C1C0:0329/224023  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000C1C0:0329/224023  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000C1C0:0329/224023  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000C1C0:0329/224023  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/224134  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")
+00000DF0:0329/224225  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00000DF0:0329/224225  LazyAttachToMonitor()
+00000DF0:0329/224225  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00000DF0:0329/224225  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00000DF0:0329/224225  LazyAttachToMonitor()
+00000DF0:0329/224225  <-- CreateDXGIFactory2() pFactory=0000028082C87510 HRESULT=0
+00000DF0:0329/224225  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00000DF0:0329/224225  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00000DF0:0329/224225  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00000DF0:0329/224225  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00000DF0:0329/224225  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00000DF0:0329/224225  <-- D3D11CreateDevice() pDevice=0000028082B05920 pImmediateContext=0000000000000000 HRESULT=0
+00000DF0:0329/224225  LazyAttachToMonitor()
+00000DF0:0329/224225  LazyAttachToMonitor()
+0000C054:0329/224225  LazyAttachToMonitor()
+0000C054:0329/224225  LazyAttachToMonitor()
+0000BD78:0329/224225  LdrLoad("C:\Windows\System32\Windows.StateRepositoryPS.dll") Base: 00007FF993750000
+0000C054:0329/224225  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000C054:0329/224225  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000C054:0329/224225  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000C054:0329/224225  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000C054:0329/224225  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00007C74:0329/224228  [DataExchangeHost.exe+14660] --> D3D11CreateDevice(pAdapter=0000000000000000 DriverType=D3D_DRIVER_TYPE_HARDWARE FeatureLevels={} ppImmediateContext=0000000000000000)
+00007C74:0329/224228  LazyAttachToMonitor()
+00007C74:0329/224228  [d3d11.dll+5effa] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory)
+00007C74:0329/224228  WARNING: Hooking disabled for module: C:\Windows\System32\d3d11.dll  Function: CreateDXGIFactory2()
+00007C74:0329/224228  LazyAttachToMonitor()
+00007C74:0329/224228  <-- CreateDXGIFactory2() pFactory=0000028083077DA0 HRESULT=0
+00007C74:0329/224228  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll") Base: 00007FF9B24D0000
+00007C74:0329/224228  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll") Base: 00007FF9AC230000
+00007C74:0329/224228  LdrLoad("C:\Windows\System32\WINMM.dll") Base: 00007FF9AB320000
+00007C74:0329/224228  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll") Base: 00007FF9AB360000
+00007C74:0329/224228  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll") Base: 00007FF9A4200000
+00007C74:0329/224228  <-- D3D11CreateDevice() pDevice=0000028082B04C00 pImmediateContext=0000000000000000 HRESULT=0
+00007C74:0329/224228  LazyAttachToMonitor()
+00007C74:0329/224228  LazyAttachToMonitor()
+0000C054:0329/224228  LazyAttachToMonitor()
+0000C054:0329/224228  LazyAttachToMonitor()
+0000C054:0329/224228  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvwgf2umx.dll")
+0000C054:0329/224228  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvgpucomp64.dll")
+0000C054:0329/224228  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\NvMemMapStoragex.dll")
+0000C054:0329/224228  LdrUnload("C:\Windows\System32\WINMM.dll")
+0000C054:0329/224228  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_4bf4c17fa8a478b5\nvldumdx.dll")
+00003B10:0329/224334  LdrUnload("C:\Windows\System32\Windows.StateRepositoryPS.dll")

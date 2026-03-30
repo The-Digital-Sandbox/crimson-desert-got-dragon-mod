@@ -1,0 +1,260 @@
+00004034:0329/174710  Ninja Ripper 2.13 x64
+00004034:0329/174710  © blackninja, 2026
+
+00004034:0329/174710  Operating System: Version=10.0.26200 ServicePack=0.0 
+00004034:0329/174710  Process Id: 28112
+00004034:0329/174710  Program: C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
+00004034:0329/174710  Command line: "C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe" -ServerName:FullTrustApp.AppXykjsye98af63ez2annt9djke8trg8stn.mca
+00004034:0329/174710  Working directory: C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy
+
+00004034:0329/174710  DXGI Hook: Wrapper
+00004034:0329/174710  WARNING: Loaded wrapper dll detected: C:\WINDOWS\system32\dxcapturereplay.dll
+00004034:0329/174710  Frame  Rip Key: BackSpace
+00004034:0329/174710  Forced Rip Key: Insert
+00004034:0329/174710  Export hooked: CreateProcessInternalW Target=[KERNELBASE.dll+af410]
+00004034:0329/174710  Export hooked: CreateProcessInternalA Target=[KERNELBASE.dll+aedc0]
+00004034:0329/174710  Export hooked: CreateProcessAsUserW Target=[advapi32.dll+309c0]
+00004034:0329/174710  Export hooked: CreateProcessWithLogonW Target=[advapi32.dll+5aef0]
+00004034:0329/174710  Export hooked: CreateProcessWithTokenW Target=[advapi32.dll+29480]
+00004034:0329/174710  Export hooked: SetTokenInformation Target=[advapi32.dll+34720]
+00004034:0329/174710  Module loaded. Base: 00007FF9B6790000 C:\WINDOWS\system32\d3d11.dll
+00004034:0329/174710  Export hooked: D3D11CreateDevice Target=[d3d11.dll+84170]
+00004034:0329/174710  Export hooked: D3D11CreateDeviceAndSwapChain Target=[d3d11.dll+82880]
+00004034:0329/174710  Module loaded. Base: 00007FF9B78C0000 C:\WINDOWS\system32\dxgi.dll
+00004034:0329/174710  Export hooked: CreateDXGIFactory Target=[dxgi.dll+4dca0]
+00004034:0329/174710  Export hooked: CreateDXGIFactory1 Target=[dxgi.dll+4ddd0]
+00004034:0329/174710  Export hooked: CreateDXGIFactory2 Target=[dxgi.dll+529f0]
+00004034:0329/174710  Wrapper logger changed
+00004034:0329/174710  DXGI env initialize
+00004034:0329/174710  D3D env initialize
+0000B8B8:0329/174726  LdrLoad("C:\Windows\System32\ActXPrxy.dll") Base: 00007FF97DB20000
+00003C50:0329/174738  LdrUnload("C:\Windows\System32\aadWamExtension.dll")
+0000289C:0329/174853  LdrLoad("C:\Windows\System32\aadWamExtension.dll") Base: 00007FF994C90000
+000057B4:0329/174854  LdrLoad("C:\WINDOWS\SYSTEM32\NInput.dll") Base: 00007FF98FCC0000
+0000126C:0329/174927  LdrUnload("C:\Windows\System32\ActXPrxy.dll")
+0000126C:0329/175056  LdrUnload("C:\Windows\System32\aadWamExtension.dll")
+0000126C:0329/175226  LdrUnload("C:\Windows\System32\MicrosoftAccountWAMExtension.dll")
+0000AA1C:0329/175511  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/175654  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+0000B904:0329/180947  LdrLoad("C:\Windows\System32\wosc.dll") Base: 00007FF9A23C0000
+00007C9C:0329/180947  LdrLoad("C:\Windows\System32\ActXPrxy.dll") Base: 00007FF97DB20000
+00000FC4:0329/180947  LdrLoad("C:\Windows\System32\MicrosoftAccountWAMExtension.dll") Base: 00007FF986D50000
+0000B380:0329/180947  LdrLoad("C:\Windows\System32\FlightSettings.dll") Base: 00007FF98F3D0000
+00000FC4:0329/180947  LdrLoad("C:\Windows\System32\aadWamExtension.dll") Base: 00007FF994C90000
+0000B380:0329/180947  LdrLoad("C:\WINDOWS\SYSTEM32\utcutil.dll") Base: 00007FF9B74E0000
+0000B380:0329/180947  LdrLoad("C:\WINDOWS\SYSTEM32\dcntel.dll") Base: 00007FF967430000
+0000B380:0329/180947  LdrLoad("C:\WINDOWS\SYSTEM32\AEPIC.dll") Base: 00007FF990D70000
+0000B380:0329/180947  LdrLoad("C:\WINDOWS\SYSTEM32\coreprivacysettingsstore.dll") Base: 00007FF9B8920000
+0000B380:0329/180947  LdrUnload("C:\WINDOWS\SYSTEM32\AEPIC.dll")
+0000B380:0329/180947  [dcntel.dll+4591d] --> CreateDXGIFactory1(riid=IID_IDXGIFactory2)
+0000B380:0329/180947  LazyAttachToMonitor()
+0000B380:0329/180947  <-- CreateDXGIFactory1() pFactory=000002B1F0E40080 HRESULT=0
+0000B380:0329/180947  [dcntel.dll+45a01] --> D3D11CreateDevice(pAdapter=000002B1F0E3FF00 DriverType=D3D_DRIVER_TYPE_UNKNOWN FeatureLevels={{D3D_FEATURE_LEVEL_12_1},{D3D_FEATURE_LEVEL_12_0},{D3D_FEATURE_LEVEL_11_1},{D3D_FEATURE_LEVEL_11_0},{D3D_FEATURE_LEVEL_10_1},{D3D_FEATURE_LEVEL_10_0},{D3D_FEATURE_LEVEL_9_3},{D3D_FEATURE_LEVEL_9_2},{D3D_FEATURE_LEVEL_9_1}} ppImmediateContext=0000000000000000)
+0000B380:0329/180947  LdrLoad("C:\WINDOWS\SYSTEM32\d3dcompiler_47.dll") Base: 00007FF9B5680000
+0000B380:0329/180947  d3dcompiler_47.dll loaded: C:\WINDOWS\SYSTEM32\d3dcompiler_47.dll
+0000B380:0329/180947  D3D11 env initialize
+0000B380:0329/180947  AdapterDesc={VendorId=10de DeviceId=2c02 SubSysId=41761458 Revision=a1 Description="NVIDIA GeForce RTX 5080"}
+0000B380:0329/180947  LazyAttachToMonitor()
+0000B380:0329/180947  <-- D3D11CreateDevice() pDevice=0000000000000000 pImmediateContext=0000000000000000 HRESULT=1
+0000B380:0329/180947  [dcntel.dll+45a01] --> D3D11CreateDevice(pAdapter=000002B1F0E49620 DriverType=D3D_DRIVER_TYPE_UNKNOWN FeatureLevels={{D3D_FEATURE_LEVEL_12_1},{D3D_FEATURE_LEVEL_12_0},{D3D_FEATURE_LEVEL_11_1},{D3D_FEATURE_LEVEL_11_0},{D3D_FEATURE_LEVEL_10_1},{D3D_FEATURE_LEVEL_10_0},{D3D_FEATURE_LEVEL_9_3},{D3D_FEATURE_LEVEL_9_2},{D3D_FEATURE_LEVEL_9_1}} ppImmediateContext=0000000000000000)
+0000B380:0329/180947  AdapterDesc={VendorId=1002 DeviceId=13c0 SubSysId=d0001458 Revision=c5 Description="AMD Radeon(TM) Graphics"}
+0000B380:0329/180947  LazyAttachToMonitor()
+0000B380:0329/180947  LdrLoad("C:\WINDOWS\System32\SETUPAPI.dll") Base: 00007FF9BCCF0000
+0000B380:0329/180947  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\u0412061.inf_amd64_4ce7fc623a9bd594\B411279\amdxx64.dll") Base: 00007FF8FB070000
+0000B380:0329/180947  LdrLoad("C:\WINDOWS\system32\atidxx64.dll") Base: 00007FF9B1650000
+0000B380:0329/180947  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\u0412061.inf_amd64_4ce7fc623a9bd594\B411279\amdenc64.dll") Base: 00000000670A0000
+0000B380:0329/180947  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\u0412061.inf_amd64_4ce7fc623a9bd594\B411279\amdihk64.dll") Base: 00007FF997790000
+0000B380:0329/180947  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\u0412061.inf_amd64_4ce7fc623a9bd594\B411279\amdenc64.dll")
+0000B380:0329/180947  LdrUnload("C:\WINDOWS\system32\atidxx64.dll")
+0000B380:0329/180947  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\u0412061.inf_amd64_4ce7fc623a9bd594\B411279\amdihk64.dll")
+0000B380:0329/180947  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\u0412061.inf_amd64_4ce7fc623a9bd594\B411279\amdxx64.dll")
+0000B380:0329/180947  LdrUnload("C:\WINDOWS\System32\SETUPAPI.dll")
+0000B380:0329/180947  <-- D3D11CreateDevice() pDevice=0000000000000000 pImmediateContext=0000000000000000 HRESULT=1
+0000B380:0329/180947  LdrLoad("C:\WINDOWS\SYSTEM32\D3D12.dll") Base: 00007FF991930000
+0000B380:0329/180947  Module loaded. Base: 00007FF991930000 C:\WINDOWS\SYSTEM32\D3D12.dll
+0000B380:0329/180947  Export hooked: D3D12CreateDevice Target=[D3D12.dll+70b0]
+0000B380:0329/180947  Export hooked: D3D12GetInterface Target=[D3D12.dll+f370]
+0000B380:0329/180947  Export hooked: D3D12GetDebugInterface Target=[D3D12.dll+f340]
+0000B380:0329/180947  [dcntel.dll+45c5e] --> CreateDXGIFactory1(riid=IID_IDXGIFactory2)
+0000B380:0329/180947  LazyAttachToMonitor()
+0000B380:0329/180947  <-- CreateDXGIFactory1() pFactory=000002B1F0E46920 HRESULT=0
+0000B380:0329/180947  [dcntel.dll+45d40] --> D3D12CreateDevice(pAdapter=000002B1F0E46AA0 MinimumFeatureLevel=D3D_FEATURE_LEVEL_11_0 riid=IID_ID3D12Device)
+0000B380:0329/180947  WARNING: Loading dxcompiler compiler from NR directory
+0000B380:0329/180947  LdrLoad("C:\Program Files (x86)\Ninja Ripper 2.13\bin64\dxcompiler.dll") Base: 00007FF8FE380000
+0000B380:0329/180948  dxcompiler.dll loaded: C:\Program Files (x86)\Ninja Ripper 2.13\bin64\dxcompiler.dll
+0000B380:0329/180948  D3D12 env initialize
+0000B380:0329/180948  AdapterDesc={VendorId=10de DeviceId=2c02 SubSysId=41761458 Revision=a1 Description="NVIDIA GeForce RTX 5080"}
+0000B380:0329/180948  LazyAttachToMonitor()
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\D3D12Core.dll") Base: 00007FF964FD0000
+0000B380:0329/180948  [D3D12Core.dll+6177e] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory4)
+0000B380:0329/180948  WARNING: Hooking disabled for module: C:\WINDOWS\SYSTEM32\D3D12Core.dll  Function: CreateDXGIFactory2()
+0000B380:0329/180948  LazyAttachToMonitor()
+0000B380:0329/180948  <-- CreateDXGIFactory2() pFactory=000002B1E6099390 HRESULT=0
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\dxilconv.dll") Base: 00007FF96E080000
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\D3DSCache.dll") Base: 00007FF9976E0000
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\dxilconv.dll")
+0000B380:0329/180948  <-- D3D12CreateDevice() pDevice=000002B1C1F27DD0 HRESULT=0
+0000B380:0329/180948  [dcntel.dll+45d40] --> D3D12CreateDevice(pAdapter=000002B1F0E30960 MinimumFeatureLevel=D3D_FEATURE_LEVEL_11_0 riid=IID_ID3D12Device)
+0000B380:0329/180948  AdapterDesc={VendorId=1002 DeviceId=13c0 SubSysId=d0001458 Revision=c5 Description="AMD Radeon(TM) Graphics"}
+0000B380:0329/180948  LazyAttachToMonitor()
+0000B380:0329/180948  [D3D12Core.dll+6177e] --> CreateDXGIFactory2(flags=0x80000000 riid=IID_IDXGIFactory4)
+0000B380:0329/180948  WARNING: Hooking disabled for module: C:\WINDOWS\SYSTEM32\D3D12Core.dll  Function: CreateDXGIFactory2()
+0000B380:0329/180948  LazyAttachToMonitor()
+0000B380:0329/180948  <-- CreateDXGIFactory2() pFactory=000002B1E6099390 HRESULT=0
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\u0412061.inf_amd64_4ce7fc623a9bd594\B411279\amdxc64.dll") Base: 00007FF8F8080000
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\System32\DriverStore\FileRepository\u0412061.inf_amd64_4ce7fc623a9bd594\B411279\amdihk64.dll") Base: 00007FF98E6C0000
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\dxilconv.dll") Base: 00007FF96E080000
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\dxilconv.dll")
+0000B380:0329/180948  <-- D3D12CreateDevice() pDevice=000002B1C1F0E860 HRESULT=0
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\u0412061.inf_amd64_4ce7fc623a9bd594\B411279\amdihk64.dll")
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\System32\DriverStore\FileRepository\u0412061.inf_amd64_4ce7fc623a9bd594\B411279\amdxc64.dll")
+0000B380:0329/180948  LdrLoad("C:\Windows\System32\fcon.dll") Base: 00007FF9A3010000
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\NETAPI32.dll") Base: 00007FF994050000
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\WTSAPI32.dll") Base: 00007FF9B75E0000
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\System32\setupapi.dll") Base: 00007FF9BCCF0000
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\HwReqChk.dll") Base: 00007FF97F940000
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\tdh.dll") Base: 00007FF9AA4E0000
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\Cabinet.dll") Base: 00007FF9AA4B0000
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\appraiser.dll") Base: 00007FF964C90000
+0000B380:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\DSREG.DLL") Base: 00007FF9B5D60000
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\utcutil.dll")
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\dcntel.dll")
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\appraiser.dll")
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\NETAPI32.dll")
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\DSREG.DLL")
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\HwReqChk.dll")
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\WTSAPI32.dll")
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\System32\setupapi.dll")
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\tdh.dll")
+0000B380:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\Cabinet.dll")
+00003624:0329/180948  LdrLoad("C:\Windows\System32\certenroll.dll") Base: 00007FF959E90000
+00003624:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\certca.dll") Base: 00007FF959DB0000
+00007C9C:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\dcntel.dll") Base: 00007FF967430000
+00007C9C:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\utcutil.dll") Base: 00007FF9B74E0000
+00007C9C:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\NETAPI32.dll") Base: 00007FF994050000
+00007C9C:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\WTSAPI32.dll") Base: 00007FF9B75E0000
+00007C9C:0329/180948  LdrLoad("C:\WINDOWS\System32\setupapi.dll") Base: 00007FF9BCCF0000
+00007C9C:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\HwReqChk.dll") Base: 00007FF97F940000
+00007C9C:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\tdh.dll") Base: 00007FF9AA4E0000
+00007C9C:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\Cabinet.dll") Base: 00007FF9AA4B0000
+00007C9C:0329/180948  LdrLoad("C:\WINDOWS\SYSTEM32\appraiser.dll") Base: 00007FF964C90000
+00007C9C:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\utcutil.dll")
+00007C9C:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\dcntel.dll")
+00007C9C:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\appraiser.dll")
+00007C9C:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\NETAPI32.dll")
+00007C9C:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\HwReqChk.dll")
+00007C9C:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\WTSAPI32.dll")
+00007C9C:0329/180948  LdrUnload("C:\WINDOWS\System32\setupapi.dll")
+00007C9C:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\tdh.dll")
+00007C9C:0329/180948  LdrUnload("C:\WINDOWS\SYSTEM32\Cabinet.dll")
+0000126C:0329/181148  LdrUnload("C:\Windows\System32\fcon.dll")
+0000126C:0329/181148  LdrUnload("C:\Windows\System32\ActXPrxy.dll")
+0000126C:0329/181148  LdrUnload("C:\Windows\System32\certenroll.dll")
+0000126C:0329/181148  LdrUnload("C:\WINDOWS\SYSTEM32\certca.dll")
+0000126C:0329/181148  LdrUnload("C:\Windows\System32\FlightSettings.dll")
+0000126C:0329/181148  LdrUnload("C:\Windows\System32\MicrosoftAccountWAMExtension.dll")
+0000126C:0329/181148  LdrUnload("C:\Windows\System32\aadWamExtension.dll")
+00004E6C:0329/183140  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/183408  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+000070EC:0329/190211  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/190355  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+00007700:0329/190436  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/190654  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+00003C6C:0329/190925  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/191122  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+00000EA4:0329/192637  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/192915  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+0000B9A4:0329/195537  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/195902  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+000070BC:0329/200225  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/200629  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+0000B658:0329/204415  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/204642  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+00003FEC:0329/204951  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000407C:0329/205239  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+0000B1C8:0329/210235  LdrLoad("C:\Windows\System32\ActXPrxy.dll") Base: 00007FF97DB20000
+0000B838:0329/210235  LdrLoad("C:\Windows\System32\MicrosoftAccountWAMExtension.dll") Base: 00007FF986D50000
+0000B838:0329/210235  LdrLoad("C:\Windows\System32\aadWamExtension.dll") Base: 00007FF994C90000
+000055CC:0329/210235  LdrLoad("C:\Windows\System32\thumbcache.dll") Base: 00007FF97F490000
+00000DF0:0329/210235  LdrLoad("C:\WINDOWS\system32\Windows.Storage.Search.dll") Base: 00007FF9B2A70000
+000071A4:0329/210235  LdrLoad("C:\WINDOWS\system32\mssprxy.dll") Base: 00007FF942650000
+0000B838:0329/210236  LdrLoad("C:\Windows\System32\FlightSettings.dll") Base: 00007FF98F3D0000
+0000B838:0329/210236  LdrLoad("C:\WINDOWS\SYSTEM32\dcntel.dll") Base: 00007FF86A840000
+0000B838:0329/210236  LdrLoad("C:\WINDOWS\SYSTEM32\utcutil.dll") Base: 00007FF926630000
+0000B838:0329/210236  LdrLoad("C:\WINDOWS\SYSTEM32\NETAPI32.dll") Base: 00007FF994050000
+0000B838:0329/210236  LdrLoad("C:\WINDOWS\SYSTEM32\WTSAPI32.dll") Base: 00007FF9B75E0000
+0000B838:0329/210236  LdrLoad("C:\WINDOWS\System32\setupapi.dll") Base: 00007FF9BCCF0000
+0000B838:0329/210236  LdrLoad("C:\WINDOWS\SYSTEM32\HwReqChk.dll") Base: 00007FF8E4CB0000
+0000B838:0329/210236  LdrLoad("C:\WINDOWS\SYSTEM32\tdh.dll") Base: 00007FF9AA4E0000
+0000B838:0329/210236  LdrLoad("C:\WINDOWS\SYSTEM32\Cabinet.dll") Base: 00007FF9AA4B0000
+0000B838:0329/210236  LdrLoad("C:\WINDOWS\SYSTEM32\appraiser.dll") Base: 00007FF86A500000
+0000B838:0329/210236  LdrLoad("C:\Windows\System32\fcon.dll") Base: 00007FF9A3010000
+0000B838:0329/210236  LdrUnload("C:\WINDOWS\SYSTEM32\utcutil.dll")
+0000B838:0329/210236  LdrUnload("C:\WINDOWS\SYSTEM32\dcntel.dll")
+0000B838:0329/210236  LdrUnload("C:\WINDOWS\SYSTEM32\appraiser.dll")
+0000B838:0329/210236  LdrUnload("C:\WINDOWS\SYSTEM32\NETAPI32.dll")
+0000B838:0329/210236  LdrUnload("C:\WINDOWS\SYSTEM32\HwReqChk.dll")
+0000B838:0329/210236  LdrUnload("C:\WINDOWS\SYSTEM32\WTSAPI32.dll")
+0000B838:0329/210236  LdrUnload("C:\WINDOWS\System32\setupapi.dll")
+0000B838:0329/210236  LdrUnload("C:\WINDOWS\SYSTEM32\tdh.dll")
+0000B838:0329/210236  LdrUnload("C:\WINDOWS\SYSTEM32\Cabinet.dll")
+0000126C:0329/210434  LdrUnload("C:\WINDOWS\system32\mssprxy.dll")
+0000126C:0329/210434  LdrUnload("C:\WINDOWS\system32\Windows.Storage.Search.dll")
+0000126C:0329/210434  LdrUnload("C:\Windows\System32\thumbcache.dll")
+0000126C:0329/210434  LdrUnload("C:\Windows\System32\fcon.dll")
+0000126C:0329/210434  LdrUnload("C:\Windows\System32\ActXPrxy.dll")
+0000126C:0329/210434  LdrUnload("C:\Windows\System32\FlightSettings.dll")
+0000126C:0329/210434  LdrUnload("C:\Windows\System32\MicrosoftAccountWAMExtension.dll")
+0000126C:0329/210434  LdrUnload("C:\Windows\System32\aadWamExtension.dll")
+0000B778:0329/210534  LdrLoad("C:\Windows\System32\MicrosoftAccountWAMExtension.dll") Base: 00007FF986D50000
+0000B778:0329/210534  LdrLoad("C:\Windows\System32\aadWamExtension.dll") Base: 00007FF994C90000
+0000652C:0329/210534  LdrLoad("C:\WINDOWS\system32\Windows.Storage.Search.dll") Base: 00007FF9B2A70000
+0000A9A0:0329/210534  LdrLoad("C:\WINDOWS\system32\mssprxy.dll") Base: 00007FF942650000
+0000126C:0329/210733  LdrUnload("C:\WINDOWS\system32\mssprxy.dll")
+0000126C:0329/210733  LdrUnload("C:\WINDOWS\system32\Windows.Storage.Search.dll")
+0000126C:0329/210733  LdrUnload("C:\Windows\System32\MicrosoftAccountWAMExtension.dll")
+0000126C:0329/210733  LdrUnload("C:\Windows\System32\aadWamExtension.dll")
+0000A94C:0329/210746  LdrLoad("C:\Windows\System32\ActXPrxy.dll") Base: 00007FF97DB20000
+0000B368:0329/210746  LdrLoad("C:\Windows\System32\MicrosoftAccountWAMExtension.dll") Base: 00007FF986D50000
+0000B368:0329/210746  LdrLoad("C:\Windows\System32\aadWamExtension.dll") Base: 00007FF994C90000
+0000126C:0329/211032  LdrUnload("C:\Windows\System32\ActXPrxy.dll")
+0000126C:0329/211032  LdrUnload("C:\Windows\System32\MicrosoftAccountWAMExtension.dll")
+0000126C:0329/211032  LdrUnload("C:\Windows\System32\aadWamExtension.dll")
+000033F8:0329/211136  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+000078E0:0329/211144  LdrLoad("C:\Windows\System32\MicrosoftAccountWAMExtension.dll") Base: 00007FF986D50000
+000078E0:0329/211144  LdrLoad("C:\Windows\System32\aadWamExtension.dll") Base: 00007FF994C90000
+0000126C:0329/211330  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+0000126C:0329/211330  LdrUnload("C:\Windows\System32\MicrosoftAccountWAMExtension.dll")
+0000126C:0329/211330  LdrUnload("C:\Windows\System32\aadWamExtension.dll")
+0000B808:0329/211526  LdrLoad("C:\Windows\System32\ActXPrxy.dll") Base: 00007FF97DB20000
+0000B1C8:0329/211526  LdrLoad("C:\Windows\System32\MicrosoftAccountWAMExtension.dll") Base: 00007FF986D50000
+0000B1C8:0329/211526  LdrLoad("C:\Windows\System32\aadWamExtension.dll") Base: 00007FF994C90000
+00008C8C:0329/211739  LdrUnload("C:\Windows\System32\ActXPrxy.dll")
+00008C8C:0329/211739  LdrUnload("C:\Windows\System32\MicrosoftAccountWAMExtension.dll")
+00008C8C:0329/211739  LdrUnload("C:\Windows\System32\aadWamExtension.dll")
+00009BC4:0329/211818  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+00002108:0329/211818  LdrLoad("C:\Windows\System32\MicrosoftAccountWAMExtension.dll") Base: 00007FF986D50000
+00002108:0329/211818  LdrLoad("C:\Windows\System32\aadWamExtension.dll") Base: 00007FF994C90000
+0000126C:0329/212057  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+0000126C:0329/212057  LdrUnload("C:\Windows\System32\MicrosoftAccountWAMExtension.dll")
+0000126C:0329/212057  LdrUnload("C:\Windows\System32\aadWamExtension.dll")
+00004628:0329/212658  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/212953  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+00004344:0329/213828  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/214019  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+00003CF0:0329/214453  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+00004388:0329/214739  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+00006E2C:0329/220320  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/220538  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+0000B8B4:0329/222320  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/222500  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+0000A814:0329/223742  LdrLoad("C:\WINDOWS\system32\windowscodecsext.dll") Base: 00007FF96EEA0000
+0000126C:0329/224123  LdrUnload("C:\WINDOWS\system32\windowscodecsext.dll")
+00003164:0329/224610  LdrLoad("C:\Windows\System32\ActXPrxy.dll") Base: 00007FF97DB20000
+0000740C:0329/224610  LdrLoad("C:\Windows\System32\MicrosoftAccountWAMExtension.dll") Base: 00007FF986D50000
+0000740C:0329/224610  LdrLoad("C:\Windows\System32\aadWamExtension.dll") Base: 00007FF994C90000
+000057B4:0329/224611  LdrLoad("C:\WINDOWS\SYSTEM32\wkscli.dll") Base: 00007FF9B3550000
+000057B4:0329/224611  LdrLoad("C:\WINDOWS\SYSTEM32\dsreg.dll") Base: 00007FF9B5D60000
+00004034:0329/224612  [Windows.UI.Xaml.dll+38d33a] --> CreateDXGIFactory1(riid=IID_IDXGIFactory1)
+00004034:0329/224612  LazyAttachToMonitor()
+00004034:0329/224612  <-- CreateDXGIFactory1() pFactory=000002B1C570BE60 HRESULT=0
