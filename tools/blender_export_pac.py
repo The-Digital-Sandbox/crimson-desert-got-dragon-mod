@@ -22,7 +22,7 @@ from mathutils import Vector
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-ROOT = Path(r"C:\Users\waelj\got-dragon-cd-mod")
+ROOT = Path(r"C:\Users\waelj\crimson-desert-got-dragon-mod")
 ORIGINAL_PAC = ROOT / "output" / "dragon.pac"
 OUTPUT_PAC = ROOT / "output" / "dragon_drogon_blender.pac"
 OUTPUT_OBJ = ROOT / "output" / "dragon_drogon_blender.obj"
