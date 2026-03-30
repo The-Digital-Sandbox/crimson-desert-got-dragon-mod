@@ -1,0 +1,12 @@
+# Large binary files excluded from repo
+resources.bin
+render_instances.csv
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
