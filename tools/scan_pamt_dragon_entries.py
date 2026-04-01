@@ -2,8 +2,12 @@
 """
 Scan the 0009/0.pamt index for ALL dragon-related file entries.
 
-Goal: find the second dragon mesh PAC that feeds the 8054 alternate
-render pass (24,117 vertices at firstElement 3168 in resource 16288).
+ROOT CAUSE: The game prefab loads .pacb but the mod only patches .pac.
+These are likely separate PAMT records. The .pacb still has original CD
+geometry, which renders via handle 8054 (records 320-327) alongside the
+patched .pac data rendering Drogon via handle 6804 (records 145-150).
+
+Goal: find the .pacb PAMT record so we can patch it too.
 
 Usage:
     python tools/scan_pamt_dragon_entries.py

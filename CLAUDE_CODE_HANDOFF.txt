@@ -1063,3 +1063,39 @@ Recommended next texture step:
 - do a denser rebake with better source/target overlap, or
 - use a more deliberate per-region source setup before rebaking
 - do NOT assume raw Drogon DDS can line up on the current CD UVs
+
+WHY THE CD MESH STILL APPEARS (ROOT CAUSE IDENTIFIED)
+
+The game prefab references .pacb (not .pac):
+- character/model/2_mon/cd_m0004_00_dragon/cd_m0004_00_dragon/cd_m0004_00_dragon_00_0001.pacb
+
+But the mod only patches the .pac PAMT record:
+- PAMT_RECORD_OFFSET = 0x64CB5C -> points to .pac at PAZ offset 0x2DCAD1D0
+
+These are separate PAMT index entries. The engine loads BOTH:
+- .pac  -> feeds handle 6804 (records 145-150) -> renders Drogon geometry (PATCHED)
+- .pacb -> feeds handle 8054 (records 320-327) -> renders original CD geometry (NOT PATCHED)
+
+This explains:
+- Drogon silhouette IS visible (from patched .pac via 6804)
+- Original CD mesh ALSO visible (from unpatched .pacb via 8054)
+- Both render simultaneously through different draw families
+
+Known archive entries for the dragon in 3.paz:
+1. cd_m0004_00_dragon_00_0001.pac  @ 0x2DCAD1D0 (5,208,284 decomp) - PATCHED
+2. cd_m0004_00_dragon_00_0001.pamt @ 0x2E1896D0 (296,563 comp / 1,326,145 decomp) - NOT PATCHED
+3. cd_m0004_00_dragon_00_0001.pacb @ UNKNOWN OFFSET - NOT PATCHED (this is the ghost)
+4. cd_m0004_00_dragon_saliva_00_0001.paci @ UNKNOWN OFFSET - NOT PATCHED
+
+The .pacb likely has different vertex counts matching handle 8054:
+- Eyeright: 6, Eyeleft: 7, Body_02: 2013, back: 947
+- Body: 2736, Leg: 4624, Wing: 6724, Head: 7060
+- Total: 24,117 vertices
+
+Next steps to fix:
+1. Run: python tools/scan_pamt_dragon_entries.py (on Windows)
+2. Find the .pacb PAMT record offset
+3. Either:
+   a. Build a second Drogon PAC matching .pacb vertex counts and patch it
+   b. Or redirect the .pacb PAMT record to point to the same patched .pac data
+   c. Or zero out the 8054 draw calls in the indirect argument buffer
