@@ -1,0 +1,70 @@
+6804 shadow TEXCOORD1 tracer
+===========================
+
+Shared config
+-------------
+base0       : 11266
+base_lookup : 2026
+base_m0     : 2716
+base_m1     : 2990
+shift       : 274
+flag128     : True
+cluster_idx : 78
+half_2c44   : 0.066650391
+
+Overall error after exact live path
+-----------------------------------
+rmse : 0.376043556
+avg  : 0.224546821
+max  : 1.868558451
+
+Per-submesh
+-----------
+Body_02 (GpuId7153)
+  rmse              : 0.111965008
+  avg               : 0.111858118
+  max               : 0.128462902
+  blend min/avg/max : 0.000244141 / 0.215790113 / 0.666748047
+  packed min/avg/max: 0.333251953 / 0.784209887 / 0.999755859
+  d0>0 branch count : 0
+  packed branch cnt : 2013
+back (GpuId7154)
+  rmse              : 0.115964311
+  avg               : 0.114858777
+  max               : 0.137978341
+  blend min/avg/max : 0.000244141 / 0.000244141 / 0.000244141
+  packed min/avg/max: 0.999755859 / 0.999755859 / 0.999755859
+  d0>0 branch count : 0
+  packed branch cnt : 3307
+Body (GpuId7155)
+  rmse              : 0.123443556
+  avg               : 0.122760390
+  max               : 0.150556953
+  blend min/avg/max : 0.000244141 / 0.049038268 / 0.666748047
+  packed min/avg/max: 0.333251953 / 0.950961732 / 0.999755859
+  d0>0 branch count : 0
+  packed branch cnt : 2736
+Leg (GpuId7156)
+  rmse              : 0.135918122
+  avg               : 0.135598147
+  max               : 0.162663905
+  blend min/avg/max : 0.000244141 / 0.000244141 / 0.000244141
+  packed min/avg/max: 0.999755859 / 0.999755859 / 0.999755859
+  d0>0 branch count : 0
+  packed branch cnt : 4624
+Wing (GpuId7157)
+  rmse              : 0.758110781
+  avg               : 0.583840877
+  max               : 1.868558451
+  blend min/avg/max : 0.000244141 / 0.055971163 / 0.533447266
+  packed min/avg/max: 0.466552734 / 0.944028837 / 0.999755859
+  d0>0 branch count : 0
+  packed branch cnt : 6724
+Head (GpuId7158)
+  rmse              : 0.113929167
+  avg               : 0.113752691
+  max               : 0.132716230
+  blend min/avg/max : 0.000244141 / 0.057336847 / 0.800048828
+  packed min/avg/max: 0.199951172 / 0.942663153 / 0.999755859
+  d0>0 branch count : 0
+  packed branch cnt : 10258

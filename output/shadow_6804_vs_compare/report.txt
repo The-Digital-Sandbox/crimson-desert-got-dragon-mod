@@ -1,0 +1,84 @@
+6804 shadow VS compare
+======================
+
+Shared stage-1 lookup assumptions
+--------------------------------
+base0 (resource_242 + 48):   11266
+base1 (resource_242 + 52):   2716
+u76 low-half offset:         274
+base_lookup (resource_242 + 104): 2026
+
+Interpretation
+--------------
+The runtime 10-bit codes from resource_16288 were pushed through the proven
+shadow stage-1 lookup chain:
+  resource_147[base0 + code] -> resource_2085[base_lookup + lookup0] -> resource_135[base1 + lookup1]
+
+Two matrix banks were tested:
+  stage1     = base1
+  u76 bank   = base1 + u76_lo
+
+Then each prediction was compared against PIX VS TEXCOORD1_C0..C2 world positions.
+
+Global stage1 -> PIX affine fit
+-------------------------------
+[[ 5.274262770e-01 -1.004070753e-01 -7.602403824e-01]
+ [-2.160436760e-02  1.816177921e+00 -8.598418438e-02]
+ [ 7.977613789e-01  1.015527724e-01  5.575065230e-01]
+ [-7.545094859e+00 -1.378782336e+01  2.739719955e+01]]
+
+Global u76-bank -> PIX affine fit
+---------------------------------
+[[  0.505912338  -0.123547068  -0.713884312]
+ [ -0.050752095   2.009417795  -0.117470234]
+ [  0.793116294   0.149617652   0.537416576]
+ [ -7.498544905 -13.761941867  27.461538138]]
+
+Per-submesh errors
+------------------
+Body_02 (GpuId7153)
+  command/param/base: 145 / 115 / 450
+  baseline direct  rmse=31.995135 avg=31.982626 max=33.947451
+  stage1 direct    rmse=31.657056 avg=31.651476 max=32.892889
+  stage1 + affine  rmse=0.122990 avg=0.107941 max=0.317423
+  u76 + affine     rmse=0.281841 avg=0.259137 max=0.525684
+back (GpuId7154)
+  command/param/base: 146 / 116 / 2463
+  baseline direct  rmse=30.557083 avg=30.551409 max=31.799588
+  stage1 direct    rmse=30.251775 avg=30.235442 max=32.099554
+  stage1 + affine  rmse=0.144401 avg=0.137366 max=0.223879
+  u76 + affine     rmse=0.426242 avg=0.402944 max=0.700811
+Body (GpuId7155)
+  command/param/base: 147 / 117 / 5770
+  baseline direct  rmse=32.955422 avg=32.879819 max=38.809878
+  stage1 direct    rmse=30.506645 avg=30.478488 max=33.857965
+  stage1 + affine  rmse=0.270086 avg=0.192919 max=0.704154
+  u76 + affine     rmse=0.937729 avg=0.634194 max=2.715053
+Leg (GpuId7156)
+  command/param/base: 148 / 118 / 8506
+  baseline direct  rmse=32.126311 avg=32.091673 max=35.712534
+  stage1 direct    rmse=29.647095 avg=29.618921 max=32.050507
+  stage1 + affine  rmse=0.233076 avg=0.204668 max=0.435815
+  u76 + affine     rmse=0.764111 avg=0.624450 max=1.495899
+Wing (GpuId7157)
+  command/param/base: 149 / 119 / 13130
+  baseline direct  rmse=34.776814 avg=34.589753 max=45.769532
+  stage1 direct    rmse=32.979612 avg=32.847469 max=40.863529
+  stage1 + affine  rmse=0.321241 avg=0.230953 max=1.115464
+  u76 + affine     rmse=1.348343 avg=1.070051 max=3.441043
+Head (GpuId7158)
+  command/param/base: 150 / 120 / 19854
+  baseline direct  rmse=33.536096 avg=33.517621 max=35.405175
+  stage1 direct    rmse=33.244370 avg=33.237927 max=34.655730
+  stage1 + affine  rmse=0.121661 avg=0.112104 max=0.299824
+  u76 + affine     rmse=0.357333 avg=0.324600 max=0.698843
+
+Conclusion
+----------
+The main handle9/runtime-code chain is the right dragon path.
+It does not land on PIX world positions directly, but after one shared affine
+fit across the whole dragon it matches tightly. That means the remaining gap
+behaves like a shared post-skin object/world placement step, not arbitrary
+per-vertex topology or random hidden offsets.
+
+Worst-vertex CSV: C:\Users\waelj\crimson-desert-got-dragon-mod\output\shadow_6804_vs_compare\worst_vertices.csv

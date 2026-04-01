@@ -1,0 +1,615 @@
+{
+  "primary_batch": {
+    "compute_root_signature": 357,
+    "compute_pipeline_state": 17380,
+    "compute_root_cbvs": [
+      {
+        "root_param": 1,
+        "resource_id": 17510,
+        "resource_offset": 6400
+      }
+    ],
+    "compute_root_tables": {
+      "3": {
+        "heap_id": 393,
+        "descriptor_index": 472080
+      },
+      "4": {
+        "heap_id": 393,
+        "descriptor_index": 472137
+      },
+      "5": {
+        "heap_id": 393,
+        "descriptor_index": 472214
+      },
+      "6": {
+        "heap_id": 393,
+        "descriptor_index": 472289
+      },
+      "7": {
+        "heap_id": 392,
+        "descriptor_index": 236
+      },
+      "10": {
+        "heap_id": 393,
+        "descriptor_index": 0
+      }
+    },
+    "compute_dispatch": [
+      17,
+      1,
+      1
+    ],
+    "compute_barrier_resources": [
+      230,
+      232,
+      7968,
+      7879
+    ],
+    "graphics_root_signature": 17386,
+    "graphics_pipeline_state": 17416,
+    "graphics_root_cbvs": [
+      {
+        "root_param": 1,
+        "resource_id": 17510,
+        "resource_offset": 6656
+      }
+    ],
+    "graphics_root_tables": {
+      "6": {
+        "heap_id": 393,
+        "descriptor_index": 472580
+      },
+      "7": {
+        "heap_id": 393,
+        "descriptor_index": 472603
+      },
+      "8": {
+        "heap_id": 393,
+        "descriptor_index": 472608
+      },
+      "14": {
+        "heap_id": 393,
+        "descriptor_index": 472625
+      },
+      "15": {
+        "heap_id": 392,
+        "descriptor_index": 0
+      },
+      "16": {
+        "heap_id": 393,
+        "descriptor_index": 0
+      },
+      "18": {
+        "heap_id": 393,
+        "descriptor_index": 208000
+      }
+    },
+    "graphics_barrier_resources": [
+      7968,
+      232,
+      7879,
+      1371
+    ],
+    "execute_indirect": {
+      "command_signature": 17480,
+      "max_command_count": 155,
+      "argument_buffer": "7968_7",
+      "count_buffer": "7968_7",
+      "followup_pipeline_state": 17403
+    }
+  },
+  "resolved_descriptors": {
+    "graphics_t12_space37": {
+      "descriptor_index": 472620,
+      "view": {
+        "descriptor_index": 472620,
+        "heap_id": 393,
+        "view_kind": "SRV_BUFFER",
+        "resource_id": 242,
+        "format": "UNKNOWN",
+        "first_element": 0,
+        "num_elements": 65535,
+        "stride": 156,
+        "raw_text": "CreateShaderResourceView_Buffer(GetResource(242).Get(), GetCpuDescriptor(g_descriptorHeap_393.Get(), 472620), DXGI_FORMAT_UNKNOWN, D3D12_SRV_DIMENSION_BUFFER, 5768, 0, 65535, 156, D3D12_BUFFER_SRV_FLAG_NONE);"
+      }
+    },
+    "graphics_t16_space37": {
+      "descriptor_index": 472624,
+      "view": {
+        "descriptor_index": 472624,
+        "heap_id": 393,
+        "view_kind": "SRV_BUFFER",
+        "resource_id": 7879,
+        "format": "UNKNOWN",
+        "first_element": 0,
+        "num_elements": 34210,
+        "stride": 28,
+        "raw_text": "CreateShaderResourceView_Buffer(GetResource(7879).Get(), GetCpuDescriptor(g_descriptorHeap_393.Get(), 472624), DXGI_FORMAT_UNKNOWN, D3D12_SRV_DIMENSION_BUFFER, 5768, 0, 34210, 28, D3D12_BUFFER_SRV_FLAG_NONE);"
+      }
+    },
+    "compute_t37_space37": {
+      "descriptor_index": 472251,
+      "view": {
+        "descriptor_index": 472251,
+        "heap_id": 393,
+        "view_kind": "SRV_BUFFER",
+        "resource_id": 118,
+        "format": "UNKNOWN",
+        "first_element": 0,
+        "num_elements": 65536,
+        "stride": 4,
+        "raw_text": "CreateShaderResourceView_Buffer(GetResource(118).Get(), GetCpuDescriptor(g_descriptorHeap_393.Get(), 472251), DXGI_FORMAT_UNKNOWN, D3D12_SRV_DIMENSION_BUFFER, 5768, 0, 65536, 4, D3D12_BUFFER_SRV_FLAG_NONE);"
+      }
+    },
+    "compute_t59_space37": {
+      "descriptor_index": 472273,
+      "view": {
+        "descriptor_index": 472273,
+        "heap_id": 393,
+        "view_kind": "SRV_BUFFER",
+        "resource_id": 230,
+        "format": "R32_TYPELESS",
+        "first_element": 0,
+        "num_elements": 16384,
+        "stride": 0,
+        "raw_text": "CreateShaderResourceView_Buffer(GetResource(230).Get(), GetCpuDescriptor(g_descriptorHeap_393.Get(), 472273), DXGI_FORMAT_R32_TYPELESS, D3D12_SRV_DIMENSION_BUFFER, 5768, 0, 16384, 0, D3D12_BUFFER_SRV_FLAG_RAW);"
+      }
+    },
+    "compute_u10_space39": {
+      "descriptor_index": 472299,
+      "view": {
+        "descriptor_index": 472299,
+        "heap_id": 393,
+        "view_kind": "UAV_BUFFER",
+        "resource_id": 232,
+        "format": "R32_TYPELESS",
+        "first_element": 0,
+        "num_elements": 16384,
+        "stride": 0,
+        "raw_text": "CreateUnorderedAccessView_Buffer(GetResource(232).Get(), nullptr, GetCpuDescriptor(g_descriptorHeap_393.Get(), 472299), DXGI_FORMAT_R32_TYPELESS, D3D12_UAV_DIMENSION_BUFFER, 0, 16384, 0, 0, D3D12_BUFFER_UAV_FLAG_RAW);"
+      }
+    },
+    "compute_u14_space39": {
+      "descriptor_index": 472303,
+      "view": {
+        "descriptor_index": 472303,
+        "heap_id": 393,
+        "view_kind": "UAV_BUFFER",
+        "resource_id": 7968,
+        "format": "R32_TYPELESS",
+        "first_element": 0,
+        "num_elements": 342100,
+        "stride": 0,
+        "raw_text": "CreateUnorderedAccessView_Buffer(GetResource(7968).Get(), nullptr, GetCpuDescriptor(g_descriptorHeap_393.Get(), 472303), DXGI_FORMAT_R32_TYPELESS, D3D12_UAV_DIMENSION_BUFFER, 0, 342100, 0, 0, D3D12_BUFFER_UAV_FLAG_RAW);"
+      }
+    },
+    "compute_u39_space39": {
+      "descriptor_index": 472328,
+      "view": {
+        "descriptor_index": 472328,
+        "heap_id": 393,
+        "view_kind": "UAV_BUFFER",
+        "resource_id": 7879,
+        "format": "UNKNOWN",
+        "first_element": 0,
+        "num_elements": 34210,
+        "stride": 28,
+        "raw_text": "CreateUnorderedAccessView_Buffer(GetResource(7879).Get(), nullptr, GetCpuDescriptor(g_descriptorHeap_393.Get(), 472328), DXGI_FORMAT_UNKNOWN, D3D12_UAV_DIMENSION_BUFFER, 0, 34210, 28, 0, D3D12_BUFFER_UAV_FLAG_NONE);"
+      }
+    },
+    "bindless_space103_descriptor_offset": 368000
+  },
+  "resources": {
+    "118": {
+      "resource_id": 118,
+      "source_file": "CreateAndInitResources_000.cpp",
+      "size_bytes": 262144,
+      "flags": "D3D12_RESOURCE_FLAG_NONE",
+      "reader_chunk": 1745
+    },
+    "230": {
+      "resource_id": 230,
+      "source_file": "CreateAndInitResources_000.cpp",
+      "size_bytes": 65536,
+      "flags": "D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS",
+      "reader_chunk": 241
+    },
+    "232": {
+      "resource_id": 232,
+      "source_file": "CreateAndInitResources_000.cpp",
+      "size_bytes": 65536,
+      "flags": "D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS",
+      "reader_chunk": 208
+    },
+    "242": {
+      "resource_id": 242,
+      "source_file": "CreateAndInitResources_000.cpp",
+      "size_bytes": 10223616,
+      "flags": "D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS",
+      "reader_chunk": 25840
+    },
+    "7879": {
+      "resource_id": 7879,
+      "source_file": "CreateAndInitResources_005.cpp",
+      "size_bytes": 983040,
+      "flags": "D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS",
+      "reader_chunk": 8676
+    },
+    "7968": {
+      "resource_id": 7968,
+      "source_file": "CreateAndInitResources_005.cpp",
+      "size_bytes": 1376256,
+      "flags": "D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS",
+      "reader_chunk": 15927
+    }
+  },
+  "six_draw_matches": [
+    {
+      "buffer_name": "CreateIndirectArgumentBuffer_7968_33",
+      "source_file": "CreateAndInitResources_013.cpp",
+      "start_command_index": 0,
+      "commands": [
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 145,
+          "index_count": 7992,
+          "instance_count": 1,
+          "start_index": 2496,
+          "base_vertex": 450,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 146,
+          "index_count": 17007,
+          "instance_count": 1,
+          "start_index": 10488,
+          "base_vertex": 2463,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 147,
+          "index_count": 13380,
+          "instance_count": 1,
+          "start_index": 27495,
+          "base_vertex": 5770,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 148,
+          "index_count": 22464,
+          "instance_count": 1,
+          "start_index": 40875,
+          "base_vertex": 8506,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 149,
+          "index_count": 34902,
+          "instance_count": 1,
+          "start_index": 63339,
+          "base_vertex": 13130,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 150,
+          "index_count": 51180,
+          "instance_count": 1,
+          "start_index": 98241,
+          "base_vertex": 19854,
+          "start_instance": 0
+        }
+      ]
+    },
+    {
+      "buffer_name": "CreateIndirectArgumentBuffer_7968_58",
+      "source_file": "CreateAndInitResources_013.cpp",
+      "start_command_index": 0,
+      "commands": [
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 296,
+          "index_count": 7992,
+          "instance_count": 1,
+          "start_index": 2496,
+          "base_vertex": 450,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 297,
+          "index_count": 17007,
+          "instance_count": 1,
+          "start_index": 10488,
+          "base_vertex": 2463,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 298,
+          "index_count": 13380,
+          "instance_count": 1,
+          "start_index": 27495,
+          "base_vertex": 5770,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 299,
+          "index_count": 22464,
+          "instance_count": 1,
+          "start_index": 40875,
+          "base_vertex": 8506,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 300,
+          "index_count": 34902,
+          "instance_count": 1,
+          "start_index": 63339,
+          "base_vertex": 13130,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 301,
+          "index_count": 51180,
+          "instance_count": 1,
+          "start_index": 98241,
+          "base_vertex": 19854,
+          "start_instance": 0
+        }
+      ]
+    },
+    {
+      "buffer_name": "CreateIndirectArgumentBuffer_7968_68",
+      "source_file": "CreateAndInitResources_013.cpp",
+      "start_command_index": 2,
+      "commands": [
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 2,
+          "index_count": 7992,
+          "instance_count": 1,
+          "start_index": 2496,
+          "base_vertex": 450,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 3,
+          "index_count": 17007,
+          "instance_count": 1,
+          "start_index": 10488,
+          "base_vertex": 2463,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 4,
+          "index_count": 13380,
+          "instance_count": 1,
+          "start_index": 27495,
+          "base_vertex": 5770,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 5,
+          "index_count": 22464,
+          "instance_count": 1,
+          "start_index": 40875,
+          "base_vertex": 8506,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 6,
+          "index_count": 34902,
+          "instance_count": 1,
+          "start_index": 63339,
+          "base_vertex": 13130,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 7,
+          "index_count": 51180,
+          "instance_count": 1,
+          "start_index": 98241,
+          "base_vertex": 19854,
+          "start_instance": 0
+        }
+      ]
+    },
+    {
+      "buffer_name": "CreateIndirectArgumentBuffer_7968_7",
+      "source_file": "CreateAndInitResources_011.cpp",
+      "start_command_index": 39,
+      "commands": [
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 39,
+          "index_count": 7992,
+          "instance_count": 1,
+          "start_index": 2496,
+          "base_vertex": 450,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 40,
+          "index_count": 17007,
+          "instance_count": 1,
+          "start_index": 10488,
+          "base_vertex": 2463,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 41,
+          "index_count": 13380,
+          "instance_count": 1,
+          "start_index": 27495,
+          "base_vertex": 5770,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 42,
+          "index_count": 22464,
+          "instance_count": 1,
+          "start_index": 40875,
+          "base_vertex": 8506,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 43,
+          "index_count": 34902,
+          "instance_count": 1,
+          "start_index": 63339,
+          "base_vertex": 13130,
+          "start_instance": 0
+        },
+        {
+          "ibv_resource": 2073,
+          "ibv_offset": 7390720,
+          "ibv_size": 298842,
+          "ibv_format": "DXGI_FORMAT_R16_UINT",
+          "constant0": 44,
+          "index_count": 51180,
+          "instance_count": 1,
+          "start_index": 98241,
+          "base_vertex": 19854,
+          "start_instance": 0
+        }
+      ]
+    }
+  ],
+  "six_draw_usages": {
+    "CreateIndirectArgumentBuffer_7968_33": [
+      {
+        "source_file": "CommandLists_000.cpp",
+        "line_number": 28327,
+        "command_list": 17522,
+        "command_signature": 17950,
+        "max_command_count": 6,
+        "buffer_name": "7968_33",
+        "count_buffer_name": "7968_33",
+        "next_pipeline_state": 17790
+      }
+    ],
+    "CreateIndirectArgumentBuffer_7968_58": [
+      {
+        "source_file": "CommandLists_000.cpp",
+        "line_number": 29662,
+        "command_list": 17522,
+        "command_signature": 17923,
+        "max_command_count": 6,
+        "buffer_name": "7968_58",
+        "count_buffer_name": "7968_58",
+        "next_pipeline_state": 17791
+      }
+    ],
+    "CreateIndirectArgumentBuffer_7968_68": [
+      {
+        "source_file": "CommandLists_000.cpp",
+        "line_number": 32866,
+        "command_list": 17522,
+        "command_signature": 17910,
+        "max_command_count": 159,
+        "buffer_name": "7968_68",
+        "count_buffer_name": "7968_68",
+        "next_pipeline_state": 17553
+      }
+    ],
+    "CreateIndirectArgumentBuffer_7968_7": [
+      {
+        "source_file": "CommandLists_000.cpp",
+        "line_number": 14951,
+        "command_list": 17363,
+        "command_signature": 17480,
+        "max_command_count": 155,
+        "buffer_name": "7968_7",
+        "count_buffer_name": "7968_7",
+        "next_pipeline_state": 17403
+      }
+    ]
+  }
+}

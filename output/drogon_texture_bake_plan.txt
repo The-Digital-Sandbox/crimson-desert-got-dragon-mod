@@ -1,0 +1,82 @@
+Drogon -> Crimson Desert Texture Bake Plan
+==========================================
+
+Goal
+----
+Keep the working dragon PAC geometry and CD UV layout.
+Do NOT rewrite UVs yet.
+Bake Drogon textures onto the existing CD dragon UVs, then replace only the
+CD base-color and normal DDS files first.
+
+Why
+---
+- The current in-game build already proves the geometry path works.
+- The game is still sampling the original CD textures through the original CD UVs.
+- DDS files are texture images, not UV maps.
+
+Safe First Pass
+---------------
+Replace these first:
+
+- cd_m0004_00_dragon_body_0001.dds
+- cd_m0004_00_dragon_body_0001_n.dds
+- cd_m0004_00_dragon_back_0001.dds
+- cd_m0004_00_dragon_back_0001_n.dds
+- cd_m0004_00_dragon_leg_0001.dds
+- cd_m0004_00_dragon_leg_0001_n.dds
+- cd_m0004_00_dragon_wing_0001.dds
+- cd_m0004_00_dragon_wing_0001_n.dds
+- cd_m0004_00_dragon_head_0001.dds
+- cd_m0004_00_dragon_head_0001_n.dds
+
+Optional eyes later:
+
+- cd_m0004_00_dragon_eye_0001.dds
+- cd_m0004_00_dragon_eye_0001_n.dds
+
+Important shared map
+--------------------
+- `cd_m0004_00_dragon_body_0001.dds` also feeds `cd_m0004_00_dragon_body_0001_02`
+- same for `cd_m0004_00_dragon_body_0001_n.dds`
+
+Keep Original CD For First Pass
+-------------------------------
+Do NOT replace these yet:
+
+- *_sp.dds
+- *_disp.dds
+- *_m.dds
+- cd_texturelayer_dragon_0001*.dds
+- cd_texturelayer_dragon_0002*.dds
+- cd_texturelayer_dragon_0003*.dds
+
+Blender Bake Workflow
+---------------------
+1. Use the working CD carrier mesh as the bake target.
+2. Keep its UVs exactly as they are.
+3. Use Drogon as the source/high-poly reference.
+4. Split work by material region:
+   - Body / Body_02
+   - Back
+   - Leg
+   - Wing
+   - Head
+5. For each region, bake:
+   - Base color / diffuse
+   - Normal
+6. Save baked images using the exact CD filenames listed above.
+7. Convert those baked images to DDS.
+8. Replace only those DDS files in the mod path first.
+
+Expected Result
+---------------
+- The dragon should keep the new Drogon-like silhouette.
+- Surface color should start looking like Drogon.
+- PBR/spec/displacement may still look partly CD until the second pass.
+
+Second Pass
+-----------
+Once base color + normal look correct:
+- replace *_sp.dds carefully
+- then test *_m.dds and *_disp.dds only if needed
+- leave shared detail layers for last

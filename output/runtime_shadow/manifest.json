@@ -1,0 +1,137 @@
+{
+  "space103_base": 368000,
+  "records": [
+    {
+      "name": "Body_02",
+      "command_index": 145,
+      "parameter_index": 115,
+      "space103_handle": 6804,
+      "base_vertex": 450,
+      "resource_id": 16288,
+      "first_element": 46222,
+      "num_elements": 30112,
+      "stride": 40,
+      "bounds_min": [
+        -0.4847489893436432,
+        0.7247540354728699,
+        -2.4955899715423584
+      ],
+      "bounds_max": [
+        0.48511096835136414,
+        1.2787599563598633,
+        -0.37585792137093854
+      ],
+      "output_obj": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\runtime_shadow\\body_02_points.obj"
+    },
+    {
+      "name": "back",
+      "command_index": 146,
+      "parameter_index": 116,
+      "space103_handle": 6804,
+      "base_vertex": 2463,
+      "resource_id": 16288,
+      "first_element": 46222,
+      "num_elements": 30112,
+      "stride": 40,
+      "bounds_min": [
+        -0.6568704825185145,
+        1.628490249969541,
+        -1.8380609899181746
+      ],
+      "bounds_max": [
+        0.6731115865631725,
+        2.665629836336921,
+        0.47774411860567945
+      ],
+      "output_obj": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\runtime_shadow\\back_points.obj"
+    },
+    {
+      "name": "Body",
+      "command_index": 147,
+      "parameter_index": 117,
+      "space103_handle": 6804,
+      "base_vertex": 5770,
+      "resource_id": 16288,
+      "first_element": 46222,
+      "num_elements": 30112,
+      "stride": 40,
+      "bounds_min": [
+        -0.629319965839386,
+        0.7813169956207275,
+        -3.04502010345459
+      ],
+      "bounds_max": [
+        0.6323689818382263,
+        2.59060001373291,
+        6.3802995681762695
+      ],
+      "output_obj": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\runtime_shadow\\body_points.obj"
+    },
+    {
+      "name": "Leg",
+      "command_index": 148,
+      "parameter_index": 118,
+      "space103_handle": 6804,
+      "base_vertex": 8506,
+      "resource_id": 16288,
+      "first_element": 46222,
+      "num_elements": 30112,
+      "stride": 40,
+      "bounds_min": [
+        -1.029229998588562,
+        -0.014959299005568027,
+        -0.5278979539871216
+      ],
+      "bounds_max": [
+        1.0273901224136353,
+        3.100780046544969,
+        1.8400501012802124
+      ],
+      "output_obj": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\runtime_shadow\\leg_points.obj"
+    },
+    {
+      "name": "Wing",
+      "command_index": 149,
+      "parameter_index": 119,
+      "space103_handle": 6804,
+      "base_vertex": 13130,
+      "resource_id": 16288,
+      "first_element": 46222,
+      "num_elements": 30112,
+      "stride": 40,
+      "bounds_min": [
+        -7.9752397537231445,
+        1.1535398960113525,
+        -2.7553000450134277
+      ],
+      "bounds_max": [
+        7.9752397537231445,
+        2.0106101036071777,
+        3.6147398948669434
+      ],
+      "output_obj": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\runtime_shadow\\wing_points.obj"
+    },
+    {
+      "name": "Head",
+      "command_index": 150,
+      "parameter_index": 120,
+      "space103_handle": 6804,
+      "base_vertex": 19854,
+      "resource_id": 16288,
+      "first_element": 46222,
+      "num_elements": 30112,
+      "stride": 40,
+      "bounds_min": [
+        -0.7322019934654236,
+        0.85195392370224,
+        -3.642210006713867
+      ],
+      "bounds_max": [
+        0.788966953754425,
+        2.8491899371147156,
+        -1.5011458522498482
+      ],
+      "output_obj": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\runtime_shadow\\head_points.obj"
+    }
+  ]
+}

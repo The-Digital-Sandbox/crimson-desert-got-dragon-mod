@@ -1,0 +1,804 @@
+{
+  "shared_param": {
+    "parameter_index": 115,
+    "u44": 1114258,
+    "u48": 11266,
+    "u52": 2716,
+    "u60": 2147483648,
+    "u76": 17957138,
+    "u80": 24,
+    "u84": 655369,
+    "u88": 2031647,
+    "u96": 2687054,
+    "u104": 2026,
+    "u112": 8,
+    "f128": 0.0
+  },
+  "autos_values": {
+    "param_u80_handle": 24,
+    "param_u48_base0": 11266,
+    "param_u76_lo": 274,
+    "param_u84_word_live": 589834,
+    "param_u84_wavefirst_live": 589834,
+    "param_u112_handle_live": 6,
+    "param_u112_wavefirst_live": 6,
+    "global_cb_handle33_live": 9,
+    "param_u52_base1_live": 2716,
+    "param_u60_base2_live": 2147483648,
+    "param_u104_base_lookup_live": 2026
+  },
+  "descriptor_views": {
+    "handle24_space20_or_lookup": {
+      "descriptor_index": 138024,
+      "resource_id": 147,
+      "first_element": 0,
+      "num_elements": 16384,
+      "stride": 4,
+      "source_file": "Descriptors_010.cpp"
+    },
+    "handle31_space20_or_remap": {
+      "descriptor_index": 138031,
+      "resource_id": 2085,
+      "first_element": 0,
+      "num_elements": 16384,
+      "stride": 4,
+      "source_file": "Descriptors_010.cpp"
+    },
+    "handle6_space21_optional": {
+      "descriptor_index": 138006,
+      "resource_id": 122,
+      "first_element": 0,
+      "num_elements": 25600,
+      "stride": 64,
+      "source_file": "Descriptors_010.cpp"
+    },
+    "handle8_space21_optional": {
+      "descriptor_index": 138008,
+      "resource_id": 154,
+      "first_element": 0,
+      "num_elements": 25600,
+      "stride": 64,
+      "source_file": "Descriptors_010.cpp"
+    },
+    "handle9_space21_or_stage1": {
+      "descriptor_index": 138009,
+      "resource_id": 135,
+      "first_element": 0,
+      "num_elements": 102400,
+      "stride": 64,
+      "source_file": "Descriptors_010.cpp"
+    },
+    "handle10_space21_candidate": {
+      "descriptor_index": 138010,
+      "resource_id": 2070,
+      "first_element": 0,
+      "num_elements": 102400,
+      "stride": 64,
+      "source_file": "Descriptors_010.cpp"
+    },
+    "handle41_space15_or_cluster": {
+      "descriptor_index": 138041,
+      "resource_id": 80,
+      "first_element": 0,
+      "num_elements": 200,
+      "stride": 272,
+      "source_file": "Descriptors_010.cpp"
+    },
+    "handle6804_space103_runtime_view": {
+      "descriptor_index": 374804,
+      "resource_id": 16288,
+      "first_element": 46222,
+      "num_elements": 30112,
+      "stride": 40,
+      "source_file": "Descriptors_022.cpp"
+    }
+  },
+  "stage1_fit": {
+    "handle9": {
+      "matrix_handle_label": "handle9",
+      "resource_id": 135,
+      "overall_rmse": 4.755617669389879,
+      "per_submesh_rmse": {
+        "Body_02": 3.526990988469346,
+        "back": 4.754010881593068,
+        "Body": 6.378622492023967,
+        "Leg": 3.4612497607610684,
+        "Wing": 5.646726809669755,
+        "Head": 4.303025544989088
+      }
+    },
+    "handle10": {
+      "matrix_handle_label": "handle10",
+      "resource_id": 2070,
+      "overall_rmse": 4.774057714589382,
+      "per_submesh_rmse": {
+        "Body_02": 3.5612715034659765,
+        "back": 4.758871858854528,
+        "Body": 6.332956444364119,
+        "Leg": 3.5072993290427226,
+        "Wing": 5.690765000622552,
+        "Head": 4.317924570941507
+      }
+    }
+  },
+  "submeshes": [
+    {
+      "name": "Body_02",
+      "gpu_id": "GpuId7153",
+      "command_index": 145,
+      "parameter_index": 115,
+      "record": [
+        115,
+        6804,
+        450,
+        0,
+        0,
+        1,
+        0
+      ],
+      "runtime_base_vertex": 46672,
+      "vertex_count": 2013,
+      "active_runtime_code_histogram": {
+        "1": 42,
+        "2": 320,
+        "3": 658,
+        "4": 582,
+        "5": 367,
+        "6": 44
+      },
+      "exact_first4_matches": 0,
+      "sorted_code_overlap_matches": 5,
+      "top_first_code_pairs": [
+        [
+          [
+            3,
+            3
+          ],
+          268
+        ],
+        [
+          [
+            5,
+            3
+          ],
+          212
+        ],
+        [
+          [
+            5,
+            5
+          ],
+          206
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          174
+        ],
+        [
+          [
+            3,
+            5
+          ],
+          122
+        ],
+        [
+          [
+            3,
+            7
+          ],
+          116
+        ],
+        [
+          [
+            2,
+            3
+          ],
+          112
+        ],
+        [
+          [
+            7,
+            2
+          ],
+          89
+        ],
+        [
+          [
+            7,
+            5
+          ],
+          76
+        ],
+        [
+          [
+            5,
+            2
+          ],
+          75
+        ],
+        [
+          [
+            7,
+            7
+          ],
+          48
+        ],
+        [
+          [
+            7,
+            3
+          ],
+          46
+        ]
+      ]
+    },
+    {
+      "name": "back",
+      "gpu_id": "GpuId7154",
+      "command_index": 146,
+      "parameter_index": 116,
+      "record": [
+        116,
+        6804,
+        2463,
+        0,
+        0,
+        1,
+        0
+      ],
+      "runtime_base_vertex": 48685,
+      "vertex_count": 3307,
+      "active_runtime_code_histogram": {
+        "1": 189,
+        "2": 90,
+        "3": 980,
+        "4": 596,
+        "5": 1045,
+        "6": 407
+      },
+      "exact_first4_matches": 0,
+      "sorted_code_overlap_matches": 2,
+      "top_first_code_pairs": [
+        [
+          [
+            29,
+            3
+          ],
+          125
+        ],
+        [
+          [
+            3,
+            3
+          ],
+          120
+        ],
+        [
+          [
+            3,
+            4
+          ],
+          119
+        ],
+        [
+          [
+            26,
+            3
+          ],
+          103
+        ],
+        [
+          [
+            25,
+            3
+          ],
+          70
+        ],
+        [
+          [
+            5,
+            3
+          ],
+          70
+        ],
+        [
+          [
+            38,
+            4
+          ],
+          67
+        ],
+        [
+          [
+            27,
+            3
+          ],
+          66
+        ],
+        [
+          [
+            31,
+            3
+          ],
+          64
+        ],
+        [
+          [
+            13,
+            3
+          ],
+          61
+        ],
+        [
+          [
+            16,
+            3
+          ],
+          56
+        ],
+        [
+          [
+            3,
+            8
+          ],
+          56
+        ]
+      ]
+    },
+    {
+      "name": "Body",
+      "gpu_id": "GpuId7155",
+      "command_index": 147,
+      "parameter_index": 117,
+      "record": [
+        117,
+        6804,
+        5770,
+        0,
+        0,
+        1,
+        0
+      ],
+      "runtime_base_vertex": 51992,
+      "vertex_count": 2736,
+      "active_runtime_code_histogram": {
+        "1": 75,
+        "2": 282,
+        "3": 1120,
+        "4": 603,
+        "5": 412,
+        "6": 244
+      },
+      "exact_first4_matches": 0,
+      "sorted_code_overlap_matches": 14,
+      "top_first_code_pairs": [
+        [
+          [
+            16,
+            3
+          ],
+          211
+        ],
+        [
+          [
+            13,
+            3
+          ],
+          80
+        ],
+        [
+          [
+            16,
+            29
+          ],
+          78
+        ],
+        [
+          [
+            30,
+            26
+          ],
+          72
+        ],
+        [
+          [
+            16,
+            31
+          ],
+          62
+        ],
+        [
+          [
+            16,
+            8
+          ],
+          62
+        ],
+        [
+          [
+            16,
+            5
+          ],
+          57
+        ],
+        [
+          [
+            23,
+            29
+          ],
+          47
+        ],
+        [
+          [
+            30,
+            25
+          ],
+          46
+        ],
+        [
+          [
+            16,
+            2
+          ],
+          45
+        ],
+        [
+          [
+            13,
+            5
+          ],
+          45
+        ],
+        [
+          [
+            30,
+            29
+          ],
+          42
+        ]
+      ]
+    },
+    {
+      "name": "Leg",
+      "gpu_id": "GpuId7156",
+      "command_index": 148,
+      "parameter_index": 118,
+      "record": [
+        118,
+        6804,
+        8506,
+        0,
+        0,
+        1,
+        0
+      ],
+      "runtime_base_vertex": 54728,
+      "vertex_count": 4624,
+      "active_runtime_code_histogram": {
+        "1": 580,
+        "2": 1599,
+        "3": 1008,
+        "4": 608,
+        "5": 550,
+        "6": 279
+      },
+      "exact_first4_matches": 0,
+      "sorted_code_overlap_matches": 0,
+      "top_first_code_pairs": [
+        [
+          [
+            8,
+            16
+          ],
+          464
+        ],
+        [
+          [
+            8,
+            13
+          ],
+          138
+        ],
+        [
+          [
+            6,
+            16
+          ],
+          111
+        ],
+        [
+          [
+            8,
+            23
+          ],
+          80
+        ],
+        [
+          [
+            8,
+            30
+          ],
+          75
+        ],
+        [
+          [
+            76,
+            16
+          ],
+          71
+        ],
+        [
+          [
+            16,
+            52
+          ],
+          61
+        ],
+        [
+          [
+            16,
+            55
+          ],
+          59
+        ],
+        [
+          [
+            77,
+            16
+          ],
+          58
+        ],
+        [
+          [
+            8,
+            4
+          ],
+          50
+        ],
+        [
+          [
+            67,
+            16
+          ],
+          49
+        ],
+        [
+          [
+            16,
+            38
+          ],
+          48
+        ]
+      ]
+    },
+    {
+      "name": "Wing",
+      "gpu_id": "GpuId7157",
+      "command_index": 149,
+      "parameter_index": 119,
+      "record": [
+        119,
+        6804,
+        13130,
+        0,
+        0,
+        1,
+        0
+      ],
+      "runtime_base_vertex": 59352,
+      "vertex_count": 6724,
+      "active_runtime_code_histogram": {
+        "1": 386,
+        "2": 696,
+        "3": 1325,
+        "4": 1684,
+        "5": 1726,
+        "6": 907
+      },
+      "exact_first4_matches": 0,
+      "sorted_code_overlap_matches": 1,
+      "top_first_code_pairs": [
+        [
+          [
+            8,
+            19
+          ],
+          135
+        ],
+        [
+          [
+            8,
+            77
+          ],
+          109
+        ],
+        [
+          [
+            76,
+            8
+          ],
+          107
+        ],
+        [
+          [
+            8,
+            8
+          ],
+          106
+        ],
+        [
+          [
+            77,
+            8
+          ],
+          94
+        ],
+        [
+          [
+            80,
+            8
+          ],
+          92
+        ],
+        [
+          [
+            8,
+            81
+          ],
+          84
+        ],
+        [
+          [
+            8,
+            14
+          ],
+          80
+        ],
+        [
+          [
+            8,
+            82
+          ],
+          73
+        ],
+        [
+          [
+            81,
+            8
+          ],
+          72
+        ],
+        [
+          [
+            8,
+            80
+          ],
+          71
+        ],
+        [
+          [
+            8,
+            76
+          ],
+          68
+        ]
+      ]
+    },
+    {
+      "name": "Head",
+      "gpu_id": "GpuId7158",
+      "command_index": 150,
+      "parameter_index": 120,
+      "record": [
+        120,
+        6804,
+        19854,
+        0,
+        0,
+        1,
+        0
+      ],
+      "runtime_base_vertex": 66076,
+      "vertex_count": 10258,
+      "active_runtime_code_histogram": {
+        "1": 4371,
+        "2": 1247,
+        "3": 596,
+        "4": 527,
+        "5": 549,
+        "6": 2968
+      },
+      "exact_first4_matches": 1,
+      "sorted_code_overlap_matches": 74,
+      "top_first_code_pairs": [
+        [
+          [
+            8,
+            8
+          ],
+          236
+        ],
+        [
+          [
+            8,
+            6
+          ],
+          141
+        ],
+        [
+          [
+            134,
+            8
+          ],
+          65
+        ],
+        [
+          [
+            8,
+            162
+          ],
+          54
+        ],
+        [
+          [
+            135,
+            8
+          ],
+          42
+        ],
+        [
+          [
+            141,
+            8
+          ],
+          42
+        ],
+        [
+          [
+            6,
+            8
+          ],
+          38
+        ],
+        [
+          [
+            8,
+            105
+          ],
+          37
+        ],
+        [
+          [
+            8,
+            94
+          ],
+          32
+        ],
+        [
+          [
+            159,
+            8
+          ],
+          31
+        ],
+        [
+          [
+            162,
+            8
+          ],
+          28
+        ],
+        [
+          [
+            114,
+            6
+          ],
+          27
+        ]
+      ]
+    }
+  ]
+}

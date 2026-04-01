@@ -1,0 +1,144 @@
+PAC vs runtime shadow comparison
+================================
+
+This verifies the six proven dragon shadow submeshes against the original PAC.
+Expectation: bbox + local triangles match, raw packets do not.
+
+Body_02
+  command_index:       145
+  parameter_index:     115
+  vertex_count:        2013
+  triangle_count:      2664
+  bbox_match:          True
+  index_match:         True
+  delta_len:           min=0.089888 avg=1.509516 max=3.990189
+  exact_packet_match:  0 / 2013
+  exact_pos8_match:    0 / 2013
+  field_exact_ratios:
+    pos6           0 /  2013  (0.0000%)
+    w2             0 /  2013  (0.0000%)
+    normal4        0 /  2013  (0.0000%)
+    bone_idx4      0 /  2013  (0.0000%)
+    extra0_4       0 /  2013  (0.0000%)
+    bone_wt4       0 /  2013  (0.0000%)
+    extra1_4     580 /  2013  (28.8127%)
+    vcolor4        0 /  2013  (0.0000%)
+    uv0_4          0 /  2013  (0.0000%)
+    uv1_4          0 /  2013  (0.0000%)
+  csv_path:            C:\Users\waelj\crimson-desert-got-dragon-mod\output\pac_shadow_compare\body_02_pairs.csv
+
+back
+  command_index:       146
+  parameter_index:     116
+  vertex_count:        3307
+  triangle_count:      5669
+  bbox_match:          True
+  index_match:         True
+  delta_len:           min=0.048803 avg=1.420997 max=3.784202
+  exact_packet_match:  0 / 3307
+  exact_pos8_match:    0 / 3307
+  field_exact_ratios:
+    pos6           0 /  3307  (0.0000%)
+    w2             0 /  3307  (0.0000%)
+    normal4        0 /  3307  (0.0000%)
+    bone_idx4      0 /  3307  (0.0000%)
+    extra0_4       0 /  3307  (0.0000%)
+    bone_wt4       0 /  3307  (0.0000%)
+    extra1_4     260 /  3307  (7.8621%)
+    vcolor4        0 /  3307  (0.0000%)
+    uv0_4          0 /  3307  (0.0000%)
+    uv1_4          0 /  3307  (0.0000%)
+  csv_path:            C:\Users\waelj\crimson-desert-got-dragon-mod\output\pac_shadow_compare\back_pairs.csv
+
+Body
+  command_index:       147
+  parameter_index:     117
+  vertex_count:        2736
+  triangle_count:      4460
+  bbox_match:          True
+  index_match:         True
+  delta_len:           min=0.716316 avg=3.186155 max=11.003735
+  exact_packet_match:  0 / 2736
+  exact_pos8_match:    0 / 2736
+  field_exact_ratios:
+    pos6           0 /  2736  (0.0000%)
+    w2             0 /  2736  (0.0000%)
+    normal4        0 /  2736  (0.0000%)
+    bone_idx4      0 /  2736  (0.0000%)
+    extra0_4       0 /  2736  (0.0000%)
+    bone_wt4       0 /  2736  (0.0000%)
+    extra1_4     321 /  2736  (11.7325%)
+    vcolor4        0 /  2736  (0.0000%)
+    uv0_4          0 /  2736  (0.0000%)
+    uv1_4          0 /  2736  (0.0000%)
+  csv_path:            C:\Users\waelj\crimson-desert-got-dragon-mod\output\pac_shadow_compare\body_pairs.csv
+
+Leg
+  command_index:       148
+  parameter_index:     118
+  vertex_count:        4624
+  triangle_count:      7488
+  bbox_match:          True
+  index_match:         True
+  delta_len:           min=0.307027 avg=1.474676 max=3.239738
+  exact_packet_match:  0 / 4624
+  exact_pos8_match:    0 / 4624
+  field_exact_ratios:
+    pos6           0 /  4624  (0.0000%)
+    w2             0 /  4624  (0.0000%)
+    normal4        0 /  4624  (0.0000%)
+    bone_idx4      0 /  4624  (0.0000%)
+    extra0_4       0 /  4624  (0.0000%)
+    bone_wt4       0 /  4624  (0.0000%)
+    extra1_4    1397 /  4624  (30.2119%)
+    vcolor4        0 /  4624  (0.0000%)
+    uv0_4          0 /  4624  (0.0000%)
+    uv1_4          0 /  4624  (0.0000%)
+  csv_path:            C:\Users\waelj\crimson-desert-got-dragon-mod\output\pac_shadow_compare\leg_pairs.csv
+
+Wing
+  command_index:       149
+  parameter_index:     119
+  vertex_count:        6724
+  triangle_count:      11634
+  bbox_match:          True
+  index_match:         True
+  delta_len:           min=0.488585 avg=4.163543 max=11.270686
+  exact_packet_match:  0 / 6724
+  exact_pos8_match:    0 / 6724
+  field_exact_ratios:
+    pos6           0 /  6724  (0.0000%)
+    w2             0 /  6724  (0.0000%)
+    normal4        0 /  6724  (0.0000%)
+    bone_idx4      0 /  6724  (0.0000%)
+    extra0_4       0 /  6724  (0.0000%)
+    bone_wt4       0 /  6724  (0.0000%)
+    extra1_4     325 /  6724  (4.8334%)
+    vcolor4        0 /  6724  (0.0000%)
+    uv0_4          0 /  6724  (0.0000%)
+    uv1_4          0 /  6724  (0.0000%)
+  csv_path:            C:\Users\waelj\crimson-desert-got-dragon-mod\output\pac_shadow_compare\wing_pairs.csv
+
+Head
+  command_index:       150
+  parameter_index:     120
+  vertex_count:        10258
+  triangle_count:      17060
+  bbox_match:          True
+  index_match:         True
+  delta_len:           min=0.085972 avg=1.422696 max=5.820527
+  exact_packet_match:  0 / 10258
+  exact_pos8_match:    0 / 10258
+  field_exact_ratios:
+    pos6           0 / 10258  (0.0000%)
+    w2             0 / 10258  (0.0000%)
+    normal4        0 / 10258  (0.0000%)
+    bone_idx4      0 / 10258  (0.0000%)
+    extra0_4       0 / 10258  (0.0000%)
+    bone_wt4       0 / 10258  (0.0000%)
+    extra1_4     135 / 10258  (1.3160%)
+    vcolor4        0 / 10258  (0.0000%)
+    uv0_4        253 / 10258  (2.4664%)
+    uv1_4          0 / 10258  (0.0000%)
+  csv_path:            C:\Users\waelj\crimson-desert-got-dragon-mod\output\pac_shadow_compare\head_pairs.csv
+

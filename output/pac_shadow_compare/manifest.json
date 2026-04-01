@@ -1,0 +1,278 @@
+{
+  "pac_path": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\dragon.pac",
+  "runtime_vertex_resource": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\pix_resources\\resource_16288.bin",
+  "runtime_index_resource": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\pix_resources\\resource_2074.bin",
+  "runtime_view_first_element": 46222,
+  "records": [
+    {
+      "name": "Body_02",
+      "command_index": 145,
+      "parameter_index": 115,
+      "pac_base_vertex": 450,
+      "runtime_base_vertex": 450,
+      "vertex_count": 2013,
+      "triangle_count": 2664,
+      "bbox_match": true,
+      "index_match": true,
+      "delta": {
+        "minimum": 0.08988847882431923,
+        "average": 1.509515519537282,
+        "maximum": 3.9901887676575556
+      },
+      "packet_matches": {
+        "exact_packet_matches": 0,
+        "exact_position_packet_matches": 0,
+        "field_exact_matches": {
+          "pos6": 0,
+          "w2": 0,
+          "normal4": 0,
+          "bone_idx4": 0,
+          "extra0_4": 0,
+          "bone_wt4": 0,
+          "extra1_4": 580,
+          "vcolor4": 0,
+          "uv0_4": 0,
+          "uv1_4": 0
+        },
+        "field_exact_ratios": {
+          "pos6": 0.0,
+          "w2": 0.0,
+          "normal4": 0.0,
+          "bone_idx4": 0.0,
+          "extra0_4": 0.0,
+          "bone_wt4": 0.0,
+          "extra1_4": 0.28812717337307503,
+          "vcolor4": 0.0,
+          "uv0_4": 0.0,
+          "uv1_4": 0.0
+        }
+      },
+      "csv_path": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\pac_shadow_compare\\body_02_pairs.csv"
+    },
+    {
+      "name": "back",
+      "command_index": 146,
+      "parameter_index": 116,
+      "pac_base_vertex": 2463,
+      "runtime_base_vertex": 2463,
+      "vertex_count": 3307,
+      "triangle_count": 5669,
+      "bbox_match": true,
+      "index_match": true,
+      "delta": {
+        "minimum": 0.04880308434155167,
+        "average": 1.4209972970249907,
+        "maximum": 3.784202150962685
+      },
+      "packet_matches": {
+        "exact_packet_matches": 0,
+        "exact_position_packet_matches": 0,
+        "field_exact_matches": {
+          "pos6": 0,
+          "w2": 0,
+          "normal4": 0,
+          "bone_idx4": 0,
+          "extra0_4": 0,
+          "bone_wt4": 0,
+          "extra1_4": 260,
+          "vcolor4": 0,
+          "uv0_4": 0,
+          "uv1_4": 0
+        },
+        "field_exact_ratios": {
+          "pos6": 0.0,
+          "w2": 0.0,
+          "normal4": 0.0,
+          "bone_idx4": 0.0,
+          "extra0_4": 0.0,
+          "bone_wt4": 0.0,
+          "extra1_4": 0.07862110674327184,
+          "vcolor4": 0.0,
+          "uv0_4": 0.0,
+          "uv1_4": 0.0
+        }
+      },
+      "csv_path": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\pac_shadow_compare\\back_pairs.csv"
+    },
+    {
+      "name": "Body",
+      "command_index": 147,
+      "parameter_index": 117,
+      "pac_base_vertex": 5770,
+      "runtime_base_vertex": 5770,
+      "vertex_count": 2736,
+      "triangle_count": 4460,
+      "bbox_match": true,
+      "index_match": true,
+      "delta": {
+        "minimum": 0.7163157312895677,
+        "average": 3.1861549919983347,
+        "maximum": 11.003734520618776
+      },
+      "packet_matches": {
+        "exact_packet_matches": 0,
+        "exact_position_packet_matches": 0,
+        "field_exact_matches": {
+          "pos6": 0,
+          "w2": 0,
+          "normal4": 0,
+          "bone_idx4": 0,
+          "extra0_4": 0,
+          "bone_wt4": 0,
+          "extra1_4": 321,
+          "vcolor4": 0,
+          "uv0_4": 0,
+          "uv1_4": 0
+        },
+        "field_exact_ratios": {
+          "pos6": 0.0,
+          "w2": 0.0,
+          "normal4": 0.0,
+          "bone_idx4": 0.0,
+          "extra0_4": 0.0,
+          "bone_wt4": 0.0,
+          "extra1_4": 0.11732456140350878,
+          "vcolor4": 0.0,
+          "uv0_4": 0.0,
+          "uv1_4": 0.0
+        }
+      },
+      "csv_path": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\pac_shadow_compare\\body_pairs.csv"
+    },
+    {
+      "name": "Leg",
+      "command_index": 148,
+      "parameter_index": 118,
+      "pac_base_vertex": 8506,
+      "runtime_base_vertex": 8506,
+      "vertex_count": 4624,
+      "triangle_count": 7488,
+      "bbox_match": true,
+      "index_match": true,
+      "delta": {
+        "minimum": 0.3070268466477728,
+        "average": 1.474675642066928,
+        "maximum": 3.239737741027868
+      },
+      "packet_matches": {
+        "exact_packet_matches": 0,
+        "exact_position_packet_matches": 0,
+        "field_exact_matches": {
+          "pos6": 0,
+          "w2": 0,
+          "normal4": 0,
+          "bone_idx4": 0,
+          "extra0_4": 0,
+          "bone_wt4": 0,
+          "extra1_4": 1397,
+          "vcolor4": 0,
+          "uv0_4": 0,
+          "uv1_4": 0
+        },
+        "field_exact_ratios": {
+          "pos6": 0.0,
+          "w2": 0.0,
+          "normal4": 0.0,
+          "bone_idx4": 0.0,
+          "extra0_4": 0.0,
+          "bone_wt4": 0.0,
+          "extra1_4": 0.30211937716262977,
+          "vcolor4": 0.0,
+          "uv0_4": 0.0,
+          "uv1_4": 0.0
+        }
+      },
+      "csv_path": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\pac_shadow_compare\\leg_pairs.csv"
+    },
+    {
+      "name": "Wing",
+      "command_index": 149,
+      "parameter_index": 119,
+      "pac_base_vertex": 13130,
+      "runtime_base_vertex": 13130,
+      "vertex_count": 6724,
+      "triangle_count": 11634,
+      "bbox_match": true,
+      "index_match": true,
+      "delta": {
+        "minimum": 0.4885852012080139,
+        "average": 4.163542882887734,
+        "maximum": 11.270685861929547
+      },
+      "packet_matches": {
+        "exact_packet_matches": 0,
+        "exact_position_packet_matches": 0,
+        "field_exact_matches": {
+          "pos6": 0,
+          "w2": 0,
+          "normal4": 0,
+          "bone_idx4": 0,
+          "extra0_4": 0,
+          "bone_wt4": 0,
+          "extra1_4": 325,
+          "vcolor4": 0,
+          "uv0_4": 0,
+          "uv1_4": 0
+        },
+        "field_exact_ratios": {
+          "pos6": 0.0,
+          "w2": 0.0,
+          "normal4": 0.0,
+          "bone_idx4": 0.0,
+          "extra0_4": 0.0,
+          "bone_wt4": 0.0,
+          "extra1_4": 0.0483343248066627,
+          "vcolor4": 0.0,
+          "uv0_4": 0.0,
+          "uv1_4": 0.0
+        }
+      },
+      "csv_path": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\pac_shadow_compare\\wing_pairs.csv"
+    },
+    {
+      "name": "Head",
+      "command_index": 150,
+      "parameter_index": 120,
+      "pac_base_vertex": 19854,
+      "runtime_base_vertex": 19854,
+      "vertex_count": 10258,
+      "triangle_count": 17060,
+      "bbox_match": true,
+      "index_match": true,
+      "delta": {
+        "minimum": 0.08597182648772805,
+        "average": 1.4226958108670893,
+        "maximum": 5.820526658393088
+      },
+      "packet_matches": {
+        "exact_packet_matches": 0,
+        "exact_position_packet_matches": 0,
+        "field_exact_matches": {
+          "pos6": 0,
+          "w2": 0,
+          "normal4": 0,
+          "bone_idx4": 0,
+          "extra0_4": 0,
+          "bone_wt4": 0,
+          "extra1_4": 135,
+          "vcolor4": 0,
+          "uv0_4": 253,
+          "uv1_4": 0
+        },
+        "field_exact_ratios": {
+          "pos6": 0.0,
+          "w2": 0.0,
+          "normal4": 0.0,
+          "bone_idx4": 0.0,
+          "extra0_4": 0.0,
+          "bone_wt4": 0.0,
+          "extra1_4": 0.013160460128680055,
+          "vcolor4": 0.0,
+          "uv0_4": 0.02466367713004484,
+          "uv1_4": 0.0
+        }
+      },
+      "csv_path": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\pac_shadow_compare\\head_pairs.csv"
+    }
+  ]
+}

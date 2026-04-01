@@ -1,0 +1,165 @@
+{
+  "vertex_count": 10258,
+  "global_fit": {
+    "label": "global_head_affine",
+    "count": 10258,
+    "rmse": 0.5836799886506026,
+    "max_error": 1.7402973029181834
+  },
+  "single_weight_vertex_count": 738,
+  "top_signature_fits": [
+    {
+      "label": "codes=(8, 0, 0, 0) weights=(255, 0, 0, 0)",
+      "count": 406,
+      "rmse": 0.5441834015830463,
+      "max_error": 1.2650226305956929
+    },
+    {
+      "label": "codes=(8, 48, 0, 0) weights=(255, 0, 0, 0)",
+      "count": 148,
+      "rmse": 0.5204460661446374,
+      "max_error": 1.2212401630344074
+    },
+    {
+      "label": "codes=(8, 48, 112, 0) weights=(255, 0, 0, 0)",
+      "count": 44,
+      "rmse": 0.42060441946948046,
+      "max_error": 0.930586546338421
+    },
+    {
+      "label": "codes=(6, 0, 0, 0) weights=(255, 0, 0, 0)",
+      "count": 21,
+      "rmse": 0.43596188703057087,
+      "max_error": 0.9847981595831317
+    },
+    {
+      "label": "codes=(107, 168, 225, 9) weights=(255, 0, 0, 0)",
+      "count": 15,
+      "rmse": 0.3708351547507211,
+      "max_error": 0.6400335756940988
+    },
+    {
+      "label": "codes=(8, 160, 33, 6) weights=(255, 0, 0, 0)",
+      "count": 14,
+      "rmse": 0.48669339863514594,
+      "max_error": 0.9369622409929469
+    },
+    {
+      "label": "codes=(8, 132, 131, 6) weights=(255, 0, 0, 0)",
+      "count": 13,
+      "rmse": 0.4115127507692857,
+      "max_error": 0.784417079769112
+    },
+    {
+      "label": "codes=(8, 100, 161, 8) weights=(255, 0, 0, 0)",
+      "count": 10,
+      "rmse": 0.6037039028875891,
+      "max_error": 1.124769680398573
+    },
+    {
+      "label": "codes=(8, 40, 146, 5) weights=(255, 0, 0, 0)",
+      "count": 9,
+      "rmse": 0.24258291041953772,
+      "max_error": 0.4536753522155968
+    },
+    {
+      "label": "codes=(107, 0, 0, 0) weights=(255, 0, 0, 0)",
+      "count": 8,
+      "rmse": 0.24000165402658857,
+      "max_error": 0.38445965602277354
+    },
+    {
+      "label": "codes=(222, 0, 0, 0) weights=(255, 0, 0, 0)",
+      "count": 6,
+      "rmse": 0.22285834103659807,
+      "max_error": 0.4733664242368468
+    },
+    {
+      "label": "codes=(6, 148, 80, 0) weights=(254, 1, 0, 0)",
+      "count": 5,
+      "rmse": 0.24056123499572057,
+      "max_error": 0.42262047776306194
+    },
+    {
+      "label": "codes=(8, 4, 35, 12) weights=(255, 0, 0, 0)",
+      "count": 5,
+      "rmse": 0.3935770097260164,
+      "max_error": 0.5729315134015812
+    },
+    {
+      "label": "codes=(8, 48, 112, 0) weights=(254, 0, 0, 0)",
+      "count": 5,
+      "rmse": 0.2310504580926101,
+      "max_error": 0.3518416411034041
+    },
+    {
+      "label": "codes=(8, 136, 129, 6) weights=(255, 0, 0, 0)",
+      "count": 4,
+      "rmse": 1.011930760650913e-12,
+      "max_error": 1.1968473210092833e-12
+    },
+    {
+      "label": "codes=(8, 100, 193, 0) weights=(255, 0, 0, 0)",
+      "count": 4,
+      "rmse": 1.4809625583345964e-13,
+      "max_error": 1.5320920859683538e-13
+    },
+    {
+      "label": "codes=(105, 168, 177, 6) weights=(133, 85, 19, 8)",
+      "count": 4,
+      "rmse": 0.32076046279545956,
+      "max_error": 0.46396885402922367
+    },
+    {
+      "label": "codes=(105, 176, 161, 6) weights=(166, 44, 24, 12)",
+      "count": 4,
+      "rmse": 0.13176261931657202,
+      "max_error": 0.17351753962826041
+    },
+    {
+      "label": "codes=(8, 64, 98, 13) weights=(255, 0, 0, 0)",
+      "count": 4,
+      "rmse": 1.7813458370713757e-14,
+      "max_error": 1.8704539862437642e-14
+    },
+    {
+      "label": "codes=(8, 132, 131, 6) weights=(254, 0, 0, 0)",
+      "count": 4,
+      "rmse": 2.2288203517911951e-13,
+      "max_error": 2.615494118752892e-13
+    }
+  ],
+  "top_code_fits": [
+    {
+      "label": "dominant_code=8 single_weight_only",
+      "count": 678,
+      "rmse": 0.5500866121284581,
+      "max_error": 1.317977762038035
+    },
+    {
+      "label": "dominant_code=107 single_weight_only",
+      "count": 26,
+      "rmse": 0.37860180093249873,
+      "max_error": 0.7756704189922179
+    },
+    {
+      "label": "dominant_code=6 single_weight_only",
+      "count": 23,
+      "rmse": 0.47545537522209586,
+      "max_error": 1.0339046421485976
+    },
+    {
+      "label": "dominant_code=222 single_weight_only",
+      "count": 7,
+      "rmse": 0.2402584006677438,
+      "max_error": 0.5388378718851647
+    },
+    {
+      "label": "dominant_code=224 single_weight_only",
+      "count": 4,
+      "rmse": 0.2378677800280556,
+      "max_error": 0.32072304495041165
+    }
+  ],
+  "csv_path": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\head_pac_shadow_delta\\head_pairs.csv"
+}

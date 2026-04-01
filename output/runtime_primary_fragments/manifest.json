@@ -1,0 +1,154 @@
+{
+  "records": [
+    {
+      "name": "Primary_39",
+      "command_index": 39,
+      "parameter_index": 262,
+      "space103_handle": 7696,
+      "flags": 3,
+      "control": 1,
+      "base_vertex": 22,
+      "vertex_count": 80,
+      "triangle_count": 60,
+      "vertex_resource_id": 15390,
+      "index_buffer_offset": 3991264,
+      "index_buffer_size_bytes": 1164,
+      "bounds_min": [
+        -0.3090582489967346,
+        -0.00017647728123045686,
+        -0.2744120955467224
+      ],
+      "bounds_max": [
+        0.30523084621897734,
+        0.28492220440018773,
+        0.11776167154312134
+      ],
+      "output_obj": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\runtime_primary_fragments\\primary_39.obj"
+    },
+    {
+      "name": "Primary_40",
+      "command_index": 40,
+      "parameter_index": 123,
+      "space103_handle": 4522,
+      "flags": 2,
+      "control": 1,
+      "base_vertex": 55,
+      "vertex_count": 162,
+      "triangle_count": 161,
+      "vertex_resource_id": 15486,
+      "index_buffer_offset": 3036768,
+      "index_buffer_size_bytes": 12450,
+      "bounds_min": [
+        -0.2557249649352767,
+        -0.0023824756833274096,
+        -0.254972368478775
+      ],
+      "bounds_max": [
+        0.25594695939966616,
+        0.302940820009145,
+        0.08742722868919373
+      ],
+      "output_obj": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\runtime_primary_fragments\\primary_40.obj"
+    },
+    {
+      "name": "Primary_41",
+      "command_index": 41,
+      "parameter_index": 125,
+      "space103_handle": 6773,
+      "flags": 2,
+      "control": 0,
+      "base_vertex": 0,
+      "vertex_count": 11,
+      "triangle_count": 7,
+      "vertex_resource_id": 15486,
+      "index_buffer_offset": 4001008,
+      "index_buffer_size_bytes": 13662,
+      "bounds_min": [
+        -0.05473330244421959,
+        0.13896199899313233,
+        0.04274449497461319
+      ],
+      "bounds_max": [
+        0.05082077160477638,
+        0.17000216245651245,
+        0.13051947855726023
+      ],
+      "output_obj": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\runtime_primary_fragments\\primary_41.obj"
+    },
+    {
+      "name": "Primary_42",
+      "command_index": 42,
+      "parameter_index": 131,
+      "space103_handle": 6773,
+      "flags": 2,
+      "control": 0,
+      "base_vertex": 1626,
+      "vertex_count": 162,
+      "triangle_count": 163,
+      "vertex_resource_id": 15486,
+      "index_buffer_offset": 4001008,
+      "index_buffer_size_bytes": 13662,
+      "bounds_min": [
+        -0.2575652116714815,
+        -0.0022911207697886298,
+        -0.2707124650478363
+      ],
+      "bounds_max": [
+        0.25576798432342707,
+        0.3107432217871422,
+        0.0872699569689182
+      ],
+      "output_obj": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\runtime_primary_fragments\\primary_42.obj"
+    },
+    {
+      "name": "Primary_43",
+      "command_index": 43,
+      "parameter_index": 168,
+      "space103_handle": 6774,
+      "flags": 3,
+      "control": 1,
+      "base_vertex": 0,
+      "vertex_count": 3,
+      "triangle_count": 1,
+      "vertex_resource_id": 15390,
+      "index_buffer_offset": 4544080,
+      "index_buffer_size_bytes": 1188,
+      "bounds_min": [
+        -0.05473330244421959,
+        0.13896199899313233,
+        0.04274449497461319
+      ],
+      "bounds_max": [
+        0.05082077160477638,
+        0.16695979840524372,
+        0.11296668523546759
+      ],
+      "output_obj": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\runtime_primary_fragments\\primary_43.obj"
+    },
+    {
+      "name": "Primary_44",
+      "command_index": 44,
+      "parameter_index": 174,
+      "space103_handle": 6774,
+      "flags": 3,
+      "control": 1,
+      "base_vertex": 131,
+      "vertex_count": 77,
+      "triangle_count": 74,
+      "vertex_resource_id": 15390,
+      "index_buffer_offset": 4544080,
+      "index_buffer_size_bytes": 1188,
+      "bounds_min": [
+        -0.25979098677635193,
+        -0.0010027893384106311,
+        -0.2707124650478363
+      ],
+      "bounds_max": [
+        0.25745704770088196,
+        0.32517655985429883,
+        0.08855277299880981
+      ],
+      "output_obj": "C:\\Users\\waelj\\crimson-desert-got-dragon-mod\\output\\runtime_primary_fragments\\primary_44.obj"
+    }
+  ]
+}

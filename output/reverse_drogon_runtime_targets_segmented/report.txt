@@ -1,0 +1,95 @@
+Drogon runtime reverse targets (segmented)
+==========================================
+
+Inputs
+------
+raw_drogon_obj    : C:\Users\waelj\crimson-desert-got-dragon-mod\gpu-analysis\DROGON.obj
+rigged_glb        : C:\Users\waelj\crimson-desert-got-dragon-mod\output\DrogonRigged-correctweights.glb
+affine_manifest   : C:\Users\waelj\crimson-desert-got-dragon-mod\output\shadow_6804_effective_affine\manifest.json
+
+Method
+------
+- Score segmented source clouds per submesh against the live PIX world positions.
+- Segmentation uses quantile splits on source/target axis 2 with 16 bins.
+- Keep the best candidate per submesh, then run the exact reverse inversion through
+  downstream affine inverse + exact per-vertex late matrix inverse.
+
+Overall
+-------
+submeshes             : 6
+total_vertices        : 29662
+nearest rmse          : 0.491238006
+nearest avg           : 0.354531660
+reforward rmse        : 0.000000000
+reforward avg         : 0.000000000
+combined world obj    : output/reverse_drogon_runtime_targets_segmented/drogon_target_world.obj
+combined local obj    : output/reverse_drogon_runtime_targets_segmented/drogon_target_runtime_local.obj
+
+Per-submesh
+-----------
+Body_02 (GpuId7153)
+  chosen candidate      : glb_primitive_seg_z16
+  candidate points      : 1757
+  nearest rmse          : 0.190505565
+  nearest avg           : 0.168372730
+  reforward rmse        : 0.000000000
+  bbox overflow         : 52 / 2013 (2.58%)
+    cand glb_primitive_bbox       points=  1757 rmse=0.404654369 avg=0.341977920
+    cand glb_primitive_seg_z16    points=  1757 rmse=0.191877456 avg=0.167365582
+back (GpuId7154)
+  chosen candidate      : glb_primitive_seg_z16
+  candidate points      : 3307
+  nearest rmse          : 0.262603109
+  nearest avg           : 0.229569209
+  reforward rmse        : 0.000000000
+  bbox overflow         : 22 / 3307 (0.67%)
+    cand glb_primitive_bbox       points=  3307 rmse=0.628618888 avg=0.506909255
+    cand glb_primitive_seg_z16    points=  3307 rmse=0.261680780 avg=0.228378889
+Body (GpuId7155)
+  chosen candidate      : glb_body_union_seg_z16
+  candidate points      : 18324
+  nearest rmse          : 0.525888239
+  nearest avg           : 0.414204498
+  reforward rmse        : 0.000000000
+  bbox overflow         : 97 / 2736 (3.55%)
+    cand glb_primitive_bbox       points=  1902 rmse=2.756277837 avg=2.475250751
+    cand glb_primitive_seg_z16    points=  1902 rmse=0.546898962 avg=0.488352838
+    cand raw_global               points=149229 rmse=2.562126345 avg=2.272735077
+    cand raw_global_seg_z16       points=149229 rmse=0.567634147 avg=0.441100877
+    cand glb_body_union_bbox      points= 18324 rmse=2.621274414 avg=2.332768210
+    cand glb_body_union_seg_z16   points= 18324 rmse=0.534177263 avg=0.421395840
+Leg (GpuId7156)
+  chosen candidate      : glb_primitive_seg_z16
+  candidate points      : 4625
+  nearest rmse          : 0.377119964
+  nearest avg           : 0.327340808
+  reforward rmse        : 0.000000000
+  bbox overflow         : 345 / 4624 (7.46%)
+    cand glb_primitive_bbox       points=  4625 rmse=3.278354057 avg=3.031350699
+    cand glb_primitive_seg_z16    points=  4625 rmse=0.376711163 avg=0.326795650
+    cand raw_global               points=149229 rmse=1.391218250 avg=1.158716037
+    cand raw_global_seg_z16       points=149229 rmse=0.631168962 avg=0.469030577
+    cand glb_leg_union_bbox       points=  6527 rmse=1.331676211 avg=1.171409909
+    cand glb_leg_union_seg_z16    points=  6527 rmse=0.568665700 avg=0.493946425
+Wing (GpuId7157)
+  chosen candidate      : glb_primitive_seg_z16
+  candidate points      : 6733
+  nearest rmse          : 0.845426700
+  nearest avg           : 0.686067472
+  reforward rmse        : 0.000000000
+  bbox overflow         : 690 / 6724 (10.26%)
+    cand glb_primitive_bbox       points=  6733 rmse=4.062482112 avg=3.355705990
+    cand glb_primitive_seg_z16    points=  6733 rmse=0.850017703 avg=0.691968672
+    cand raw_global               points=149229 rmse=4.260671182 avg=3.531752791
+    cand raw_global_seg_z16       points=149229 rmse=0.903903158 avg=0.702336658
+    cand glb_wing_union_bbox      points= 11797 rmse=3.989843388 avg=3.293123919
+    cand glb_wing_union_seg_z16   points= 11797 rmse=0.852743888 avg=0.697024054
+Head (GpuId7158)
+  chosen candidate      : glb_primitive_seg_z16
+  candidate points      : 10258
+  nearest rmse          : 0.249102413
+  nearest avg           : 0.210371743
+  reforward rmse        : 0.000000000
+  bbox overflow         : 4 / 10258 (0.04%)
+    cand glb_primitive_bbox       points= 10258 rmse=0.538856646 avg=0.457620968
+    cand glb_primitive_seg_z16    points= 10258 rmse=0.250638068 avg=0.212300620

@@ -1,0 +1,56 @@
+6804 late position probe
+=======================
+
+Shared config
+-------------
+base0             : 11266
+base_lookup       : 2026
+base_late_matrix  : 2716
+cluster_idx       : 78
+u64_word          : 2147483648
+u64 < 2^30        : False
+
+Global late-factor histogram
+----------------------------
+  63: 29662
+
+Interpretation
+--------------
+- The late position stage is built from resource_2070, not resource_135.
+- The exact TEXCOORD1 shader path remains: late_matrix -> space15[64..112] -> cb14[87..90].
+- The diagnostic block0 comparison is not a shader path; it only shows the remaining miss is downstream of the late matrix stage.
+- In this capture, the packed 6-bit factor is 63 for every shadow-family dragon vertex, so the alternate `%325` / `%2411` correction branches are dead on the proven 6804 route.
+  A single shared translation delta removes most of the remaining error: (-0.010472420, -0.144051618, 0.008831669)
+
+Per-submesh
+-----------
+Body_02 (GpuId7153)
+  exact late path rmse        : 0.257503401
+  diagnostic block0 rmse      : 0.165480360
+  shared-translation rmse     : 0.140206840
+  late factor histogram       : {63: 2013}
+back (GpuId7154)
+  exact late path rmse        : 0.128955157
+  diagnostic block0 rmse      : 0.024277933
+  shared-translation rmse     : 0.016071252
+  late factor histogram       : {63: 3307}
+Body (GpuId7155)
+  exact late path rmse        : 0.167162898
+  diagnostic block0 rmse      : 0.080450543
+  shared-translation rmse     : 0.065889951
+  late factor histogram       : {63: 2736}
+Leg (GpuId7156)
+  exact late path rmse        : 0.130319199
+  diagnostic block0 rmse      : 0.026145882
+  shared-translation rmse     : 0.014626568
+  late factor histogram       : {63: 4624}
+Wing (GpuId7157)
+  exact late path rmse        : 0.167838350
+  diagnostic block0 rmse      : 0.127275690
+  shared-translation rmse     : 0.129301550
+  late factor histogram       : {63: 6724}
+Head (GpuId7158)
+  exact late path rmse        : 0.173642674
+  diagnostic block0 rmse      : 0.087122672
+  shared-translation rmse     : 0.073472465
+  late factor histogram       : {63: 10258}

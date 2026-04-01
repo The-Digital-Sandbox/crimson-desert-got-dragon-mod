@@ -1,0 +1,45 @@
+Crimson Desert Head Draw Trace
+==============================
+
+PAC:        C:\Users\waelj\crimson-desert-got-dragon-mod\output\dragon.pac
+PIX CSV:    C:\Users\waelj\crimson-desert-got-dragon-mod\gpu-analysis\2026_3_30__9_24_50_GpuId7158_VS_BufferData_exp0.csv
+vertexStart=0x7BFA
+indexStart=0x4AE982
+storedVertCount=27376
+
+Stored layout:
+  total stored verts = 27376
+  body shares back buffer = True
+  head stored base = 17118
+  head stored end  = 27375
+
+Head bbox from PAC descriptor:
+  min = (-0.732201993, 0.851953924, -3.642210007)
+  dim = (1.521168947, 1.997236013, 3.642210007)
+
+Head draw counts:
+  PIX unique vertices = 10258
+  PAC stored vertices = 10258
+  PAC head indices    = 51180 (17060 triangles)
+
+Bounds:
+  local min = (-0.732156, 0.851954, -3.642210)
+  local max = (-0.019364, 1.787943, 2.300682)
+  local span= (0.712791, 0.935989, 5.942892)
+  world min = (-12.351200, -12.054100, 24.302400)
+  world max = (-8.678600, -6.154070, 28.208700)
+  world span= (3.672600, 5.900030, 3.906300)
+
+Notes:
+  - This export is pre-skin and pre-packed-offset only.
+  - PAC UV decode is intentionally omitted here because the non-position layout is not fully solved yet.
+  - If this object-space head is coherent but does not match PIX world space, the remaining gap is in the shader-side offset + skinning path.
+
+Sample rows:
+  vid=    0 stored=17118 u16=(13244, 14761, 0) local=(-0.117365,  1.751676, -3.642210) pixWorld=(-11.290100, -10.917300,  27.840900)
+  vid=    1 stored=17119 u16=(11553, 13246, 15160) local=(-0.195868,  1.659333, -1.957103) pixWorld=(-11.296900, -10.947600,  27.911000)
+  vid=    2 stored=17120 u16=(12396, 12508, 20574) local=(-0.156732,  1.614350, -1.355311) pixWorld=(-11.228000, -11.026700,  27.788900)
+  vid=  100 stored=17218 u16=(14683, 14604, 18772) local=(-0.050561,  1.742107, -1.555612) pixWorld=(-11.020500, -11.222600,  27.990000)
+  vid= 1000 stored=18118 u16=(13402, 14741, 19074) local=(-0.110030,  1.750457, -1.522043) pixWorld=(-10.290000, -10.997000,  26.467300)
+  vid= 5000 stored=22118 u16=(14280, 15297, 19096) local=(-0.069270,  1.784347, -1.519598) pixWorld=(-10.829700, -10.706900,  27.377400)
+  vid= 9000 stored=26118 u16=(2884, 3678, 3240) local=(-0.598316,  1.076138, -3.282068) pixWorld=(-10.875900, -10.532700,  27.064500)
