@@ -1092,10 +1092,23 @@ The .pacb likely has different vertex counts matching handle 8054:
 - Body: 2736, Leg: 4624, Wing: 6724, Head: 7060
 - Total: 24,117 vertices
 
+PAC internal layout (single LOD, no embedded LOD1):
+  0x000000 - 0x000077: Header (PAR magic, version 2307)
+  0x000077 - 0x000441: Submesh descriptors (8 submeshes, bbox + LOD range)
+  0x000441 - 0x007BFA: Bone palette (227 entries) + metadata
+  0x007BFA - 0x11317A: Vertex buffer (27,376 × stride 40 = 1,095,040 bytes)
+  0x11317A - 0x15C0D4: Index buffer GLOBAL (149,421 × 2 = 298,842 bytes)
+  0x15C0D4 - 0x4AE982: Sparse morph/blend data (87,095 entries, mostly zeroed)
+  0x4AE982 - 0x4F78DC: Index buffer LOCAL (149,421 × 2 = 298,842 bytes)
+
+Unlike BDO's 3-LOD-per-submesh PAC layout (szkaradek123 scripts confirm BDO
+stores 3 LODs inline), Crimson Desert stores only ONE LOD in the PAC. The
+.pacb LOD1 mesh is a SEPARATE archive entry with its own PAZ offset.
+
 Next steps to fix:
 1. Run: python tools/scan_pamt_dragon_entries.py (on Windows)
-2. Find the .pacb PAMT record offset
-3. Either:
-   a. Build a second Drogon PAC matching .pacb vertex counts and patch it
-   b. Or redirect the .pacb PAMT record to point to the same patched .pac data
-   c. Or zero out the 8054 draw calls in the indirect argument buffer
+2. Find the .pacb PAMT record offset and PAZ location
+3. Extract .pacb, determine its internal format (same PAC structure, different vert counts)
+4. Build a Drogon PAC for .pacb matching its vertex counts:
+   Eyeright=6, Eyeleft=7, Body_02=2013, back=947, Body=2736, Leg=4624, Wing=6724, Head=7060
+5. Patch .pacb PAMT record to point to the new LOD1 PAC
