@@ -1,0 +1,86 @@
+PAC visible-code -> runtime shadow skinning inference
+===============================================
+
+vertex_count:              29662
+single_weight_vertices:    2234
+learned_codes:             19
+
+Global affine baseline (all vertices)
+-----------------------------------
+count:      29662
+rmse:       2.346394
+avg_error:  1.759172
+max_error:  11.132783
+
+Global-code weighted prediction
+-------------------------------
+coverage:   2717 / 29662 (9.16%)
+rmse:       59.041626
+avg_error:  3.616421
+max_error:  2976.000553
+per_submesh_rmse:
+  Body_02  3.076791
+  back     5.940646
+  Body     2.426177
+  Leg      1.203581
+  Wing     3.886249
+  Head     108.675611
+
+Submesh-local code weighted prediction
+-------------------------------------
+coverage:   2342 / 29662 (7.90%)
+rmse:       1.752735
+avg_error:  1.171539
+max_error:  12.063715
+per_submesh_rmse:
+  Body_02  0.320303
+  back     0.805344
+  Body     2.074132
+  Leg      0.919947
+  Wing     2.981387
+  Head     0.539235
+
+Top learned codes from single-weight vertices
+--------------------------------------------
+code=  8  single_weight_vertices= 1275  rmse=2.058399  avg=1.447973  max=15.182113
+code= 16  single_weight_vertices=  386  rmse=1.715108  avg=1.359726  max=5.753287
+code=  6  single_weight_vertices=  196  rmse=1.827304  avg=1.387038  max=9.322596
+code=107  single_weight_vertices=   62  rmse=3.010015  avg=1.983012  max=10.993696
+code= 29  single_weight_vertices=   38  rmse=0.629276  avg=0.575311  max=1.455470
+code= 75  single_weight_vertices=   38  rmse=3.002807  avg=2.616799  max=6.155354
+code= 57  single_weight_vertices=   36  rmse=0.785554  avg=0.639253  max=2.083761
+code= 48  single_weight_vertices=   36  rmse=0.429126  avg=0.355946  max=0.966021
+code= 47  single_weight_vertices=   31  rmse=0.915139  avg=0.660249  max=2.706691
+code= 49  single_weight_vertices=   30  rmse=0.749180  avg=0.658324  max=1.745246
+code= 25  single_weight_vertices=   18  rmse=0.517588  avg=0.479405  max=0.908540
+code= 46  single_weight_vertices=   18  rmse=0.487819  avg=0.432948  max=0.949211
+code= 55  single_weight_vertices=   18  rmse=0.866037  avg=0.690835  max=2.210825
+code=  3  single_weight_vertices=   15  rmse=0.320303  avg=0.211297  max=1.022121
+code=  2  single_weight_vertices=   10  rmse=0.614725  avg=0.483197  max=1.179556
+code=222  single_weight_vertices=    7  rmse=0.240258  avg=0.171171  max=0.538838
+code= 35  single_weight_vertices=    5  rmse=2.023215  avg=1.669416  max=3.756458
+code= 32  single_weight_vertices=    5  rmse=0.353670  avg=0.272135  max=0.638342
+code=224  single_weight_vertices=    4  rmse=0.237868  avg=0.211103  max=0.320723
+
+Top learned submesh-local codes from single-weight vertices
+---------------------------------------------------------
+submesh=Head     code=  8  single_weight_vertices=  678  rmse=0.550087  avg=0.501515  max=1.317978
+submesh=Wing     code=  8  single_weight_vertices=  461  rmse=2.767620  avg=2.148152  max=12.063715
+submesh=Body     code= 16  single_weight_vertices=  203  rmse=2.246769  avg=2.008295  max=6.181210
+submesh=Leg      code= 16  single_weight_vertices=  183  rmse=0.606628  avg=0.544803  max=1.242781
+submesh=Leg      code=  8  single_weight_vertices=  136  rmse=1.081984  avg=0.989842  max=2.066401
+submesh=Leg      code=  6  single_weight_vertices=  134  rmse=1.068925  avg=1.011978  max=1.835454
+submesh=back     code= 29  single_weight_vertices=   38  rmse=0.629276  avg=0.575311  max=1.455470
+submesh=Wing     code=107  single_weight_vertices=   36  rmse=3.872327  avg=2.984352  max=11.558644
+submesh=back     code= 48  single_weight_vertices=   35  rmse=0.429243  avg=0.362507  max=0.938819
+submesh=Wing     code=  6  single_weight_vertices=   34  rmse=3.100561  avg=2.664814  max=9.147130
+submesh=Wing     code= 75  single_weight_vertices=   33  rmse=3.182471  avg=2.841066  max=6.061422
+submesh=back     code= 47  single_weight_vertices=   29  rmse=0.534609  avg=0.450806  max=1.306075
+submesh=back     code= 57  single_weight_vertices=   26  rmse=0.324462  avg=0.285304  max=0.646989
+submesh=Head     code=107  single_weight_vertices=   26  rmse=0.378602  avg=0.332473  max=0.775670
+submesh=Head     code=  6  single_weight_vertices=   23  rmse=0.475455  avg=0.403837  max=1.033905
+submesh=Body     code= 49  single_weight_vertices=   22  rmse=0.699958  avg=0.621270  max=1.399871
+submesh=back     code= 25  single_weight_vertices=   18  rmse=0.517588  avg=0.479405  max=0.908540
+submesh=back     code= 46  single_weight_vertices=   18  rmse=0.487819  avg=0.432948  max=0.949211
+submesh=Body_02  code=  3  single_weight_vertices=   15  rmse=0.320303  avg=0.211297  max=1.022121
+submesh=Body     code= 55  single_weight_vertices=   11  rmse=0.987058  avg=0.837962  max=2.066397

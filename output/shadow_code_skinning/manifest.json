@@ -1,0 +1,463 @@
+{
+  "vertex_count": 29662,
+  "single_weight_vertex_count": 2234,
+  "learned_code_count": 19,
+  "global_affine_fit": {
+    "count": 29662,
+    "rmse": 2.3463938095101464,
+    "avg_error": 1.7591715604112228,
+    "max_error": 11.132783438436382
+  },
+  "global_code_prediction": {
+    "label": "global_code_blend",
+    "coverage_count": 2717,
+    "coverage_ratio": 0.09159867844380015,
+    "fit": {
+      "count": 2717,
+      "rmse": 59.04162595159612,
+      "avg_error": 3.616421459474947,
+      "max_error": 2976.0005533454478
+    },
+    "per_submesh_rmse": {
+      "Body_02": 3.076790562088971,
+      "back": 5.9406457912699535,
+      "Body": 2.426176725395873,
+      "Leg": 1.2035809646734041,
+      "Wing": 3.886249441891563,
+      "Head": 108.67561129960222
+    }
+  },
+  "local_code_prediction": {
+    "label": "local_code_blend",
+    "coverage_count": 2342,
+    "coverage_ratio": 0.07895624030746409,
+    "fit": {
+      "count": 2342,
+      "rmse": 1.7527352884314782,
+      "avg_error": 1.1715386230491118,
+      "max_error": 12.063715128980977
+    },
+    "per_submesh_rmse": {
+      "Body_02": 0.32030341091810915,
+      "back": 0.8053441922587485,
+      "Body": 2.0741315369330966,
+      "Leg": 0.9199468498955922,
+      "Wing": 2.981386634166565,
+      "Head": 0.5392352120167527
+    }
+  },
+  "top_codes": [
+    {
+      "code": 8,
+      "single_weight_vertices": 1275,
+      "fit": {
+        "count": 1275,
+        "rmse": 2.0583991979837957,
+        "avg_error": 1.447973200357541,
+        "max_error": 15.182113066712596
+      }
+    },
+    {
+      "code": 16,
+      "single_weight_vertices": 386,
+      "fit": {
+        "count": 386,
+        "rmse": 1.7151080661171147,
+        "avg_error": 1.359726050157548,
+        "max_error": 5.753286962595548
+      }
+    },
+    {
+      "code": 6,
+      "single_weight_vertices": 196,
+      "fit": {
+        "count": 196,
+        "rmse": 1.8273036669791243,
+        "avg_error": 1.387037859507352,
+        "max_error": 9.322595677682203
+      }
+    },
+    {
+      "code": 107,
+      "single_weight_vertices": 62,
+      "fit": {
+        "count": 62,
+        "rmse": 3.010014617947645,
+        "avg_error": 1.9830124867523227,
+        "max_error": 10.993696413162533
+      }
+    },
+    {
+      "code": 29,
+      "single_weight_vertices": 38,
+      "fit": {
+        "count": 38,
+        "rmse": 0.6292758727919857,
+        "avg_error": 0.5753106184566709,
+        "max_error": 1.4554704726351815
+      }
+    },
+    {
+      "code": 75,
+      "single_weight_vertices": 38,
+      "fit": {
+        "count": 38,
+        "rmse": 3.002806663562508,
+        "avg_error": 2.616798740312549,
+        "max_error": 6.155354115880779
+      }
+    },
+    {
+      "code": 57,
+      "single_weight_vertices": 36,
+      "fit": {
+        "count": 36,
+        "rmse": 0.7855544186897175,
+        "avg_error": 0.6392527429412925,
+        "max_error": 2.083761493588471
+      }
+    },
+    {
+      "code": 48,
+      "single_weight_vertices": 36,
+      "fit": {
+        "count": 36,
+        "rmse": 0.4291259977763604,
+        "avg_error": 0.3559462214687119,
+        "max_error": 0.966021483886884
+      }
+    },
+    {
+      "code": 47,
+      "single_weight_vertices": 31,
+      "fit": {
+        "count": 31,
+        "rmse": 0.9151386984953601,
+        "avg_error": 0.6602492405707784,
+        "max_error": 2.706690864876782
+      }
+    },
+    {
+      "code": 49,
+      "single_weight_vertices": 30,
+      "fit": {
+        "count": 30,
+        "rmse": 0.7491801510270611,
+        "avg_error": 0.6583237784653948,
+        "max_error": 1.7452456634197142
+      }
+    },
+    {
+      "code": 25,
+      "single_weight_vertices": 18,
+      "fit": {
+        "count": 18,
+        "rmse": 0.5175875027408449,
+        "avg_error": 0.47940476795980147,
+        "max_error": 0.9085404516250501
+      }
+    },
+    {
+      "code": 46,
+      "single_weight_vertices": 18,
+      "fit": {
+        "count": 18,
+        "rmse": 0.48781925208778365,
+        "avg_error": 0.4329478106867286,
+        "max_error": 0.949211099375851
+      }
+    },
+    {
+      "code": 55,
+      "single_weight_vertices": 18,
+      "fit": {
+        "count": 18,
+        "rmse": 0.8660372113982187,
+        "avg_error": 0.6908348293831467,
+        "max_error": 2.210825075637771
+      }
+    },
+    {
+      "code": 3,
+      "single_weight_vertices": 15,
+      "fit": {
+        "count": 15,
+        "rmse": 0.3203034109181091,
+        "avg_error": 0.2112969950986532,
+        "max_error": 1.0221213446889585
+      }
+    },
+    {
+      "code": 2,
+      "single_weight_vertices": 10,
+      "fit": {
+        "count": 10,
+        "rmse": 0.6147249485914211,
+        "avg_error": 0.48319654478400886,
+        "max_error": 1.1795561688843903
+      }
+    },
+    {
+      "code": 222,
+      "single_weight_vertices": 7,
+      "fit": {
+        "count": 7,
+        "rmse": 0.2402584006677438,
+        "avg_error": 0.1711711188312106,
+        "max_error": 0.5388378718851647
+      }
+    },
+    {
+      "code": 35,
+      "single_weight_vertices": 5,
+      "fit": {
+        "count": 5,
+        "rmse": 2.0232149465912754,
+        "avg_error": 1.6694163242214046,
+        "max_error": 3.756458444393526
+      }
+    },
+    {
+      "code": 32,
+      "single_weight_vertices": 5,
+      "fit": {
+        "count": 5,
+        "rmse": 0.35367008900235386,
+        "avg_error": 0.27213457235594285,
+        "max_error": 0.6383416089104826
+      }
+    },
+    {
+      "code": 224,
+      "single_weight_vertices": 4,
+      "fit": {
+        "count": 4,
+        "rmse": 0.2378677800280556,
+        "avg_error": 0.21110324591038154,
+        "max_error": 0.32072304495041165
+      }
+    }
+  ],
+  "top_local_codes": [
+    {
+      "submesh": "Head",
+      "code": 8,
+      "single_weight_vertices": 678,
+      "fit": {
+        "count": 678,
+        "rmse": 0.5500866121284581,
+        "avg_error": 0.5015151104437243,
+        "max_error": 1.317977762038035
+      }
+    },
+    {
+      "submesh": "Wing",
+      "code": 8,
+      "single_weight_vertices": 461,
+      "fit": {
+        "count": 461,
+        "rmse": 2.7676199910296235,
+        "avg_error": 2.14815183132805,
+        "max_error": 12.063715128980977
+      }
+    },
+    {
+      "submesh": "Body",
+      "code": 16,
+      "single_weight_vertices": 203,
+      "fit": {
+        "count": 203,
+        "rmse": 2.246768835634602,
+        "avg_error": 2.0082950875782584,
+        "max_error": 6.181210259247911
+      }
+    },
+    {
+      "submesh": "Leg",
+      "code": 16,
+      "single_weight_vertices": 183,
+      "fit": {
+        "count": 183,
+        "rmse": 0.6066284344082333,
+        "avg_error": 0.544803255236744,
+        "max_error": 1.2427807956433545
+      }
+    },
+    {
+      "submesh": "Leg",
+      "code": 8,
+      "single_weight_vertices": 136,
+      "fit": {
+        "count": 136,
+        "rmse": 1.0819840154435687,
+        "avg_error": 0.9898424787376666,
+        "max_error": 2.0664014652589002
+      }
+    },
+    {
+      "submesh": "Leg",
+      "code": 6,
+      "single_weight_vertices": 134,
+      "fit": {
+        "count": 134,
+        "rmse": 1.0689254807402442,
+        "avg_error": 1.01197803405037,
+        "max_error": 1.8354541241938171
+      }
+    },
+    {
+      "submesh": "back",
+      "code": 29,
+      "single_weight_vertices": 38,
+      "fit": {
+        "count": 38,
+        "rmse": 0.6292758727919857,
+        "avg_error": 0.5753106184566709,
+        "max_error": 1.4554704726351815
+      }
+    },
+    {
+      "submesh": "Wing",
+      "code": 107,
+      "single_weight_vertices": 36,
+      "fit": {
+        "count": 36,
+        "rmse": 3.8723269261707687,
+        "avg_error": 2.984352210441595,
+        "max_error": 11.558643560641247
+      }
+    },
+    {
+      "submesh": "back",
+      "code": 48,
+      "single_weight_vertices": 35,
+      "fit": {
+        "count": 35,
+        "rmse": 0.4292428701810704,
+        "avg_error": 0.3625066553804617,
+        "max_error": 0.9388186935771936
+      }
+    },
+    {
+      "submesh": "Wing",
+      "code": 6,
+      "single_weight_vertices": 34,
+      "fit": {
+        "count": 34,
+        "rmse": 3.1005612256494985,
+        "avg_error": 2.6648144767862747,
+        "max_error": 9.147129965504599
+      }
+    },
+    {
+      "submesh": "Wing",
+      "code": 75,
+      "single_weight_vertices": 33,
+      "fit": {
+        "count": 33,
+        "rmse": 3.1824710297474024,
+        "avg_error": 2.8410664648021,
+        "max_error": 6.061422490970027
+      }
+    },
+    {
+      "submesh": "back",
+      "code": 47,
+      "single_weight_vertices": 29,
+      "fit": {
+        "count": 29,
+        "rmse": 0.5346089671495727,
+        "avg_error": 0.45080554650428195,
+        "max_error": 1.3060753563894432
+      }
+    },
+    {
+      "submesh": "back",
+      "code": 57,
+      "single_weight_vertices": 26,
+      "fit": {
+        "count": 26,
+        "rmse": 0.32446187617152217,
+        "avg_error": 0.28530439499100346,
+        "max_error": 0.6469886016341581
+      }
+    },
+    {
+      "submesh": "Head",
+      "code": 107,
+      "single_weight_vertices": 26,
+      "fit": {
+        "count": 26,
+        "rmse": 0.37860180093249873,
+        "avg_error": 0.33247269764653686,
+        "max_error": 0.7756704189922179
+      }
+    },
+    {
+      "submesh": "Head",
+      "code": 6,
+      "single_weight_vertices": 23,
+      "fit": {
+        "count": 23,
+        "rmse": 0.47545537522209586,
+        "avg_error": 0.4038372432490956,
+        "max_error": 1.0339046421485976
+      }
+    },
+    {
+      "submesh": "Body",
+      "code": 49,
+      "single_weight_vertices": 22,
+      "fit": {
+        "count": 22,
+        "rmse": 0.6999584712136797,
+        "avg_error": 0.6212697729980389,
+        "max_error": 1.3998711338371255
+      }
+    },
+    {
+      "submesh": "back",
+      "code": 25,
+      "single_weight_vertices": 18,
+      "fit": {
+        "count": 18,
+        "rmse": 0.5175875027408449,
+        "avg_error": 0.47940476795980147,
+        "max_error": 0.9085404516250501
+      }
+    },
+    {
+      "submesh": "back",
+      "code": 46,
+      "single_weight_vertices": 18,
+      "fit": {
+        "count": 18,
+        "rmse": 0.48781925208778365,
+        "avg_error": 0.4329478106867286,
+        "max_error": 0.949211099375851
+      }
+    },
+    {
+      "submesh": "Body_02",
+      "code": 3,
+      "single_weight_vertices": 15,
+      "fit": {
+        "count": 15,
+        "rmse": 0.3203034109181091,
+        "avg_error": 0.2112969950986532,
+        "max_error": 1.0221213446889585
+      }
+    },
+    {
+      "submesh": "Body",
+      "code": 55,
+      "single_weight_vertices": 11,
+      "fit": {
+        "count": 11,
+        "rmse": 0.9870575001592109,
+        "avg_error": 0.8379623939166496,
+        "max_error": 2.0663969554789055
+      }
+    }
+  ]
+}

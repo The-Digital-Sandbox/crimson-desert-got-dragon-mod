@@ -1,0 +1,56 @@
+Segmented runtime-local PAC build
+================================
+
+input_pac   : C:\Users\user\crimson-desert-got-dragon-mod\output\dragon.pac
+manifest    : C:\Users\user\crimson-desert-got-dragon-mod\output\reverse_drogon_runtime_targets_segmented\manifest.json
+output_pac  : C:\Users\user\crimson-desert-got-dragon-mod\output\dragon_drogon_segmented.pac
+
+Per-submesh
+-----------
+Eyeright
+  verts      : 225
+  action     : preserved original eye/aux geometry
+Eyeleft
+  verts      : 225
+  action     : preserved original eye/aux geometry
+Body_02
+  verts      : 2013
+  old_min    : (-0.484749, 0.724754, -2.495590)
+  old_dim    : (0.969860, 0.554006, 2.495590)
+  new_min    : (-0.495093, 0.704052, -2.471695)
+  new_dim    : (0.991672, 0.611169, 2.066229)
+back
+  verts      : 3307
+  old_min    : (-0.663831, 1.619489, -1.839269)
+  old_dim    : (1.357660, 1.049600, 2.328025)
+  new_min    : (-0.675066, 1.566043, -1.843168)
+  new_dim    : (1.377131, 1.121994, 2.257736)
+Body
+  verts      : 2736
+  old_min    : (-0.629320, 0.781317, -3.045020)
+  old_dim    : (1.261689, 1.809283, 9.425320)
+  new_min    : (-0.711255, 0.426741, -2.785412)
+  new_dim    : (1.389989, 2.198202, 8.910040)
+Leg
+  verts      : 4624
+  old_min    : (-1.029230, -0.014959, -0.527898)
+  old_dim    : (2.056620, 3.115739, 2.367948)
+  new_min    : (-1.051113, -0.134507, -0.524744)
+  new_dim    : (2.047251, 3.217991, 2.416822)
+Wing
+  verts      : 6724
+  old_min    : (-7.975240, 1.153540, -2.755300)
+  old_dim    : (15.950480, 0.857070, 6.370040)
+  new_min    : (-7.378679, 0.656232, -2.587177)
+  new_dim    : (15.115769, 1.863785, 6.006753)
+Head
+  verts      : 10258
+  old_min    : (-0.732202, 0.851954, -3.642210)
+  old_dim    : (1.521169, 1.997236, 3.642210)
+  new_min    : (-0.668360, 0.958294, -3.484948)
+  new_dim    : (1.436442, 1.899662, 2.085509)
+
+Output
+------
+size       : 5,208,284
+size_match : yes

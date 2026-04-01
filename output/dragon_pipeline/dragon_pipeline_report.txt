@@ -1,0 +1,71 @@
+Crimson Desert Dragon Pipeline Trace
+===================================
+
+Primary Dragon Batch
+--------------------
+Compute: CL 17363, RS 357, PSO 17380, Dispatch (17, 1, 1)
+Compute root tables: param 3=heap393:472080, param 4=heap393:472137, param 5=heap393:472214, param 6=heap393:472289, param 7=heap392:236, param 10=heap393:0
+Compute barriers touch: 230, 232, 7968, 7879
+Graphics: RS 17386, PSO 17416, ExecuteIndirect sig 17480 via 7968_7 (155 max draws)
+Graphics root tables: param 6=heap393:472580, param 7=heap393:472603, param 8=heap393:472608, param 14=heap393:472625, param 15=heap392:0, param 16=heap393:0, param 18=heap393:208000
+Graphics barriers touch: 7968, 232, 7879, 1371
+
+Resolved Descriptor Slots
+------------------------
+Graphics t12,space37 -> desc 472620 -> SRV_BUFFER, res=242, fmt=UNKNOWN, count=65535, stride=156, first=0
+Graphics t16,space37 -> desc 472624 -> SRV_BUFFER, res=7879, fmt=UNKNOWN, count=34210, stride=28, first=0
+Compute t37,space37 -> desc 472251 -> SRV_BUFFER, res=118, fmt=UNKNOWN, count=65536, stride=4, first=0
+Compute t59,space37 -> desc 472273 -> SRV_BUFFER, res=230, fmt=R32_TYPELESS, count=16384, stride=0, first=0
+Compute u10,space39 -> desc 472299 -> UAV_BUFFER, res=232, fmt=R32_TYPELESS, count=16384, stride=0, first=0
+Compute u14,space39 -> desc 472303 -> UAV_BUFFER, res=7968, fmt=R32_TYPELESS, count=342100, stride=0, first=0
+Compute u39,space39 -> desc 472328 -> UAV_BUFFER, res=7879, fmt=UNKNOWN, count=34210, stride=28, first=0
+Bindless space103 base offset inside root param 16: 368000
+
+Interesting Buffer Resources
+---------------------------
+Resource 118: size=262144 flags=D3D12_RESOURCE_FLAG_NONE reader_chunk=1745 source=CreateAndInitResources_000.cpp
+Resource 230: size=65536 flags=D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS reader_chunk=241 source=CreateAndInitResources_000.cpp
+Resource 232: size=65536 flags=D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS reader_chunk=208 source=CreateAndInitResources_000.cpp
+Resource 242: size=10223616 flags=D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS reader_chunk=25840 source=CreateAndInitResources_000.cpp
+Resource 7879: size=983040 flags=D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS reader_chunk=8676 source=CreateAndInitResources_005.cpp
+Resource 7968: size=1376256 flags=D3D12_RESOURCE_FLAG_ALLOW_UNORDERED_ACCESS reader_chunk=15927 source=CreateAndInitResources_005.cpp
+
+Six-Submesh Dragon Sequence Matches
+-----------------------------------
+7968_33 (CreateAndInitResources_013.cpp), command index 0
+  const=145 idxCount= 7992 startIndex= 2496 baseVertex=  450 ibv=(2073,7390720)
+  const=146 idxCount=17007 startIndex=10488 baseVertex= 2463 ibv=(2073,7390720)
+  const=147 idxCount=13380 startIndex=27495 baseVertex= 5770 ibv=(2073,7390720)
+  const=148 idxCount=22464 startIndex=40875 baseVertex= 8506 ibv=(2073,7390720)
+  const=149 idxCount=34902 startIndex=63339 baseVertex=13130 ibv=(2073,7390720)
+  const=150 idxCount=51180 startIndex=98241 baseVertex=19854 ibv=(2073,7390720)
+    used by CommandLists_000.cpp:28327 CL17522 sig=17950 max=6 nextPSO=17790
+7968_58 (CreateAndInitResources_013.cpp), command index 0
+  const=296 idxCount= 7992 startIndex= 2496 baseVertex=  450 ibv=(2073,7390720)
+  const=297 idxCount=17007 startIndex=10488 baseVertex= 2463 ibv=(2073,7390720)
+  const=298 idxCount=13380 startIndex=27495 baseVertex= 5770 ibv=(2073,7390720)
+  const=299 idxCount=22464 startIndex=40875 baseVertex= 8506 ibv=(2073,7390720)
+  const=300 idxCount=34902 startIndex=63339 baseVertex=13130 ibv=(2073,7390720)
+  const=301 idxCount=51180 startIndex=98241 baseVertex=19854 ibv=(2073,7390720)
+    used by CommandLists_000.cpp:29662 CL17522 sig=17923 max=6 nextPSO=17791
+7968_68 (CreateAndInitResources_013.cpp), command index 2
+  const=  2 idxCount= 7992 startIndex= 2496 baseVertex=  450 ibv=(2073,7390720)
+  const=  3 idxCount=17007 startIndex=10488 baseVertex= 2463 ibv=(2073,7390720)
+  const=  4 idxCount=13380 startIndex=27495 baseVertex= 5770 ibv=(2073,7390720)
+  const=  5 idxCount=22464 startIndex=40875 baseVertex= 8506 ibv=(2073,7390720)
+  const=  6 idxCount=34902 startIndex=63339 baseVertex=13130 ibv=(2073,7390720)
+  const=  7 idxCount=51180 startIndex=98241 baseVertex=19854 ibv=(2073,7390720)
+    used by CommandLists_000.cpp:32866 CL17522 sig=17910 max=159 nextPSO=17553
+7968_7 (CreateAndInitResources_011.cpp), command index 39
+  const= 39 idxCount= 7992 startIndex= 2496 baseVertex=  450 ibv=(2073,7390720)
+  const= 40 idxCount=17007 startIndex=10488 baseVertex= 2463 ibv=(2073,7390720)
+  const= 41 idxCount=13380 startIndex=27495 baseVertex= 5770 ibv=(2073,7390720)
+  const= 42 idxCount=22464 startIndex=40875 baseVertex= 8506 ibv=(2073,7390720)
+  const= 43 idxCount=34902 startIndex=63339 baseVertex=13130 ibv=(2073,7390720)
+  const= 44 idxCount=51180 startIndex=98241 baseVertex=19854 ibv=(2073,7390720)
+    used by CommandLists_000.cpp:14951 CL17363 sig=17480 max=155 nextPSO=17403
+
+Strongest Current Implication
+----------------------------
+The primary dragon path is a compute-prepared batch: resource 7879 is rebuilt as a UAV before the graphics draw and then read back as the VS stride-28 instance buffer.
+Resource 7968 is also rewritten in that same compute pass and later consumed as an indirect/UAV raw buffer, which keeps it as the strongest candidate for the runtime-expanded vertex/command staging contract.

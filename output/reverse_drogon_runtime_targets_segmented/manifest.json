@@ -1,0 +1,502 @@
+{
+  "raw_drogon_obj": "C:\\Users\\user\\crimson-desert-got-dragon-mod\\gpu-analysis\\DROGON.obj",
+  "rigged_glb": "C:\\Users\\user\\crimson-desert-got-dragon-mod\\output\\DrogonRigged-correctweights.glb",
+  "affine_manifest": "C:\\Users\\user\\crimson-desert-got-dragon-mod\\output\\shadow_6804_effective_affine\\manifest.json",
+  "segment_axis": 2,
+  "segment_bins": 16,
+  "combined_world_obj": "output/reverse_drogon_runtime_targets_segmented/drogon_target_world.obj",
+  "combined_local_obj": "output/reverse_drogon_runtime_targets_segmented/drogon_target_runtime_local.obj",
+  "overall_nearest_error": {
+    "rmse": 0.49123800625682557,
+    "avg": 0.35453166026545485,
+    "max": 2.605728061419343
+  },
+  "overall_reforward_error": {
+    "rmse": 1.2791991592685087e-15,
+    "avg": 7.35066693555586e-16,
+    "max": 7.993605777301127e-15
+  },
+  "submeshes": [
+    {
+      "name": "Body_02",
+      "gpu_id": "GpuId7153",
+      "vertex_count": 2013,
+      "triangle_count": 2664,
+      "chosen_candidate": "glb_primitive_seg_z16",
+      "chosen_candidate_points": 1757,
+      "nearest_distance": {
+        "rmse": 0.1905055648469701,
+        "avg": 0.16837272997564792,
+        "max": 0.4639457574247928
+      },
+      "reforward_error": {
+        "rmse": 7.21945061349221e-16,
+        "avg": 2.951297856990406e-16,
+        "max": 2.5121479338940403e-15
+      },
+      "bbox_overflow_count": 52,
+      "bbox_overflow_fraction": 0.025832091405861898,
+      "original_local_min": [
+        -0.4847489893436432,
+        0.7247540354728699,
+        -2.4955899715423584
+      ],
+      "original_local_max": [
+        0.48511096835136414,
+        1.2787599563598633,
+        0.0
+      ],
+      "target_local_min": [
+        -0.49409273021910843,
+        0.7050524978075902,
+        -2.4706948939269626
+      ],
+      "target_local_max": [
+        0.4955790781538349,
+        1.3142218466951192,
+        -0.40646621081319767
+      ],
+      "candidates": [
+        {
+          "name": "glb_primitive_bbox",
+          "point_count": 1757,
+          "error": {
+            "rmse": 0.4046543685462826,
+            "avg": 0.34197791964922253,
+            "max": 0.8614591133680116
+          }
+        },
+        {
+          "name": "glb_primitive_seg_z16",
+          "point_count": 1757,
+          "error": {
+            "rmse": 0.191877455512485,
+            "avg": 0.1673655817877836,
+            "max": 0.5004909275180132
+          }
+        }
+      ],
+      "output_world_obj": "output/reverse_drogon_runtime_targets_segmented/body_02_target_world.obj",
+      "output_local_obj": "output/reverse_drogon_runtime_targets_segmented/body_02_target_runtime_local.obj"
+    },
+    {
+      "name": "back",
+      "gpu_id": "GpuId7154",
+      "vertex_count": 3307,
+      "triangle_count": 5669,
+      "chosen_candidate": "glb_primitive_seg_z16",
+      "chosen_candidate_points": 3307,
+      "nearest_distance": {
+        "rmse": 0.2626031094130447,
+        "avg": 0.22956920942831116,
+        "max": 0.6593243583389942
+      },
+      "reforward_error": {
+        "rmse": 1.3871142335944881e-15,
+        "avg": 1.0696113355990622e-15,
+        "max": 4.440892098500626e-15
+      },
+      "bbox_overflow_count": 22,
+      "bbox_overflow_fraction": 0.006652555185969156,
+      "original_local_min": [
+        -0.663831353187561,
+        1.6194891929626465,
+        -1.8392688035964966
+      ],
+      "original_local_max": [
+        0.6938284635543823,
+        2.6690893173217773,
+        0.48875653743743896
+      ],
+      "target_local_min": [
+        -0.6740657186148089,
+        1.5670430259510084,
+        -1.8421682534846797
+      ],
+      "target_local_max": [
+        0.7010648922062079,
+        2.687036687038848,
+        0.4135674581959367
+      ],
+      "candidates": [
+        {
+          "name": "glb_primitive_bbox",
+          "point_count": 3307,
+          "error": {
+            "rmse": 0.6286188879075317,
+            "avg": 0.5069092549353612,
+            "max": 1.7011555008978785
+          }
+        },
+        {
+          "name": "glb_primitive_seg_z16",
+          "point_count": 3307,
+          "error": {
+            "rmse": 0.26168078035858167,
+            "avg": 0.22837888916870847,
+            "max": 0.6606645582502536
+          }
+        }
+      ],
+      "output_world_obj": "output/reverse_drogon_runtime_targets_segmented/back_target_world.obj",
+      "output_local_obj": "output/reverse_drogon_runtime_targets_segmented/back_target_runtime_local.obj"
+    },
+    {
+      "name": "Body",
+      "gpu_id": "GpuId7155",
+      "vertex_count": 2736,
+      "triangle_count": 4460,
+      "chosen_candidate": "glb_body_union_seg_z16",
+      "chosen_candidate_points": 18324,
+      "nearest_distance": {
+        "rmse": 0.5258882385238763,
+        "avg": 0.4142044980720943,
+        "max": 1.7298581511738558
+      },
+      "reforward_error": {
+        "rmse": 1.5318198172286048e-15,
+        "avg": 8.851193401918377e-16,
+        "max": 7.229248575812844e-15
+      },
+      "bbox_overflow_count": 97,
+      "bbox_overflow_fraction": 0.03545321637426901,
+      "original_local_min": [
+        -0.629319965839386,
+        0.7813169956207275,
+        -3.04502010345459
+      ],
+      "original_local_max": [
+        0.6323689818382263,
+        2.59060001373291,
+        6.3802995681762695
+      ],
+      "target_local_min": [
+        -0.7102545378321214,
+        0.42774138858330435,
+        -2.7844119229533564
+      ],
+      "target_local_max": [
+        0.677734090416178,
+        2.6239431785693683,
+        6.123628540723281
+      ],
+      "candidates": [
+        {
+          "name": "glb_primitive_bbox",
+          "point_count": 1902,
+          "error": {
+            "rmse": 2.756277837080956,
+            "avg": 2.4752507505373518,
+            "max": 5.3609085553270885
+          }
+        },
+        {
+          "name": "glb_primitive_seg_z16",
+          "point_count": 1902,
+          "error": {
+            "rmse": 0.5468989620719265,
+            "avg": 0.48835283779822275,
+            "max": 1.2180961880411572
+          }
+        },
+        {
+          "name": "raw_global",
+          "point_count": 149229,
+          "error": {
+            "rmse": 2.562126345056976,
+            "avg": 2.272735077103025,
+            "max": 4.884629639388218
+          }
+        },
+        {
+          "name": "raw_global_seg_z16",
+          "point_count": 149229,
+          "error": {
+            "rmse": 0.5676341465432669,
+            "avg": 0.441100876677444,
+            "max": 1.795653988071515
+          }
+        },
+        {
+          "name": "glb_body_union_bbox",
+          "point_count": 18324,
+          "error": {
+            "rmse": 2.621274414342926,
+            "avg": 2.33276821039652,
+            "max": 5.117520738948651
+          }
+        },
+        {
+          "name": "glb_body_union_seg_z16",
+          "point_count": 18324,
+          "error": {
+            "rmse": 0.534177263284032,
+            "avg": 0.4213958395609147,
+            "max": 1.6976112660931877
+          }
+        }
+      ],
+      "output_world_obj": "output/reverse_drogon_runtime_targets_segmented/body_target_world.obj",
+      "output_local_obj": "output/reverse_drogon_runtime_targets_segmented/body_target_runtime_local.obj"
+    },
+    {
+      "name": "Leg",
+      "gpu_id": "GpuId7156",
+      "vertex_count": 4624,
+      "triangle_count": 7488,
+      "chosen_candidate": "glb_primitive_seg_z16",
+      "chosen_candidate_points": 4625,
+      "nearest_distance": {
+        "rmse": 0.3771199638559475,
+        "avg": 0.3273408077907184,
+        "max": 1.0990370445721824
+      },
+      "reforward_error": {
+        "rmse": 9.863122589446887e-16,
+        "avg": 5.717972982418316e-16,
+        "max": 3.972054645195637e-15
+      },
+      "bbox_overflow_count": 345,
+      "bbox_overflow_fraction": 0.07461072664359862,
+      "original_local_min": [
+        -1.029229998588562,
+        -0.014959299005568027,
+        -0.5278979539871216
+      ],
+      "original_local_max": [
+        1.0273901224136353,
+        3.100780046544969,
+        1.8400501012802124
+      ],
+      "target_local_min": [
+        -1.0501125392923842,
+        -0.13350653413988461,
+        -0.5237438005163774
+      ],
+      "target_local_max": [
+        0.9951382108320619,
+        3.082484783838024,
+        1.8910780663677766
+      ],
+      "candidates": [
+        {
+          "name": "glb_primitive_bbox",
+          "point_count": 4625,
+          "error": {
+            "rmse": 3.278354057034727,
+            "avg": 3.031350699187487,
+            "max": 5.559038645619249
+          }
+        },
+        {
+          "name": "glb_primitive_seg_z16",
+          "point_count": 4625,
+          "error": {
+            "rmse": 0.37671116286957007,
+            "avg": 0.32679565044277437,
+            "max": 1.0981045154996836
+          }
+        },
+        {
+          "name": "raw_global",
+          "point_count": 149229,
+          "error": {
+            "rmse": 1.391218250396787,
+            "avg": 1.1587160366883784,
+            "max": 3.1473347638494316
+          }
+        },
+        {
+          "name": "raw_global_seg_z16",
+          "point_count": 149229,
+          "error": {
+            "rmse": 0.6311689618498953,
+            "avg": 0.46903057667806797,
+            "max": 1.7697280816562364
+          }
+        },
+        {
+          "name": "glb_leg_union_bbox",
+          "point_count": 6527,
+          "error": {
+            "rmse": 1.3316762114657552,
+            "avg": 1.1714099092417245,
+            "max": 3.093048689968094
+          }
+        },
+        {
+          "name": "glb_leg_union_seg_z16",
+          "point_count": 6527,
+          "error": {
+            "rmse": 0.5686656997860543,
+            "avg": 0.49394642475079265,
+            "max": 1.545385758344354
+          }
+        }
+      ],
+      "output_world_obj": "output/reverse_drogon_runtime_targets_segmented/leg_target_world.obj",
+      "output_local_obj": "output/reverse_drogon_runtime_targets_segmented/leg_target_runtime_local.obj"
+    },
+    {
+      "name": "Wing",
+      "gpu_id": "GpuId7157",
+      "vertex_count": 6724,
+      "triangle_count": 11634,
+      "chosen_candidate": "glb_primitive_seg_z16",
+      "chosen_candidate_points": 6733,
+      "nearest_distance": {
+        "rmse": 0.8454267003686321,
+        "avg": 0.6860674722423655,
+        "max": 2.605728061419343
+      },
+      "reforward_error": {
+        "rmse": 1.5920749155673225e-15,
+        "avg": 8.623367423546735e-16,
+        "max": 7.993605777301127e-15
+      },
+      "bbox_overflow_count": 690,
+      "bbox_overflow_fraction": 0.10261748958953004,
+      "original_local_min": [
+        -7.9752397537231445,
+        1.1535398960113525,
+        -2.7553000450134277
+      ],
+      "original_local_max": [
+        7.9752397537231445,
+        2.0106101036071777,
+        3.6147398948669434
+      ],
+      "target_local_min": [
+        -7.377679010692934,
+        0.6572315133719973,
+        -2.586176765746501
+      ],
+      "target_local_max": [
+        7.736089627895555,
+        2.519016013917469,
+        3.4185765562774533
+      ],
+      "candidates": [
+        {
+          "name": "glb_primitive_bbox",
+          "point_count": 6733,
+          "error": {
+            "rmse": 4.062482111510723,
+            "avg": 3.35570598978319,
+            "max": 11.965420271370611
+          }
+        },
+        {
+          "name": "glb_primitive_seg_z16",
+          "point_count": 6733,
+          "error": {
+            "rmse": 0.8500177033654789,
+            "avg": 0.6919686719639124,
+            "max": 2.5990360217375175
+          }
+        },
+        {
+          "name": "raw_global",
+          "point_count": 149229,
+          "error": {
+            "rmse": 4.260671181841148,
+            "avg": 3.5317527909349082,
+            "max": 11.260428836304408
+          }
+        },
+        {
+          "name": "raw_global_seg_z16",
+          "point_count": 149229,
+          "error": {
+            "rmse": 0.9039031575441346,
+            "avg": 0.7023366584595544,
+            "max": 2.6552471115712266
+          }
+        },
+        {
+          "name": "glb_wing_union_bbox",
+          "point_count": 11797,
+          "error": {
+            "rmse": 3.989843388249227,
+            "avg": 3.293123918575526,
+            "max": 11.453847634392845
+          }
+        },
+        {
+          "name": "glb_wing_union_seg_z16",
+          "point_count": 11797,
+          "error": {
+            "rmse": 0.8527438883338845,
+            "avg": 0.6970240541030226,
+            "max": 2.7684209590330844
+          }
+        }
+      ],
+      "output_world_obj": "output/reverse_drogon_runtime_targets_segmented/wing_target_world.obj",
+      "output_local_obj": "output/reverse_drogon_runtime_targets_segmented/wing_target_runtime_local.obj"
+    },
+    {
+      "name": "Head",
+      "gpu_id": "GpuId7158",
+      "vertex_count": 10258,
+      "triangle_count": 17060,
+      "chosen_candidate": "glb_primitive_seg_z16",
+      "chosen_candidate_points": 10258,
+      "nearest_distance": {
+        "rmse": 0.24910241314913747,
+        "avg": 0.2103717430752894,
+        "max": 0.7591817953576049
+      },
+      "reforward_error": {
+        "rmse": 1.1328124212823428e-15,
+        "avg": 6.636983662877368e-16,
+        "max": 4.070144838902081e-15
+      },
+      "bbox_overflow_count": 4,
+      "bbox_overflow_fraction": 0.0003899395593682979,
+      "original_local_min": [
+        -0.7322019934654236,
+        0.85195392370224,
+        -3.642210006713867
+      ],
+      "original_local_max": [
+        0.788966953754425,
+        2.8491899371147156,
+        0.0
+      ],
+      "target_local_min": [
+        -0.667360235975626,
+        0.9592939898002395,
+        -3.4839477021431233
+      ],
+      "target_local_max": [
+        0.7670821158177298,
+        2.856956289514889,
+        -1.400438780365341
+      ],
+      "candidates": [
+        {
+          "name": "glb_primitive_bbox",
+          "point_count": 10258,
+          "error": {
+            "rmse": 0.5388566455789778,
+            "avg": 0.45762096760531856,
+            "max": 1.325653769309181
+          }
+        },
+        {
+          "name": "glb_primitive_seg_z16",
+          "point_count": 10258,
+          "error": {
+            "rmse": 0.25063806835967367,
+            "avg": 0.21230062014828463,
+            "max": 0.7393841796753262
+          }
+        }
+      ],
+      "output_world_obj": "output/reverse_drogon_runtime_targets_segmented/head_target_world.obj",
+      "output_local_obj": "output/reverse_drogon_runtime_targets_segmented/head_target_runtime_local.obj"
+    }
+  ],
+  "worst_vertices_csv": "output/reverse_drogon_runtime_targets_segmented/worst_vertices.csv"
+}

@@ -32,6 +32,7 @@ ARMATURE_NAME = "CD_Dragon"
 
 SCALE = 4.0
 DEPLOY = False               # Set True to also patch the game files
+TRANSFER_BONE_DATA = False   # First proof: keep original CD weights/bone indices
 # =======================================================
 
 # PAC constants
@@ -253,6 +254,7 @@ def main():
     print("  DROGON -> PAC EXPORT")
     print("  Surface projection: 30,112 CD verts -> Drogon surface")
     print("=" * 60)
+    print(f"  Bone data: {'TRANSFER FROM DROGON' if TRANSFER_BONE_DATA else 'PRESERVE ORIGINAL CD'}")
 
     # --- Validate scene ---
     drogon_obj = bpy.data.objects.get(DROGON_NAME)
@@ -329,10 +331,16 @@ def main():
                 new_gx, new_gy, new_gz = blender_to_game(hit_pos.x, hit_pos.y, hit_pos.z)
                 new_game_positions.append((new_gx, new_gy, new_gz))
 
-                # Transfer bone weights from Drogon
-                weights = interpolate_weights_from_face(drogon_obj, hit_face, hit_pos)
-                bi, bw = weights_to_pac_format(weights, name_to_palette_idx)
-                new_bone_data.append((bi, bw))
+                if TRANSFER_BONE_DATA:
+                    # Transfer bone weights from Drogon
+                    weights = interpolate_weights_from_face(drogon_obj, hit_face, hit_pos)
+                    bi, bw = weights_to_pac_format(weights, name_to_palette_idx)
+                    new_bone_data.append((bi, bw))
+                else:
+                    # Keep original CD skinning contract for the first render-proof pass.
+                    orig_bi = struct.unpack_from('4B', pac, off + 12)
+                    orig_bw = struct.unpack_from('4B', pac, off + 20)
+                    new_bone_data.append((orig_bi, orig_bw))
 
                 total_projected += 1
             else:

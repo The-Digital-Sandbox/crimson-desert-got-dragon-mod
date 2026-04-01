@@ -1,0 +1,1065 @@
+CRIMSON DESERT DRAGON REVERSE-ENGINEERING HANDOFF
+Date: 2026-03-31
+
+READ THIS FIRST
+
+The correct path is now GPU/runtime reconstruction.
+Do NOT go back to Blender fitting, GLB injection, DDS swapping, or PAC-topology replacement.
+Those routes were wrong-layer debugging and produced misleading failures.
+
+LATEST SAMPLE/FINAL-STAGE UPDATE
+
+New scripts:
+- tools/trace_6804_autos_sample.py
+- tools/fit_6804_effective_world_affine.py
+
+New outputs:
+- output/shadow_6804_autos_sample/report.txt
+- output/shadow_6804_autos_sample/manifest.json
+- output/shadow_6804_effective_affine/report.txt
+- output/shadow_6804_effective_affine/manifest.json
+- output/shadow_6804_effective_affine/worst_vertices.csv
+
+What they prove:
+
+1. The known Autos.txt sample vertex on the shadow Wing path is now reproduced
+   stage-by-stage.
+2. The late `resource_2070` matrix stage is effectively exact:
+   - late matrix row deltas are tiny
+   - late position delta is around `1e-6 .. 1e-5`
+3. The first meaningful miss appears after that, in the downstream constants:
+   - raw `space15[handle41][78][112..124]` differs from Autos on `%195..%197` by
+     about `(0.011291496, 0.065002438, -0.003204302)`
+   - raw `cb14[87..90]` also differs slightly from Autos, but much less
+4. Therefore the current residual is best understood as a late shared
+   state/provenance mismatch in the `space15/cb14` stage, not another hidden
+   per-vertex branch.
+5. A single shared translation after the exact traced path still removes most of
+   the miss:
+   - `(-0.010472427, -0.144051624, 0.008831672)`
+6. A best-fit shared affine from `late_pos -> PIX TEXCOORD1` gets the overall
+   RMSE down to about `0.0821`, which is useful as an effective downstream model
+   even before the exact live constant provenance is fully pinned down.
+
+Interpretation:
+
+- the dragon path itself is no longer the blocker
+- the late matrix is no longer the blocker
+- the remaining miss sits in the final shared constant stage
+- the next decision is whether to keep hunting the exact live `space15/cb14`
+  provenance or accept the effective affine as the operational downstream model
+  for the next phase
+
+LATEST REVERSE-TARGET UPDATE
+
+New script:
+- tools/generate_drogon_runtime_targets.py
+
+New outputs:
+- output/reverse_drogon_runtime_targets/report.txt
+- output/reverse_drogon_runtime_targets/manifest.json
+- output/reverse_drogon_runtime_targets/drogon_target_world.obj
+- output/reverse_drogon_runtime_targets/drogon_target_runtime_local.obj
+- output/reverse_drogon_runtime_targets/worst_vertices.csv
+
+What it does:
+
+1. Loads the proven 6804 shadow-family dragon topology/runtime vertices.
+2. Coarse-aligns `gpu-analysis/DROGON.obj` into PIX dragon world bounds with
+   axis swizzle:
+   - Drogon X -> world X
+   - Drogon Z -> -world Y
+   - Drogon Y -> world Z
+3. Uses nearest Drogon vertex in world space as the provisional target.
+4. Inverts the fitted downstream affine.
+5. Inverts the exact per-vertex late matrix to recover desired runtime-local
+   coordinates.
+
+What is proven:
+
+- the reverse-side math itself works
+- re-forwarding the recovered runtime-local targets through the same affine/path
+  lands exactly back on the provisional world target
+- so the late-matrix inversion stage is not the new blocker
+
+Current quality:
+
+- overall nearest-distance RMSE: `2.988177629`
+- overall nearest-distance avg : `2.563371772`
+- reforward RMSE              : effectively `0`
+
+Per-submesh nearest RMSE:
+
+- Body_02: `2.756090691`
+- back   : `3.163444790`
+- Body   : `2.560444024`
+- Leg    : `1.388749511`
+- Wing   : `4.272619518`
+- Head   : `2.553188148`
+
+Interpretation:
+
+- the reverse contract work is now in place
+- the remaining weakness is correspondence/alignment to Drogon, not inversion
+- this first pass is vertex-cloud nearest-neighbor only
+- it is good enough to generate runtime-local target sets
+- it is NOT yet good enough for confident PAC writeback
+
+Most important metric:
+
+- many target local positions fall outside the original per-submesh local bounds
+  (for example `Head` and `back` are 100% overflow)
+- that does not invalidate the reverse path, but it means any later writeback
+  must either:
+  - update submesh bbox/storage ranges, or
+  - improve correspondence so the target stays closer to the original contract
+
+Next best move:
+
+- improve Drogon correspondence before PAC encoding
+- likely by region-locked fitting:
+  - head -> head
+  - wing -> wing
+  - leg -> leg
+  - torso -> torso
+- not by changing the proven 6804 reverse math
+
+LATEST 6804 UPDATE
+
+The new late-position tracer is:
+- tools/trace_6804_late_position_probe.py
+
+Its outputs are:
+- output/shadow_6804_late_position/report.txt
+- output/shadow_6804_late_position/manifest.json
+- output/shadow_6804_late_position/worst_vertices.csv
+
+What it proves:
+
+1. The real late shadow position stage is built from resource 2070, not the
+   earlier resource 135 stage.
+2. For the proven 6804 shadow-family dragon path, every tested shadow vertex
+   has the packed 6-bit factor pegged at `63`.
+3. Therefore these branches are dead across the full shadow dragon in this
+   capture:
+   - `%325`
+   - `%404`
+   - `%1526`
+   - `%1585`
+   - `%2411`
+4. The exact late TEXCOORD1 path currently traced is:
+   - runtime local position
+   - resource 2070 late matrix
+   - `space15[64..112]`
+   - `cb14[87..90]`
+5. Exact late-path RMSE vs PIX TEXCOORD1 is now:
+   - Body_02: `0.257503401`
+   - back: `0.128955157`
+   - Body: `0.167162898`
+   - Leg: `0.130319199`
+   - Wing: `0.167838350`
+   - Head: `0.173642674`
+6. A single shared translation delta still removes most of that remaining
+   error:
+   - delta = `(-0.010472420, -0.144051618, 0.008831669)`
+   - corrected RMSE:
+     - Body_02: `0.140206840`
+     - back: `0.016071252`
+     - Body: `0.065889951`
+     - Leg: `0.014626568`
+     - Wing: `0.129301550`
+     - Head: `0.073472465`
+
+This is important because the old wing-only blocker is gone. The remaining miss
+is now a smaller shared downstream mismatch, not a special wing branch.
+
+WHAT IS ALREADY PROVEN
+
+1. Mod/archive patching works.
+2. The game is loading modified assets.
+3. PAC storage is NOT the final rendered mesh contract.
+4. The useful dragon geometry lives in PIX-expanded runtime buffers.
+5. PIX resources.bin was found and is now being used directly.
+
+IMPORTANT FILES
+
+Repo root:
+- CLAUDE_CODE_HANDOFF.txt
+
+Main notes:
+- docs/gpu_reconstruction_pivot.md
+
+Key scripts:
+- tools/extract_pix_resources.py
+- tools/trace_dragon_pipeline.py
+- tools/dump_runtime_shadow_mesh.py
+- tools/dump_runtime_shadow_triangles.py
+- tools/compare_pac_shadow_runtime.py
+- tools/trace_head_pac_shadow_delta.py
+- tools/infer_shadow_code_skinning.py
+- tools/dump_runtime_primary_fragments.py
+- tools/trace_head_draw.py
+
+Key outputs:
+- output/pix_resources/manifest.json
+- output/pix_resources/resource_242.bin
+- output/pix_resources/resource_7879.bin
+- output/pix_resources/resource_7968.bin
+- output/pix_resources/resource_2074.bin
+- output/pix_resources/resource_16288.bin
+- output/pix_resources/resource_15390.bin
+- output/pix_resources/resource_15486.bin
+- output/dragon_pipeline/dragon_pipeline_report.txt
+- output/runtime_shadow/manifest.json
+- output/runtime_shadow/body_02_points.obj
+- output/runtime_shadow/back_points.obj
+- output/runtime_shadow/body_points.obj
+- output/runtime_shadow/leg_points.obj
+- output/runtime_shadow/wing_points.obj
+- output/runtime_shadow/head_points.obj
+- output/runtime_shadow_triangles/manifest.json
+- output/runtime_shadow_triangles/body_02_triangles.obj
+- output/runtime_shadow_triangles/back_triangles.obj
+- output/runtime_shadow_triangles/body_triangles.obj
+- output/runtime_shadow_triangles/leg_triangles.obj
+- output/runtime_shadow_triangles/wing_triangles.obj
+- output/runtime_shadow_triangles/head_triangles.obj
+- output/pac_shadow_compare/report.txt
+- output/pac_shadow_compare/manifest.json
+- output/pac_shadow_compare/body_02_pairs.csv
+- output/pac_shadow_compare/back_pairs.csv
+- output/pac_shadow_compare/body_pairs.csv
+- output/pac_shadow_compare/leg_pairs.csv
+- output/pac_shadow_compare/wing_pairs.csv
+- output/pac_shadow_compare/head_pairs.csv
+- output/head_pac_shadow_delta/report.txt
+- output/head_pac_shadow_delta/manifest.json
+- output/head_pac_shadow_delta/head_pairs.csv
+- output/shadow_code_skinning/report.txt
+- output/shadow_code_skinning/manifest.json
+- output/runtime_primary_fragments/manifest.json
+- output/runtime_primary_fragments/primary_39.obj
+- output/runtime_primary_fragments/primary_40.obj
+- output/runtime_primary_fragments/primary_41.obj
+- output/runtime_primary_fragments/primary_42.obj
+- output/runtime_primary_fragments/primary_43.obj
+- output/runtime_primary_fragments/primary_44.obj
+
+PIX SOURCE
+
+resources.bin path:
+- C:\\Users\\user\\Desktop\\Outputs\\resources.bin
+
+DO NOT ASSUME resources.bin is in the repo.
+
+CURRENT MODEL OF THE PIPELINE
+
+Primary dragon batch:
+- Command list 17363
+- Compute PSO 17380
+- Graphics PSO 17416
+- ExecuteIndirect signature 17480
+- Argument buffer family: 7968_7
+
+Graphics bindings:
+- t12, space37 -> resource 242, stride 156
+- t16, space37 -> resource 7879, stride 28
+- t0, space103 -> bindless runtime vertex buffer(s), stride 40
+
+Compute writes:
+- resource 7968
+- resource 7879
+
+IMPORTANT: resource 7879 is real live draw/instance data after compute, not a guess.
+
+CONFIRMED 7879 RECORD LAYOUT
+
+Each 7879 entry is 7 x uint32:
+- [0] = parameter index into resource 242 (stride-156 render parameter buffer)
+- [1] = bindless handle into space103 for the stride-40 runtime vertex buffer
+- [2] = base vertex added in the vertex shader
+- [3] = optional packed-offset buffer handle in space22
+- [4] = base offset into that optional packed-offset buffer
+- [5] = control value used by some passes
+- [6] = flags gating the optional packed-offset path
+
+SHADOW-FAMILY SIX-DRAW RECORDS
+
+These are the cleanest runtime dragon records currently known:
+
+7879[145] = (115, 6804, 450,   0, 0, 1, 0)
+7879[146] = (116, 6804, 2463,  0, 0, 1, 0)
+7879[147] = (117, 6804, 5770,  0, 0, 1, 0)
+7879[148] = (118, 6804, 8506,  0, 0, 1, 0)
+7879[149] = (119, 6804, 13130, 0, 0, 1, 0)
+7879[150] = (120, 6804, 19854, 0, 0, 1, 0)
+
+These map to:
+- Body_02
+- back
+- Body
+- Leg
+- Wing
+- Head
+
+There are duplicate copies at:
+- 296..301
+- 2..7
+
+The duplicate family at 2..7 uses the same geometry but field [5] = 201.
+
+CRITICAL BREAKTHROUGH
+
+Bindless handle 6804 is resolved.
+
+space103 handle:
+- 6804
+
+descriptor index:
+- 374804
+
+resolved descriptor:
+- GetResource(16288)
+- firstElement = 46222
+- numElements = 30112
+- stride = 40
+
+This is the first proven runtime dragon vertex buffer view with the full 30112 logical layout.
+
+Additional live SRV views into the same resource also exist:
+
+- descriptor 374057 -> handle 6057 -> resource 16288, firstElement 76334, count 11253, stride 40
+- descriptor 374565 -> handle 6565 -> resource 16288, firstElement 46012, count 209, stride 40
+- descriptor 376022 -> handle 8022 -> resource 16288, firstElement 27286, count 12333, stride 40
+- descriptor 376054 -> handle 8054 -> resource 16288, firstElement 3168, count 24117, stride 40
+
+Live 7879 usage observed so far:
+
+- handle 6804 is the proven full shadow-family dragon path
+- handle 8054 also appears with dragon-like params `113..120`, but different bases and `flags=2`
+- handle 6057 appears in a tiny separate family with params `299..373`
+- handles 6565 and 8022 were not yet seen in the current 7879 scan
+
+Interpretation:
+
+- resource 16288 is a shared runtime mesh cache with multiple views
+- 6804 is the authoritative full-dragon shadow view
+- 8054 is now a plausible secondary dragon-related representation worth tracing later
+
+Other resolved primary-family handles:
+- 4522 -> descriptor 372522 -> resource 15486 -> firstElement 21258 -> count 4202 -> stride 40
+- 6773 -> descriptor 374773 -> resource 15486 -> firstElement 0 -> count 4164 -> stride 40
+- 6774 -> descriptor 374774 -> resource 15390 -> firstElement 94214 -> count 437 -> stride 40
+- 7696 -> descriptor 375696 -> resource 15390 -> firstElement 14746 -> count 428 -> stride 40
+
+WHAT dump_runtime_shadow_mesh.py DOES
+
+It uses:
+- resource 7879
+- resource 242
+- resolved descriptor 374804
+- backing resource 16288
+
+Then it dequantizes the six shadow-family submeshes directly from the live runtime vertex buffer.
+
+This is NOT using PAC vertex storage.
+This is NOT using Blender.
+This is NOT using guessed topology replacement.
+
+WHAT THE CURRENT OUTPUTS MEAN
+
+The files in output/runtime_shadow/*.obj are point clouds only.
+They are still useful because they come from the real runtime vertex payload.
+
+Current proven bounds:
+- Body_02: sane torso-sized bounds
+- back: sane torso/back bounds
+- Body: sane core body bounds
+- Leg: sane leg region bounds
+- Wing: sane wing-sized bounds
+- Head: sane head-sized bounds
+
+This is much stronger than the old PAC-derived sliver outputs.
+
+WHAT dump_runtime_shadow_triangles.py DOES
+
+It extends the same runtime path one layer further:
+- reads live indirect records from resource 7968
+- reads matching live draw records from resource 7879
+- uses the resolved runtime vertex view in resource 16288
+- uses the live index-buffer backing resource 2074 on heap 2073
+
+The shadow-family indirect records now decode cleanly:
+- 7968[145] -> constant 145, indexCount 7992, startIndex 2496, baseVertex 450
+- 7968[146] -> constant 146, indexCount 17007, startIndex 10488, baseVertex 2463
+- 7968[147] -> constant 147, indexCount 13380, startIndex 27495, baseVertex 5770
+- 7968[148] -> constant 148, indexCount 22464, startIndex 40875, baseVertex 8506
+- 7968[149] -> constant 149, indexCount 34902, startIndex 63339, baseVertex 13130
+- 7968[150] -> constant 150, indexCount 51180, startIndex 98241, baseVertex 19854
+
+All six share one live index-buffer view:
+- GPUVA = 0x2e070c600
+- size = 298842 bytes
+- format = DXGI_FORMAT_R16_UINT
+
+Using the generated 7968_7 template, that GPUVA maps to heap 2073 offset 7390720,
+which is inside live resource 2074.
+
+The repo therefore now has real runtime triangle meshes for the shadow-family
+dragon. This milestone is complete.
+
+8054 ALTERNATE VIEW RESULT
+
+The repo now also has:
+
+- tools/dump_runtime_8054_family.py
+- output/runtime_8054_family/manifest.json
+- output/runtime_8054_family/*.obj
+
+This is not the bird/world-fauna path.
+
+What is proven:
+
+- handle `8054` resolves to the same backing resource `16288`
+- live `7879[320..327]` records are:
+  - `(113..120, 8054, 0/6/13/2026/2973/5709/10333/17057, 0, 0, 0, 2)`
+- live `7968[320..327]` indirect draws exist and are renderable
+- params `115..120` match the same dragon body/head bbox family as `6804`
+
+Decoded 8054 vertex counts:
+
+- Eyeright: `6`
+- Eyeleft: `7`
+- Body_02: `2013`
+- back: `947`
+- Body: `2736`
+- Leg: `4624`
+- Wing: `6724`
+- Head: `7060`
+
+Interpretation:
+
+- 8054 is dragon-side, not birds
+- it looks like an alternate reduced dragon view/LOD/pass inside the same
+  runtime cache as 6804
+- it does NOT look like a separate armor overlay, because it preserves the
+  dragon submesh family and bbox contract instead of introducing new bounds
+
+PAC BRIDGE CHECKPOINT
+
+The repo now also has:
+
+- tools/compare_pac_shadow_runtime.py
+- output/pac_shadow_compare/report.txt
+- output/pac_shadow_compare/manifest.json
+- output/pac_shadow_compare/*.csv
+
+This script proves the clean PAC/runtime-shadow relationship for the six
+dragon submeshes:
+
+- PAC bbox == runtime shadow parameter bbox for all six
+- PAC local triangle indices == live runtime shadow triangle indices for all six
+- local vertex order can be compared directly by the same local vertex index
+- raw 40-byte packets do NOT match
+- raw first 8 position bytes do NOT match
+
+Per-submesh average PAC-vs-runtime same-index position deltas:
+
+- Body_02: avg 1.5095, max 3.9902
+- back: avg 1.4210, max 3.7842
+- Body: avg 3.1862, max 11.0037
+- Leg: avg 1.4747, max 3.2397
+- Wing: avg 4.1635, max 11.2707
+- Head: avg 1.4227, max 5.8205
+
+Important packet fact:
+
+- exact full-packet matches: 0 for every submesh
+- exact first-8-byte position packet matches: 0 for every submesh
+- the only non-zero exact field carry-over is bytes 24..27 (`extra1_4`), and
+  even that is partial and inconsistent across submeshes
+
+So the proven model is now:
+
+- PAC and runtime shadow share the same dragon topology contract
+- runtime shadow is NOT a byte-for-byte PAC copy
+- the missing crack is the transform/expansion stage from PAC storage to
+  resource 16288, not a mesh/topology problem
+
+HEAD-ONLY PAC/RUNTIME DELTA RESULT
+
+The repo now also has:
+
+- tools/trace_head_pac_shadow_delta.py
+- output/head_pac_shadow_delta/report.txt
+- output/head_pac_shadow_delta/manifest.json
+- output/head_pac_shadow_delta/head_pairs.csv
+
+This result matters:
+
+- head global affine fit: rmse 0.5837, max 1.7403
+- top exact visible signature `(8, 0, 0, 0) / (255, 0, 0, 0)`: rmse 0.5442
+- top dominant single-weight code `8`: rmse 0.5501 over 678 verts
+
+Interpretation:
+
+- the head PAC->runtime delta is structured and skinning-like
+- this is NOT behaving like arbitrary mesh replacement
+
+VISIBLE CODE INTERPRETATION RESULT
+
+The repo now also has:
+
+- tools/infer_shadow_code_skinning.py
+- output/shadow_code_skinning/report.txt
+- output/shadow_code_skinning/manifest.json
+
+This is the strongest current statement about PAC skin codes:
+
+- treating visible PAC code bytes as GLOBAL bone ids fails badly
+  - global-code weighted prediction: rmse 59.0416 over 2717 covered verts
+- treating visible PAC code bytes as SUBMESH-LOCAL / DRAW-LOCAL works much better
+  - local-code weighted prediction: rmse 1.7527 over 2342 covered verts
+
+Best local-code regions so far:
+
+- Head overall local-code prediction: rmse 0.5392
+- back overall local-code prediction: rmse 0.8053
+- Leg overall local-code prediction: rmse 0.9199
+- Body_02 overall local-code prediction: rmse 0.3203
+
+Critical implication:
+
+- visible PAC code bytes are almost certainly NOT global bone ids
+- they behave more like local palette indices scoped to a draw/submesh family
+- the hidden crack is therefore palette indirection, not mesh topology
+
+IMPORTANT CORRECTION ABOUT 7968_7
+
+The generated CreateIndirectArgumentBuffer_7968_7() data is only the
+pre-compute template.
+
+After compute, the live resource_7968.bin records are the truth.
+
+That matters because the live primary records 39..44 are now tiny draws:
+- 39 -> indexCount 180, startIndex 54, baseVertex 22
+- 40 -> indexCount 483, startIndex 99, baseVertex 55
+- 41 -> indexCount 21, startIndex 0, baseVertex 0
+- 42 -> indexCount 489, startIndex 3030, baseVertex 1626
+- 43 -> indexCount 3, startIndex 0, baseVertex 0
+- 44 -> indexCount 222, startIndex 141, baseVertex 131
+
+So do NOT trust the static generated counts for 39..44 over the live 7968 data.
+If generated data and live resource_7968.bin disagree, the live buffer wins.
+
+PRIMARY-FAMILY FRAGMENT RESULT
+
+The repo now has a direct live primary dump:
+- tools/dump_runtime_primary_fragments.py
+
+This reconstructs records 39..44 from:
+- live 7968 indirect records
+- live 7879 draw records
+- live vertex resources 15390 / 15486
+- live index backing resource 2074
+
+Result: 39..44 are genuinely tiny live fragments, not a hidden full-dragon path.
+
+Current decoded live fragments:
+- 39 -> param 262, handle 7696, flags 3, control 1, 80 verts, 60 tris, resource 15390
+- 40 -> param 123, handle 4522, flags 2, control 1, 162 verts, 161 tris, resource 15486
+- 41 -> param 125, handle 6773, flags 2, control 0, 11 verts, 7 tris, resource 15486
+- 42 -> param 131, handle 6773, flags 2, control 0, 162 verts, 163 tris, resource 15486
+- 43 -> param 168, handle 6774, flags 3, control 1, 3 verts, 1 tri, resource 15390
+- 44 -> param 174, handle 6774, flags 3, control 1, 77 verts, 74 tris, resource 15390
+
+The important shape fact is that all six are clustered in a small local box near the origin,
+roughly:
+- x about -0.31 .. 0.31
+- y about -0.00 .. 0.33
+- z about -0.27 .. 0.13
+
+So the primary-family path is not just "the same six full dragon submeshes on a different buffer."
+It is a different runtime representation and/or an aux-driven refinement path.
+
+DO NOT DO THESE THINGS
+
+Do NOT:
+- retry GLB -> PAC injection
+- retry Blender carrier fitting as the main path
+- retry nearest-surface PAC projection as the main path
+- assume DDS/materials are the blocker
+- assume PAC bytes directly equal the runtime vertex payload
+- assume resource 242 is the runtime vertex buffer
+- assume resource 7968 is directly the VS vertex buffer without proof
+
+THE NEXT CORRECT TASKS
+
+1. Stay on the PAC-shadow bridge, not the primary-fragment branch.
+   Treat primary `39..44` as secondary unless they become directly relevant
+   to the PAC->16288 expansion stage.
+
+2. Treat visible PAC codes as local palette indices, not global bone ids.
+   Head/Leg/back are currently the cleanest proof of that model.
+
+3. Find where resource 16288 is produced or mutated in the capture.
+   The creation/init path is only:
+   - CreateAndInitResources_010.cpp
+   - ApiObjectId 16288
+   - placed resource on heap 16287
+   - size 4194304
+   - UAV-capable
+   Current direct text search has NOT yet found a clean writer by resource id.
+
+4. If no explicit writer is easy to surface, use the PAC-shadow CSV pairs as
+   supervised data and work backwards from the same local vertex order:
+   - PAC raw packet at local vertex i
+   - runtime shadow packet at local vertex i
+   - same bbox
+   - same triangle neighborhood
+   Goal: identify which PAC fields plus local palette state feed the runtime shadow position.
+
+5. Only after the PAC->16288 expansion/skinning stage is understood:
+   return to palette/skin-code indirection and inverse encoding.
+
+SUGGESTED COMMANDS
+
+Re-extract live PIX resources:
+python tools\\extract_pix_resources.py
+
+Regenerate the traced pipeline report:
+python tools\\trace_dragon_pipeline.py
+
+Regenerate the runtime shadow point clouds:
+python tools\\dump_runtime_shadow_mesh.py
+
+Regenerate the runtime shadow triangle meshes:
+python tools\\dump_runtime_shadow_triangles.py
+
+Regenerate the PAC-vs-shadow bridge report:
+python tools\\compare_pac_shadow_runtime.py
+
+Regenerate the head PAC/runtime delta report:
+python tools\\trace_head_pac_shadow_delta.py
+
+Regenerate the visible-code skinning inference report:
+python tools\\infer_shadow_code_skinning.py
+
+Regenerate the dedicated 6804 shadow trace:
+python tools\\trace_6804_shadow_path.py
+
+HEAD-ONLY PAC DIAGNOSTIC (OLDER, STILL USEFUL FOR CONTRAST)
+
+The script below is useful only as a contrast case showing why PAC-only decoding is incomplete:
+- tools/trace_head_draw.py
+
+It proves PAC dequantization is real, but it is NOT enough to reproduce the rendered dragon.
+
+SUCCESS CONDITION FOR THE NEXT AGENT
+
+The next agent should stay on the PAC/runtime-shadow path and deliver at least one of:
+- a proven writer or mutation stage for resource 16288, OR
+- a concrete per-vertex mapping from PAC fields to runtime shadow position changes using the CSV bridge data
+
+If the next agent starts talking about Blender fitting, Drogon textures, GLB export, or direct PAC mesh replacement,
+it is off the path.
+
+LATEST 6804-SPECIFIC FACTS
+
+There is now a dedicated 6804 report:
+- tools/trace_6804_shadow_path.py
+- output/shadow_6804_trace/report.txt
+- output/shadow_6804_trace/manifest.json
+
+What it proved:
+
+1. Shared shadow param fields for 115..120 are:
+   - u48 = 11266
+   - u52 = 2716
+   - u60 = 0x80000000
+   - u76 = 0x01120112
+   - u80 = 24
+   - u84 = 0x000A0009
+   - u88 = 0x001F001F
+   - u96 = 0x0029004E
+   - u104 = 2026
+   - u112 = 8
+   - f128 = 0.0
+
+2. Resolved shadow-related handles:
+   - 24 -> descriptor 138024 -> resource 147 -> stride 4
+   - 31 -> descriptor 138031 -> resource 2085 -> stride 4
+   - 6  -> descriptor 138006 -> resource 122 -> stride 64
+   - 8  -> descriptor 138008 -> resource 154 -> stride 64
+   - 9  -> descriptor 138009 -> resource 135 -> stride 64
+   - 10 -> descriptor 138010 -> resource 2070 -> stride 64
+   - 41 -> descriptor 138041 -> resource 80  -> stride 272
+   - 6804 -> descriptor 374804 -> resource 16288 -> firstElement 46222 -> count 30112 -> stride 40
+
+3. IMPORTANT live discrepancy:
+   - resource_242 raw u84 word = 655369 (0x000A0009)
+   - Autos.txt live u84 word = 589834 (0x0009000A)
+   - resource_242 raw u112 = 8
+   - Autos.txt live u112 = 6
+
+   So resource_242 is not yet safe to trust blindly for every shadow handle split.
+   The live shader values in Autos.txt currently win for 6804 handle interpretation.
+
+4. Runtime 16288 packets carry their own runtime influence codes:
+   - up to 6 active slots per vertex
+   - almost zero direct equality with visible PAC code bytes
+   - exact first-4 PAC/runtime code matches:
+     - Body_02 0 / 2013
+     - back    0 / 3307
+     - Body    0 / 2736
+     - Leg     0 / 4624
+     - Wing    0 / 6724
+     - Head    1 / 10258
+
+   Example runtime slot histograms:
+   - Head: {1: 4371, 2: 1247, 3: 596, 4: 527, 5: 549, 6: 2968}
+   - Wing: {1: 386, 2: 696, 3: 1325, 4: 1684, 5: 1726, 6: 907}
+   - Leg:  {1: 580, 2: 1599, 3: 1008, 4: 608, 5: 550, 6: 279}
+
+5. Stage-1 PAC-code sanity check through the resolved shadow matrix chain:
+   - handle9/resource135 overall rmse: 4.7556
+   - handle10/resource2070 overall rmse: 4.7741
+
+   This is not enough to solve the path, but it proves the first shadow matrix stage
+   is real and partially explanatory. The remaining gap is now:
+   - how PAC visible codes expand/remap into the runtime 10-bit codes in 16288
+   - plus whatever later shadow-only branch is driven by u76 / u112 / optional handles
+
+NEWEST 6804 VS-COMPARE BREAKTHROUGH
+
+There is now a second 6804-specific tracer:
+- tools/trace_6804_vs_compare.py
+- output/shadow_6804_vs_compare/report.txt
+- output/shadow_6804_vs_compare/manifest.json
+- output/shadow_6804_vs_compare/worst_vertices.csv
+
+What it does:
+- takes the proven 6804 runtime path
+- uses the runtime 10-bit codes from resource_16288, not visible PAC codes
+- pushes them through the resolved shadow stage-1 lookup chain:
+  - resource_147[base0 + code]
+  - resource_2085[base_lookup + lookup0]
+  - resource_135[base1 + lookup1]
+- compares those predictions directly against PIX VS TEXCOORD1_C0..C2 world positions
+
+Shared values used:
+- base0 = 11266
+- base1 = 2716
+- u76_lo = 274
+- base_lookup = 2026
+
+Hard result:
+- raw runtime-local dequantized positions are still very far from PIX world positions
+  - direct RMSE per submesh is about 30..35
+- the direct stage-1 runtime-code prediction is also still far in absolute world space
+  - direct RMSE per submesh is about 29..33
+- BUT if you fit one shared affine across the whole dragon from stage1->PIX,
+  the error collapses:
+  - Body_02 rmse 0.1230
+  - back    rmse 0.1444
+  - Body    rmse 0.2701
+  - Leg     rmse 0.2331
+  - Wing    rmse 0.3212
+  - Head    rmse 0.1217
+
+Global stage1->PIX affine found by the tracer:
+[
+  [ 0.527426277, -0.100407075, -0.760240382 ],
+  [ -0.021604368, 1.816177921, -0.085984184 ],
+  [ 0.797761379, 0.101552772, 0.557506523 ],
+  [ -7.545094859, -13.787823365, 27.397199546 ]
+]
+
+Control result:
+- the alternate u76-shifted bank is worse even after affine fit
+  - Wing rmse 1.3483
+  - Head rmse 0.3573
+
+Interpretation:
+- the main handle9/runtime-code chain is the right dragon path
+- the remaining discrepancy behaves like one shared post-skin object/world placement
+  step or equivalent transform-space mismatch
+- this is NOT consistent with arbitrary hidden per-vertex magic
+
+Best next move now:
+1. identify where that shared affine/object placement comes from in the capture
+2. compare it against global/instance/cluster transforms exposed to the VS
+3. only after that, return to optional shadow-only branches if still necessary
+
+NEWEST 6804 TEXCOORD1 EXACT-PATH BREAKTHROUGH
+
+There is now a third 6804-specific tracer:
+- tools/trace_6804_texcoord1_path.py
+- output/shadow_6804_texcoord1/report.txt
+- output/shadow_6804_texcoord1/manifest.json
+- output/shadow_6804_texcoord1/worst_vertices.csv
+
+This script formalizes the current best exact shadow TEXCOORD1 path:
+
+1. runtime local vertex from `resource_16288`
+2. runtime 10-bit influence codes from the same `40`-byte packet
+3. first lookup `resource_147[base0 + code]`
+4. remap lookup `resource_2085[base_lookup + lookup0]`
+5. two matrix banks in `resource_135`
+   - `M0 = base_m0 = 2716`
+   - `M1 = base_m1 = 2990`
+6. active blend on the proven shadow path:
+   - `blend = 1 - packed_factor`
+   - packed factor comes from the high word at byte offset `36`
+   - because the `d0 > 0` branch never fired in the tested shadow family
+7. apply live `space15` block from `resource_80[78]` offsets `64..112`
+8. apply live `cb14,space35` rows `87..90`
+   - IMPORTANT: output z uses the `.w` column of rows `87..90`, not `.z`
+
+Shared values now confirmed in code:
+- `base0 = 11266`
+- `base_lookup = 2026`
+- `base_m0 = 2716`
+- `base_m1 = 2990`
+- `shift = 274`
+- `cluster_idx = 78`
+- `flag128 = true`
+- `half(0x2C44) = 0.066650390625`
+
+Per-submesh exact-path RMSE:
+- `Body_02`: `0.111965008`
+- `back`: `0.115964311`
+- `Body`: `0.123443556`
+- `Leg`: `0.135918122`
+- `Wing`: `0.758110781`
+- `Head`: `0.113929167`
+
+Overall exact-path error:
+- `rmse = 0.376043556`
+- `avg  = 0.224546821`
+- `max  = 1.868558451`
+
+Important branch facts now proved:
+- `%157` comes from `resource_242[%70].u96`
+- `%70` is the wave-broadcast draw parameter index
+- so the `space15` element selector is constant per draw, not per-vertex
+- the `2411` normalization block is inactive on this proven shadow path
+- the active blend path is the packed fallback for all tested shadow vertices
+
+Wing-specific clue:
+- the exact chain is very good for 5 submeshes and only clearly bad for `Wing`
+- worst wing residuals are structured, not random
+- the hot region clusters in the `local_z > 0` half of the wing submesh
+- testing `resource_80[78]` offsets `0..48` improves wing a bit
+  - wing rmse drops from `0.7581` to `0.7054`
+- but those same offsets worsen the other 5 submeshes badly
+- so the likely remaining miss is a wing-only late branch or selector, not a
+  whole-dragon mistake
+
+What this means:
+- the 6804 shadow TEXCOORD1 path is now mostly cracked
+- the remaining blocker is no longer PAC extraction or global mesh decoding
+- it is a narrow late-path discrepancy centered on the wing branch
+
+Best next move after this tracer:
+1. trace the late shader consumers around `%2730..%2808` with the wing as the target
+2. determine whether the wing chooses a different `space15` block or a different
+   late affine than the other 5 submeshes
+3. only after the wing branch is explained, move back to inverse-encoding Drogon
+   into the proven runtime contract
+
+NEWEST 6804 WING-PROBE FACTS
+
+There is now a focused wing probe:
+- tools/trace_6804_wing_probe.py
+- output/shadow_6804_wing_probe/report.txt
+- output/shadow_6804_wing_probe/manifest.json
+
+What it proves:
+
+1. The remaining miss is genuinely local to Wing.
+   - exact world-space wing rmse: `0.758110781`
+   - split by local z:
+     - `local_z > 0`: `1.057007644`
+     - `local_z <= 0`: `0.370336003`
+
+2. The miss already exists before cb14.
+   The probe inverts cb14 rows `87..90` and compares the recovered pre-cb14 target
+   against the candidate `resource_80[78]` space15 blocks:
+   - block `0..48`: `0.563429464`
+   - block `64..112`: `0.588218540`
+
+   So cb14 is not the main culprit. The wing discrepancy is upstream of final
+   world placement.
+
+3. `resource_80` entry `78` is still the correct element.
+   A brute-force search over every full `272`-byte element in `resource_80`
+   shows that entry `78` is by far the best candidate for both obvious block
+   offsets:
+   - base `0`: best = entry `78`, rmse `0.5634`; next best > `5.08`
+   - base `64`: best = entry `78`, rmse `0.5882`; next best > `5.01`
+
+Interpretation:
+- the remaining problem is NOT a wrong space15 element lookup
+- it is NOT a whole-dragon transform bug
+- it is NOT primarily a cb14 issue
+- it is a wing-side late-path discrepancy inside the otherwise proven 6804 route
+
+Best next move after the wing probe:
+1. trace the unresolved `610 -> 1231` vs `1182 -> 1231` fork for wing-heavy samples
+2. determine whether `%644` or another upstream per-vertex factor is activating
+   a wing-only adjustment before `%1439..%1450`
+3. then re-check the `%2736..%2808` late world-position block with that resolved
+
+Do NOT drift back into:
+- Blender fitting
+- arbitrary PAC writeback
+- GLB injection
+- DDS/material work
+- 8054 as the main decode target
+
+SEGMENTED REVERSE-ENCODE BREAKTHROUGH
+
+The repo now has a materially better reverse-target pass:
+- tools/generate_drogon_runtime_targets_segmented.py
+- output/reverse_drogon_runtime_targets_segmented/report.txt
+- output/reverse_drogon_runtime_targets_segmented/manifest.json
+- output/reverse_drogon_runtime_targets_segmented/drogon_target_world.obj
+- output/reverse_drogon_runtime_targets_segmented/drogon_target_runtime_local.obj
+
+What changed:
+- The old "hybrid" pass used one bbox fit per submesh candidate.
+- The new pass uses quantile-segmented bbox fitting on axis 2 with 16 bins.
+- This keeps the proven `6804` reverse math unchanged and only improves
+  correspondence.
+
+New segmented reverse metrics:
+- overall nearest rmse: `0.491238006`
+- overall nearest avg : `0.354531660`
+- overall reforward rmse: effectively `0`
+
+Per-submesh segmented rmse:
+- `Body_02`: `0.190505565`
+- `back`: `0.262603109`
+- `Body`: `0.525888239`
+- `Leg`: `0.377119964`
+- `Wing`: `0.845426700`
+- `Head`: `0.249102413`
+
+Per-submesh bbox overflow after reverse inversion:
+- `Body_02`: `2.58%`
+- `back`: `0.67%`
+- `Body`: `3.55%`
+- `Leg`: `7.46%`
+- `Wing`: `10.26%`
+- `Head`: `0.04%`
+
+This is the first reverse-target set that looks usable for a real PAC attempt.
+
+PAC CANDIDATE BUILT FROM SEGMENTED TARGETS
+
+New build tool:
+- tools/build_segmented_target_pac.py
+
+Outputs:
+- output/dragon_drogon_segmented.pac
+- output/dragon_drogon_segmented_report.txt
+
+What it does:
+- takes the segmented runtime-local targets
+- preserves the original dragon PAC topology, indices, weights, UVs, normals,
+  and all non-position fields
+- patches only quantized position fields and per-submesh bbox blocks
+- preserves the two eye submeshes unchanged because the reverse pass only covers
+  the six main dragon shadow draws
+
+Important build facts:
+- output PAC size still matches original exactly: `5,208,284`
+- this is NOT GLB injection
+- this is NOT the old Blender nearest-surface exporter
+- this is a topology-preserving PAC built from the cracked `6804` reverse path
+
+DEPLOYMENT STATE
+
+The segmented PAC was copied to:
+- output/dragon_drogon_final.pac
+
+And deployed with:
+- tools/deploy_new_pac.py
+
+Latest deploy facts:
+- PAZ appended offset: `0x36620200`
+- PAMT checksum updated to: `0x12A8F307`
+- PAPGT checksum updated to: `0x84909C3A`
+
+If the next assistant needs to restore:
+- python tools/deploy_new_pac.py --restore
+
+CURRENT MOST IMPORTANT QUESTION
+
+Do not go back to Blender or the old projection route first.
+The immediate next check is the in-game result of the segmented PAC candidate.
+
+If the in-game result is still wrong, the best next analysis target is:
+- compare the segmented PAC candidate against the old projected PAC candidate
+- isolate which remaining distortion correlates with Wing / Leg / Body
+- decide whether PAC visible position fields are sufficient, or whether the
+  still-missing PAC->runtime expansion step is overriding part of the geometry
+
+LATEST IN-GAME RESULT
+
+The segmented PAC candidate is the first one that works in-game with the
+correct overall Drogon-like silhouette.
+
+Observed result:
+- overall shape is clearly Drogon-derived
+- mesh seams / region joins are still visible in places
+- original CD textures still dominated until a first texture rebake was tried
+
+TEXTURE BAKE / RESKIN STATUS
+
+New script:
+- tools/patch_baked_dragon_textures.py
+
+New baked PNGs:
+- output/cd_m0004_00_dragon_body_0001.png
+- output/cd_m0004_00_dragon_body_0001_n.png
+- output/cd_m0004_00_dragon_back_0001.png
+- output/cd_m0004_00_dragon_back_0001_n.png
+- output/cd_m0004_00_dragon_head_0001.png
+- output/cd_m0004_00_dragon_head_0001_n.png
+- output/cd_m0004_00_dragon_leg_0001.png
+- output/cd_m0004_00_dragon_leg_0001_n.png
+- output/cd_m0004_00_dragon_wing_0001.png
+- output/cd_m0004_00_dragon_wing_0001_n.png
+
+New converted DDS outputs:
+- converted/baked/*.dds
+
+What was patched:
+- first-pass baseColor + normal only for:
+  - body
+  - back
+  - leg
+  - wing
+  - head
+- original CD spec / mask / height / detail-layer textures were left intact
+
+Important outcome:
+- DDS conversion / archive patch path works
+- the in-game result proves the dragon is still sampling the preserved CD UV
+  layout, not Drogon's original UV layout
+- the first manual bake was too sparse / patchy, so the color swap only affects
+  small UV islands instead of giving a full clean Drogon skin
+
+Most important texture lesson:
+- you cannot just drop in the original Drogon DDS files directly
+- those DDS files are authored for Drogon's original UV layout
+- the current working CD mod keeps the CD UVs and material contract
+- therefore textures must be rebaked onto the preserved CD UV layout, or the UV
+  layout itself must be rewritten coherently
+
+Recommended next texture step:
+- do a denser rebake with better source/target overlap, or
+- use a more deliberate per-region source setup before rebaking
+- do NOT assume raw Drogon DDS can line up on the current CD UVs

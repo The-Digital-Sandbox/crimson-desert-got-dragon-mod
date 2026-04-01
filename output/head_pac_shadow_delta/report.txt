@@ -1,0 +1,39 @@
+Head PAC -> runtime shadow delta trace
+=====================================
+
+vertex_count:             10258
+single_weight_vertex_count: 738
+global_fit:               rmse=0.583680 max=1.740297
+
+Top signature fits
+------------------
+  406  rmse=0.544183 max=1.265023  codes=(8, 0, 0, 0) weights=(255, 0, 0, 0)
+  148  rmse=0.520446 max=1.221240  codes=(8, 48, 0, 0) weights=(255, 0, 0, 0)
+   44  rmse=0.420604 max=0.930587  codes=(8, 48, 112, 0) weights=(255, 0, 0, 0)
+   21  rmse=0.435962 max=0.984798  codes=(6, 0, 0, 0) weights=(255, 0, 0, 0)
+   15  rmse=0.370835 max=0.640034  codes=(107, 168, 225, 9) weights=(255, 0, 0, 0)
+   14  rmse=0.486693 max=0.936962  codes=(8, 160, 33, 6) weights=(255, 0, 0, 0)
+   13  rmse=0.411513 max=0.784417  codes=(8, 132, 131, 6) weights=(255, 0, 0, 0)
+   10  rmse=0.603704 max=1.124770  codes=(8, 100, 161, 8) weights=(255, 0, 0, 0)
+    9  rmse=0.242583 max=0.453675  codes=(8, 40, 146, 5) weights=(255, 0, 0, 0)
+    8  rmse=0.240002 max=0.384460  codes=(107, 0, 0, 0) weights=(255, 0, 0, 0)
+    6  rmse=0.222858 max=0.473366  codes=(222, 0, 0, 0) weights=(255, 0, 0, 0)
+    5  rmse=0.240561 max=0.422620  codes=(6, 148, 80, 0) weights=(254, 1, 0, 0)
+    5  rmse=0.393577 max=0.572932  codes=(8, 4, 35, 12) weights=(255, 0, 0, 0)
+    5  rmse=0.231050 max=0.351842  codes=(8, 48, 112, 0) weights=(254, 0, 0, 0)
+    4  rmse=0.000000 max=0.000000  codes=(8, 136, 129, 6) weights=(255, 0, 0, 0)
+    4  rmse=0.000000 max=0.000000  codes=(8, 100, 193, 0) weights=(255, 0, 0, 0)
+    4  rmse=0.320760 max=0.463969  codes=(105, 168, 177, 6) weights=(133, 85, 19, 8)
+    4  rmse=0.131763 max=0.173518  codes=(105, 176, 161, 6) weights=(166, 44, 24, 12)
+    4  rmse=0.000000 max=0.000000  codes=(8, 64, 98, 13) weights=(255, 0, 0, 0)
+    4  rmse=0.000000 max=0.000000  codes=(8, 132, 131, 6) weights=(254, 0, 0, 0)
+
+Top dominant-code fits (single-weight only)
+-------------------------------------------
+  678  rmse=0.550087 max=1.317978  dominant_code=8 single_weight_only
+   26  rmse=0.378602 max=0.775670  dominant_code=107 single_weight_only
+   23  rmse=0.475455 max=1.033905  dominant_code=6 single_weight_only
+    7  rmse=0.240258 max=0.538838  dominant_code=222 single_weight_only
+    4  rmse=0.237868 max=0.320723  dominant_code=224 single_weight_only
+
+csv_path: C:\Users\user\crimson-desert-got-dragon-mod\output\head_pac_shadow_delta\head_pairs.csv

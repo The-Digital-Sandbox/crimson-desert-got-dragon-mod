@@ -1,0 +1,108 @@
+6804 shadow-family trace
+========================
+
+Shared shadow parameter fields from resource_242
+-----------------------------------------------
+parameter index: 115
+u44 : 1114258 (0x00110092)
+u48 : 11266 (0x00002C02)
+u52 : 2716 (0x00000A9C)
+u60 : 2147483648 (0x80000000)
+u76 : 17957138 (0x01120112)
+u80 : 24 (0x00000018)
+u84 : 655369 (0x000A0009)
+u88 : 2031647 (0x001F001F)
+u96 : 2687054 (0x0029004E)
+u104: 2026 (0x000007EA)
+u112: 8 (0x00000008)
+f128: 0.000000
+
+Autos.txt live values for the same shadow path
+----------------------------------------------
+global_cb_handle33_live: 9
+param_u104_base_lookup_live: 2026
+param_u112_handle_live: 6
+param_u112_wavefirst_live: 6
+param_u48_base0: 11266
+param_u52_base1_live: 2716
+param_u60_base2_live: 2147483648
+param_u76_lo: 274
+param_u80_handle: 24
+param_u84_wavefirst_live: 589834
+param_u84_word_live: 589834
+
+Key discrepancy
+---------------
+resource_242 u84 raw word          : 655369 (0x000A0009)
+Autos wave-read u84 live word      : 589834
+resource_242 u112 raw handle       : 8
+Autos wave-read u112 live handle   : 6
+
+Resolved descriptor views
+-------------------------
+handle24_space20_or_lookup: desc=138024 resource=147 first=0 count=16384 stride=4 source=Descriptors_010.cpp
+handle31_space20_or_remap: desc=138031 resource=2085 first=0 count=16384 stride=4 source=Descriptors_010.cpp
+handle6_space21_optional: desc=138006 resource=122 first=0 count=25600 stride=64 source=Descriptors_010.cpp
+handle8_space21_optional: desc=138008 resource=154 first=0 count=25600 stride=64 source=Descriptors_010.cpp
+handle9_space21_or_stage1: desc=138009 resource=135 first=0 count=102400 stride=64 source=Descriptors_010.cpp
+handle10_space21_candidate: desc=138010 resource=2070 first=0 count=102400 stride=64 source=Descriptors_010.cpp
+handle41_space15_or_cluster: desc=138041 resource=80 first=0 count=200 stride=272 source=Descriptors_010.cpp
+handle6804_space103_runtime_view: desc=374804 resource=16288 first=46222 count=30112 stride=40 source=Descriptors_022.cpp
+
+Stage-1 PAC->runtime sanity check using visible PAC codes
+---------------------------------------------------------
+handle9/resource135 overall rmse : 4.755618
+handle10/resource2070 overall rmse: 4.774058
+per-submesh rmse (handle9):
+  Body_02 3.526991
+  back    4.754011
+  Body    6.378622
+  Leg     3.461250
+  Wing    5.646727
+  Head    4.303026
+per-submesh rmse (handle10):
+  Body_02 3.561272
+  back    4.758872
+  Body    6.332956
+  Leg     3.507299
+  Wing    5.690765
+  Head    4.317925
+
+Per-submesh runtime-code summary
+-------------------------------
+Body_02 (GpuId7153)
+  command/index/param: 145 / 450 / 115
+  active runtime slots: {1: 42, 2: 320, 3: 658, 4: 582, 5: 367, 6: 44}
+  exact first4 PAC/runtime code matches: 0 / 2013
+  sorted PAC/runtime code overlaps:      5 / 2013
+  top first-code pairs: [((3, 3), 268), ((5, 3), 212), ((5, 5), 206), ((3, 2), 174), ((3, 5), 122), ((3, 7), 116), ((2, 3), 112), ((7, 2), 89), ((7, 5), 76), ((5, 2), 75), ((7, 7), 48), ((7, 3), 46)]
+back (GpuId7154)
+  command/index/param: 146 / 2463 / 116
+  active runtime slots: {1: 189, 2: 90, 3: 980, 4: 596, 5: 1045, 6: 407}
+  exact first4 PAC/runtime code matches: 0 / 3307
+  sorted PAC/runtime code overlaps:      2 / 3307
+  top first-code pairs: [((29, 3), 125), ((3, 3), 120), ((3, 4), 119), ((26, 3), 103), ((25, 3), 70), ((5, 3), 70), ((38, 4), 67), ((27, 3), 66), ((31, 3), 64), ((13, 3), 61), ((16, 3), 56), ((3, 8), 56)]
+Body (GpuId7155)
+  command/index/param: 147 / 5770 / 117
+  active runtime slots: {1: 75, 2: 282, 3: 1120, 4: 603, 5: 412, 6: 244}
+  exact first4 PAC/runtime code matches: 0 / 2736
+  sorted PAC/runtime code overlaps:      14 / 2736
+  top first-code pairs: [((16, 3), 211), ((13, 3), 80), ((16, 29), 78), ((30, 26), 72), ((16, 31), 62), ((16, 8), 62), ((16, 5), 57), ((23, 29), 47), ((30, 25), 46), ((16, 2), 45), ((13, 5), 45), ((30, 29), 42)]
+Leg (GpuId7156)
+  command/index/param: 148 / 8506 / 118
+  active runtime slots: {1: 580, 2: 1599, 3: 1008, 4: 608, 5: 550, 6: 279}
+  exact first4 PAC/runtime code matches: 0 / 4624
+  sorted PAC/runtime code overlaps:      0 / 4624
+  top first-code pairs: [((8, 16), 464), ((8, 13), 138), ((6, 16), 111), ((8, 23), 80), ((8, 30), 75), ((76, 16), 71), ((16, 52), 61), ((16, 55), 59), ((77, 16), 58), ((8, 4), 50), ((67, 16), 49), ((16, 38), 48)]
+Wing (GpuId7157)
+  command/index/param: 149 / 13130 / 119
+  active runtime slots: {1: 386, 2: 696, 3: 1325, 4: 1684, 5: 1726, 6: 907}
+  exact first4 PAC/runtime code matches: 0 / 6724
+  sorted PAC/runtime code overlaps:      1 / 6724
+  top first-code pairs: [((8, 19), 135), ((8, 77), 109), ((76, 8), 107), ((8, 8), 106), ((77, 8), 94), ((80, 8), 92), ((8, 81), 84), ((8, 14), 80), ((8, 82), 73), ((81, 8), 72), ((8, 80), 71), ((8, 76), 68)]
+Head (GpuId7158)
+  command/index/param: 150 / 19854 / 120
+  active runtime slots: {1: 4371, 2: 1247, 3: 596, 4: 527, 5: 549, 6: 2968}
+  exact first4 PAC/runtime code matches: 1 / 10258
+  sorted PAC/runtime code overlaps:      74 / 10258
+  top first-code pairs: [((8, 8), 236), ((8, 6), 141), ((134, 8), 65), ((8, 162), 54), ((135, 8), 42), ((141, 8), 42), ((6, 8), 38), ((8, 105), 37), ((8, 94), 32), ((159, 8), 31), ((162, 8), 28), ((114, 6), 27)]

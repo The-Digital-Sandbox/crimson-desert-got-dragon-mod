@@ -1,0 +1,55 @@
+6804 effective late-world affine fit
+===================================
+
+Interpretation
+--------------
+- This fitter starts after the proven late resource_2070 shadow matrix stage.
+- It treats everything downstream as one shared affine late_pos -> PIX TEXCOORD1.
+- If that affine fits well, the remaining mismatch is a shared state/provenance issue,
+  not hidden per-vertex shader logic.
+
+Shared translation-only delta
+-----------------------------
+delta_x: -0.010472427
+delta_y: -0.144051624
+delta_z: 0.008831672
+
+Best-fit affine
+---------------
+   0.562431600 -0.095524319 -0.817001637
+   0.000966606  1.721770788 -0.068004874
+   0.795918624  0.073606347  0.575497375
+  -7.570819067 -13.835778878  27.332986294
+
+Overall error
+-------------
+exact rmse            : 0.168499383
+translation-only rmse : 0.086333665
+full-affine rmse      : 0.082101644
+
+Per-submesh
+-----------
+Body_02 (GpuId7153)
+  exact rmse            : 0.257503435
+  translation-only rmse : 0.140206870
+  full-affine rmse      : 0.135558405
+back (GpuId7154)
+  exact rmse            : 0.128955161
+  translation-only rmse : 0.016071255
+  full-affine rmse      : 0.029961270
+Body (GpuId7155)
+  exact rmse            : 0.167162888
+  translation-only rmse : 0.065889931
+  full-affine rmse      : 0.070329788
+Leg (GpuId7156)
+  exact rmse            : 0.130319182
+  translation-only rmse : 0.014626590
+  full-affine rmse      : 0.016820227
+Wing (GpuId7157)
+  exact rmse            : 0.167838379
+  translation-only rmse : 0.129301549
+  full-affine rmse      : 0.115630072
+Head (GpuId7158)
+  exact rmse            : 0.173642673
+  translation-only rmse : 0.073472467
+  full-affine rmse      : 0.073382438

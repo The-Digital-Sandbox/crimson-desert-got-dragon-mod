@@ -1,0 +1,249 @@
+{
+  "drogon_obj": "C:\\Users\\user\\crimson-desert-got-dragon-mod\\gpu-analysis\\DROGON.obj",
+  "affine_manifest": "C:\\Users\\user\\crimson-desert-got-dragon-mod\\output\\shadow_6804_effective_affine\\manifest.json",
+  "combined_world_obj": "output/reverse_drogon_runtime_targets/drogon_target_world.obj",
+  "combined_local_obj": "output/reverse_drogon_runtime_targets/drogon_target_runtime_local.obj",
+  "submeshes": [
+    {
+      "name": "Body_02",
+      "gpu_id": "GpuId7153",
+      "vertex_count": 2013,
+      "triangle_count": 2664,
+      "nearest_distance": {
+        "rmse": 2.7560906911411736,
+        "avg": 2.7160619729123816,
+        "max": 3.4716668425181534
+      },
+      "reforward_error": {
+        "rmse": 5.932209741212305e-16,
+        "avg": 1.6019113517664505e-16,
+        "max": 4.351167857633658e-15
+      },
+      "bbox_overflow_count": 2003,
+      "bbox_overflow_fraction": 0.9950322901142573,
+      "original_local_min": [
+        -0.4847489893436432,
+        0.7247540354728699,
+        -2.4955899715423584
+      ],
+      "original_local_max": [
+        0.48511096835136414,
+        1.2787599563598633,
+        0.0
+      ],
+      "target_local_min": [
+        -1.9128709543233695,
+        -0.3111950142723246,
+        -3.8209784616667033
+      ],
+      "target_local_max": [
+        0.9258381338833762,
+        1.578753031224581,
+        0.5272007111977952
+      ],
+      "output_world_obj": "output/reverse_drogon_runtime_targets/body_02_target_world.obj",
+      "output_local_obj": "output/reverse_drogon_runtime_targets/body_02_target_runtime_local.obj"
+    },
+    {
+      "name": "back",
+      "gpu_id": "GpuId7154",
+      "vertex_count": 3307,
+      "triangle_count": 5669,
+      "nearest_distance": {
+        "rmse": 3.163444789572228,
+        "avg": 3.0367219650474886,
+        "max": 4.7108214118333445
+      },
+      "reforward_error": {
+        "rmse": 1.4019107654949436e-15,
+        "avg": 9.67821512785797e-16,
+        "max": 4.5288390936029406e-15
+      },
+      "bbox_overflow_count": 3307,
+      "bbox_overflow_fraction": 1.0,
+      "original_local_min": [
+        -0.663831353187561,
+        1.6194891929626465,
+        -1.8392688035964966
+      ],
+      "original_local_max": [
+        0.6938284635543823,
+        2.6690893173217773,
+        0.48875653743743896
+      ],
+      "target_local_min": [
+        -2.151799449660874,
+        0.4240779626342961,
+        -3.888012315659526
+      ],
+      "target_local_max": [
+        1.2945418596824787,
+        3.0843107749055187,
+        0.7699122274614677
+      ],
+      "output_world_obj": "output/reverse_drogon_runtime_targets/back_target_world.obj",
+      "output_local_obj": "output/reverse_drogon_runtime_targets/back_target_runtime_local.obj"
+    },
+    {
+      "name": "Body",
+      "gpu_id": "GpuId7155",
+      "vertex_count": 2736,
+      "triangle_count": 4460,
+      "nearest_distance": {
+        "rmse": 2.5604440242209288,
+        "avg": 2.270507044516864,
+        "max": 4.91978287268285
+      },
+      "reforward_error": {
+        "rmse": 1.550411821214272e-15,
+        "avg": 7.625379317827019e-16,
+        "max": 7.160723346098895e-15
+      },
+      "bbox_overflow_count": 1587,
+      "bbox_overflow_fraction": 0.5800438596491229,
+      "original_local_min": [
+        -0.629319965839386,
+        0.7813169956207275,
+        -3.04502010345459
+      ],
+      "original_local_max": [
+        0.6323689818382263,
+        2.59060001373291,
+        6.3802995681762695
+      ],
+      "target_local_min": [
+        -2.1283806040974245,
+        -0.2906857156926038,
+        -3.919731490343814
+      ],
+      "target_local_max": [
+        1.1712457370877989,
+        3.2415618482616875,
+        5.758965735694748
+      ],
+      "output_world_obj": "output/reverse_drogon_runtime_targets/body_target_world.obj",
+      "output_local_obj": "output/reverse_drogon_runtime_targets/body_target_runtime_local.obj"
+    },
+    {
+      "name": "Leg",
+      "gpu_id": "GpuId7156",
+      "vertex_count": 4624,
+      "triangle_count": 7488,
+      "nearest_distance": {
+        "rmse": 1.388749511217467,
+        "avg": 1.156722829178616,
+        "max": 3.1289092810287507
+      },
+      "reforward_error": {
+        "rmse": 8.109675846556634e-16,
+        "avg": 5.014595987468146e-16,
+        "max": 3.66205343881779e-15
+      },
+      "bbox_overflow_count": 1000,
+      "bbox_overflow_fraction": 0.21626297577854672,
+      "original_local_min": [
+        -1.029229998588562,
+        -0.014959299005568027,
+        -0.5278979539871216
+      ],
+      "original_local_max": [
+        1.0273901224136353,
+        3.100780046544969,
+        1.8400501012802124
+      ],
+      "target_local_min": [
+        -1.388191285347406,
+        -0.3695035985737239,
+        0.017884574479426794
+      ],
+      "target_local_max": [
+        1.1582789068853165,
+        3.3779658163521344,
+        2.510219489456742
+      ],
+      "output_world_obj": "output/reverse_drogon_runtime_targets/leg_target_world.obj",
+      "output_local_obj": "output/reverse_drogon_runtime_targets/leg_target_runtime_local.obj"
+    },
+    {
+      "name": "Wing",
+      "gpu_id": "GpuId7157",
+      "vertex_count": 6724,
+      "triangle_count": 11634,
+      "nearest_distance": {
+        "rmse": 4.2726195181332525,
+        "avg": 3.5402114273928382,
+        "max": 11.285570101763652
+      },
+      "reforward_error": {
+        "rmse": 1.34523745512948e-15,
+        "avg": 7.283394982570933e-16,
+        "max": 7.32410687763558e-15
+      },
+      "bbox_overflow_count": 4400,
+      "bbox_overflow_fraction": 0.6543723973825104,
+      "original_local_min": [
+        -7.9752397537231445,
+        1.1535398960113525,
+        -2.7553000450134277
+      ],
+      "original_local_max": [
+        7.9752397537231445,
+        2.0106101036071777,
+        3.6147398948669434
+      ],
+      "target_local_min": [
+        -6.112673214317501,
+        -2.2061085183824853,
+        -3.9096694092594597
+      ],
+      "target_local_max": [
+        5.897865246840869,
+        3.488203501248745,
+        2.888144166559866
+      ],
+      "output_world_obj": "output/reverse_drogon_runtime_targets/wing_target_world.obj",
+      "output_local_obj": "output/reverse_drogon_runtime_targets/wing_target_runtime_local.obj"
+    },
+    {
+      "name": "Head",
+      "gpu_id": "GpuId7158",
+      "vertex_count": 10258,
+      "triangle_count": 17060,
+      "nearest_distance": {
+        "rmse": 2.553188147807977,
+        "avg": 2.4526892108140443,
+        "max": 5.314995336142672
+      },
+      "reforward_error": {
+        "rmse": 1.3082550678435736e-15,
+        "avg": 8.505648426734158e-16,
+        "max": 5.329070518200751e-15
+      },
+      "bbox_overflow_count": 10258,
+      "bbox_overflow_fraction": 1.0,
+      "original_local_min": [
+        -0.7322019934654236,
+        0.85195392370224,
+        -3.642210006713867
+      ],
+      "original_local_max": [
+        0.788966953754425,
+        2.8491899371147156,
+        0.0
+      ],
+      "target_local_min": [
+        -1.3823842384592064,
+        0.009552540859046338,
+        -4.0400642840840035
+      ],
+      "target_local_max": [
+        1.0760955329450896,
+        1.6066736462112996,
+        0.23027016339681772
+      ],
+      "output_world_obj": "output/reverse_drogon_runtime_targets/head_target_world.obj",
+      "output_local_obj": "output/reverse_drogon_runtime_targets/head_target_runtime_local.obj"
+    }
+  ],
+  "worst_vertices_csv": "output/reverse_drogon_runtime_targets/worst_vertices.csv"
+}

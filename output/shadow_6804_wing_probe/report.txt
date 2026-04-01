@@ -1,0 +1,56 @@
+6804 Wing Probe
+===============
+
+Shared config
+-------------
+base0        : 11266
+base_lookup  : 2026
+base_m0      : 2716
+base_m1      : 2990
+cluster_idx  : 78
+
+Exact world-space error using the current proven path
+----------------------------------------------------
+all          : rmse 0.758110781, avg 0.583840877, max 1.868558451
+local_z > 0  : rmse 1.057007644, avg 0.953544953, max 1.868558451
+local_z <= 0 : rmse 0.370336003, avg 0.285653979, max 1.224068516
+
+Recovered pre-cb14 target comparison
+------------------------------------
+block 0..48  : rmse 0.563429464, avg 0.449989680, max 1.441768434
+block 64..112: rmse 0.588218540, avg 0.456473391, max 1.483139181
+block64 z>0  : rmse 0.807755817, avg 0.729888862, max 1.483139181
+block64 z<=0 : rmse 0.314352087, avg 0.235948608, max 1.024597162
+
+Best resource_80 candidates against pre-cb14 target
+---------------------------------------------------
+base 0 candidates:
+  entry  78: rmse 0.563429464
+  entry   0: rmse 5.088802645
+  entry   3: rmse 6.785308888
+  entry   9: rmse 6.980777691
+  entry   7: rmse 7.684187134
+  entry   5: rmse 9.086044905
+  entry   6: rmse 10.109107822
+  entry   8: rmse 11.986077008
+  entry   1: rmse 11.996165555
+  entry   2: rmse 12.030118781
+base 64 candidates:
+  entry  78: rmse 0.588218540
+  entry   0: rmse 5.014854356
+  entry   3: rmse 6.716178329
+  entry   9: rmse 6.901143728
+  entry   7: rmse 7.630088102
+  entry   5: rmse 9.062696438
+  entry   6: rmse 10.045987716
+  entry   8: rmse 11.947335574
+  entry   1: rmse 11.961502790
+  entry   2: rmse 11.995128417
+
+Interpretation
+--------------
+- The wing miss is concentrated in the local_z > 0 half.
+- The miss already exists before cb14, so cb14 is not the main culprit.
+- resource_80 entry 78 remains the best candidate for both obvious block offsets.
+- No alternative resource_80 element comes close, so the remaining issue is likely
+  a late branch or selector inside the proven wing path, not a wrong element lookup.

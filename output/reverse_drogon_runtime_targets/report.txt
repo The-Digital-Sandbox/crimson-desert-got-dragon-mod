@@ -1,0 +1,88 @@
+Drogon runtime reverse targets
+==============================
+
+Inputs
+------
+drogon_obj       : C:\Users\user\crimson-desert-got-dragon-mod\gpu-analysis\DROGON.obj
+affine_manifest  : C:\Users\user\crimson-desert-got-dragon-mod\output\shadow_6804_effective_affine\manifest.json
+
+Method
+------
+- Coarse-align Drogon OBJ to PIX dragon world bounds with axis swizzle:
+  Drogon X -> world X, Drogon Z -> -world Y, Drogon Y -> world Z
+- Query nearest Drogon vertex in world space for each proven 6804 dragon vertex.
+- Invert the fitted late_pos -> PIX world affine.
+- Invert the exact per-vertex late matrix to recover desired runtime-local coordinates.
+
+Important limitation
+--------------------
+- This is a vertex-cloud correspondence pass, not full nearest-triangle projection.
+- It is meant to generate a measurable runtime-local target set, not final PAC bytes.
+
+Overall
+-------
+submeshes             : 6
+total_vertices        : 29662
+nearest rmse          : 2.988177629
+nearest avg           : 2.563371772
+reforward rmse        : 0.000000000
+reforward avg         : 0.000000000
+combined world obj    : output/reverse_drogon_runtime_targets/drogon_target_world.obj
+combined local obj    : output/reverse_drogon_runtime_targets/drogon_target_runtime_local.obj
+
+Per-submesh
+-----------
+Body_02 (GpuId7153)
+  verts                 : 2013
+  tris                  : 2664
+  nearest rmse          : 2.756090691
+  nearest avg           : 2.716061973
+  reforward rmse        : 0.000000000
+  bbox overflow         : 2003 / 2013 (99.50%)
+  local target min      : (-1.912871, -0.311195, -3.820978)
+  local target max      : (0.925838, 1.578753, 0.527201)
+back (GpuId7154)
+  verts                 : 3307
+  tris                  : 5669
+  nearest rmse          : 3.163444790
+  nearest avg           : 3.036721965
+  reforward rmse        : 0.000000000
+  bbox overflow         : 3307 / 3307 (100.00%)
+  local target min      : (-2.151799, 0.424078, -3.888012)
+  local target max      : (1.294542, 3.084311, 0.769912)
+Body (GpuId7155)
+  verts                 : 2736
+  tris                  : 4460
+  nearest rmse          : 2.560444024
+  nearest avg           : 2.270507045
+  reforward rmse        : 0.000000000
+  bbox overflow         : 1587 / 2736 (58.00%)
+  local target min      : (-2.128381, -0.290686, -3.919731)
+  local target max      : (1.171246, 3.241562, 5.758966)
+Leg (GpuId7156)
+  verts                 : 4624
+  tris                  : 7488
+  nearest rmse          : 1.388749511
+  nearest avg           : 1.156722829
+  reforward rmse        : 0.000000000
+  bbox overflow         : 1000 / 4624 (21.63%)
+  local target min      : (-1.388191, -0.369504, 0.017885)
+  local target max      : (1.158279, 3.377966, 2.510219)
+Wing (GpuId7157)
+  verts                 : 6724
+  tris                  : 11634
+  nearest rmse          : 4.272619518
+  nearest avg           : 3.540211427
+  reforward rmse        : 0.000000000
+  bbox overflow         : 4400 / 6724 (65.44%)
+  local target min      : (-6.112673, -2.206109, -3.909669)
+  local target max      : (5.897865, 3.488204, 2.888144)
+Head (GpuId7158)
+  verts                 : 10258
+  tris                  : 17060
+  nearest rmse          : 2.553188148
+  nearest avg           : 2.452689211
+  reforward rmse        : 0.000000000
+  bbox overflow         : 10258 / 10258 (100.00%)
+  local target min      : (-1.382384, 0.009553, -4.040064)
+  local target max      : (1.076096, 1.606674, 0.230270)

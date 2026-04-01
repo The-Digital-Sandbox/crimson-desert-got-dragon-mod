@@ -1,0 +1,212 @@
+Crimson Desert Dragon Texture Slots
+===================================
+
+source xml : C:\Users\user\crimson-desert-got-dragon-mod\dragon-extract\character\cd_m0004_00_dragon_00_0001.pac.xml
+submeshes   : 8
+unique dds  : 40
+
+Fastest safe texture swap path
+------------------------------
+- Keep the working PAC geometry and current CD UV layout.
+- Bake Drogon color/normal into the existing CD UVs.
+- Replace only `_baseColorTexture` and `_normalTexture` first.
+- Keep `_materialTexture`, `_heightTexture`, `_maskTexture`, and detail layers
+  as the original CD files until the render is stable.
+
+Per-submesh Slots
+-----------------
+cd_m0004_00_dragon_eyeright_0001
+  material : SkinnedMeshStandard
+  variants : 2
+  _baseColorTexture    character/texture/cd_m0004_00_dragon_eye_0001.dds
+  _normalTexture       character/texture/cd_m0004_00_dragon_eye_0001_n.dds
+  _materialTexture     character/texture/cd_m0004_00_dragon_eye_0001_sp.dds
+
+cd_m0004_00_dragon_eyeleft_0001
+  material : SkinnedMeshStandard
+  variants : 2
+  _baseColorTexture    character/texture/cd_m0004_00_dragon_eye_0001.dds
+  _normalTexture       character/texture/cd_m0004_00_dragon_eye_0001_n.dds
+  _materialTexture     character/texture/cd_m0004_00_dragon_eye_0001_sp.dds
+
+cd_m0004_00_dragon_body_0001_02
+  material : SkinnedMeshBlendHeight
+  variants : 2
+  _baseColorTexture    character/texture/cd_m0004_00_dragon_body_0001.dds
+  _normalTexture       character/texture/cd_m0004_00_dragon_body_0001_n.dds
+  _materialTexture     character/texture/cd_m0004_00_dragon_body_0001_sp.dds
+  _heightTexture       character/texture/cd_m0004_00_dragon_body_0001_disp.dds
+  _maskTexture         character/texture/cd_m0004_00_dragon_body_0001_m.dds
+  detail/extra:
+    _detailDiffuseMaskR character/texture/cd_texturelayer_dragon_0002.dds
+    _detailNormalMaskR character/texture/cd_texturelayer_dragon_0002_n.dds
+    _detailHeightMaskR character/texture/cd_texturelayer_dragon_0002_disp.dds
+    _detailMaterialMaskR character/texture/cd_texturelayer_dragon_0002_sp.dds
+    _detailDiffuseMaskG character/texture/cd_texturelayer_dragon_0001.dds
+    _detailNormalMaskG character/texture/cd_texturelayer_dragon_0001_n.dds
+    _detailHeightMaskG character/texture/cd_texturelayer_dragon_0001_disp.dds
+    _detailMaterialMaskG character/texture/cd_texturelayer_dragon_0001_sp.dds
+    _detailDiffuseMaskB character/texture/cd_texturelayer_dragon_0003.dds
+    _detailNormalMaskB character/texture/cd_texturelayer_dragon_0003_n.dds
+    _detailHeightMaskB character/texture/cd_texturelayer_dragon_0003_disp.dds
+    _detailMaterialMaskB character/texture/cd_texturelayer_dragon_0003_sp.dds
+
+cd_m0004_00_dragon_back_0001
+  material : SkinnedMeshBlendHeight
+  variants : 2
+  _baseColorTexture    character/texture/cd_m0004_00_dragon_back_0001.dds
+  _normalTexture       character/texture/cd_m0004_00_dragon_back_0001_n.dds
+  _materialTexture     character/texture/cd_m0004_00_dragon_back_0001_sp.dds
+  _heightTexture       character/texture/cd_m0004_00_dragon_back_0001_disp.dds
+  _maskTexture         character/texture/cd_m0004_00_dragon_back_0001_m.dds
+  detail/extra:
+    _detailDiffuseMaskR character/texture/cd_texturelayer_dragon_0002.dds
+    _detailNormalMaskR character/texture/cd_texturelayer_dragon_0002_n.dds
+    _detailHeightMaskR character/texture/cd_texturelayer_dragon_0002_disp.dds
+    _detailMaterialMaskR character/texture/cd_texturelayer_dragon_0002_sp.dds
+    _detailDiffuseMaskG character/texture/cd_texturelayer_dragon_0001.dds
+    _detailNormalMaskG character/texture/cd_texturelayer_dragon_0001_n.dds
+    _detailHeightMaskG character/texture/cd_texturelayer_dragon_0001_disp.dds
+    _detailMaterialMaskG character/texture/cd_texturelayer_dragon_0001_sp.dds
+    _detailDiffuseMaskB character/texture/cd_texturelayer_dragon_0001.dds
+    _detailNormalMaskB character/texture/cd_texturelayer_dragon_0001_n.dds
+    _detailHeightMaskB character/texture/cd_texturelayer_dragon_0001_disp.dds
+    _detailMaterialMaskB character/texture/cd_texturelayer_dragon_0001_sp.dds
+
+cd_m0004_00_dragon_body_0001
+  material : SkinnedMeshBlendHeight
+  variants : 2
+  _baseColorTexture    character/texture/cd_m0004_00_dragon_body_0001.dds
+  _normalTexture       character/texture/cd_m0004_00_dragon_body_0001_n.dds
+  _materialTexture     character/texture/cd_m0004_00_dragon_body_0001_sp.dds
+  _heightTexture       character/texture/cd_m0004_00_dragon_body_0001_disp.dds
+  _maskTexture         character/texture/cd_m0004_00_dragon_body_0001_m.dds
+  detail/extra:
+    _detailDiffuseMaskR character/texture/cd_texturelayer_dragon_0002.dds
+    _detailNormalMaskR character/texture/cd_texturelayer_dragon_0002_n.dds
+    _detailHeightMaskR character/texture/cd_texturelayer_dragon_0002_disp.dds
+    _detailMaterialMaskR character/texture/cd_texturelayer_dragon_0002_sp.dds
+    _detailDiffuseMaskG character/texture/cd_texturelayer_dragon_0001.dds
+    _detailNormalMaskG character/texture/cd_texturelayer_dragon_0001_n.dds
+    _detailHeightMaskG character/texture/cd_texturelayer_dragon_0001_disp.dds
+    _detailMaterialMaskG character/texture/cd_texturelayer_dragon_0001_sp.dds
+    _detailDiffuseMaskB character/texture/cd_texturelayer_dragon_0003.dds
+    _detailNormalMaskB character/texture/cd_texturelayer_dragon_0003_n.dds
+    _detailHeightMaskB character/texture/cd_texturelayer_dragon_0003_disp.dds
+    _detailMaterialMaskB character/texture/cd_texturelayer_dragon_0003_sp.dds
+
+cd_m0004_00_dragon_leg_0001
+  material : SkinnedMeshBlendHeight
+  variants : 2
+  _baseColorTexture    character/texture/cd_m0004_00_dragon_leg_0001.dds
+  _normalTexture       character/texture/cd_m0004_00_dragon_leg_0001_n.dds
+  _materialTexture     character/texture/cd_m0004_00_dragon_leg_0001_sp.dds
+  _heightTexture       character/texture/cd_m0004_00_dragon_leg_0001_disp.dds
+  _maskTexture         character/texture/cd_m0004_00_dragon_leg_0001_m.dds
+  detail/extra:
+    _detailDiffuseMaskR character/texture/cd_texturelayer_dragon_0002.dds
+    _detailNormalMaskR character/texture/cd_texturelayer_dragon_0002_n.dds
+    _detailHeightMaskR character/texture/cd_texturelayer_dragon_0002_disp.dds
+    _detailMaterialMaskR character/texture/cd_texturelayer_dragon_0002_sp.dds
+    _detailDiffuseMaskG character/texture/cd_texturelayer_dragon_0001.dds
+    _detailNormalMaskG character/texture/cd_texturelayer_dragon_0001_n.dds
+    _detailHeightMaskG character/texture/cd_texturelayer_dragon_0001_disp.dds
+    _detailMaterialMaskG character/texture/cd_texturelayer_dragon_0001_sp.dds
+    _detailDiffuseMaskB character/texture/cd_texturelayer_dragon_0003.dds
+    _detailNormalMaskB character/texture/cd_texturelayer_dragon_0003_n.dds
+    _detailHeightMaskB character/texture/cd_texturelayer_dragon_0003_disp.dds
+    _detailMaterialMaskB character/texture/cd_texturelayer_dragon_0003_sp.dds
+
+cd_m0004_00_dragon_wing_0001
+  material : SkinnedMeshBlendHeight
+  variants : 2
+  _baseColorTexture    character/texture/cd_m0004_00_dragon_wing_0001.dds
+  _normalTexture       character/texture/cd_m0004_00_dragon_wing_0001_n.dds
+  _materialTexture     character/texture/cd_m0004_00_dragon_wing_0001_sp.dds
+  _heightTexture       character/texture/cd_m0004_00_dragon_wing_0001_disp.dds
+  _maskTexture         character/texture/cd_m0004_00_dragon_wing_0001_m.dds
+  detail/extra:
+    _detailDiffuseMaskR character/texture/cd_texturelayer_dragon_0002.dds
+    _detailNormalMaskR character/texture/cd_texturelayer_dragon_0002_n.dds
+    _detailHeightMaskR character/texture/cd_texturelayer_dragon_0002_disp.dds
+    _detailMaterialMaskR character/texture/cd_texturelayer_dragon_0002_sp.dds
+    _detailDiffuseMaskG character/texture/cd_texturelayer_dragon_0001.dds
+    _detailNormalMaskG character/texture/cd_texturelayer_dragon_0001_n.dds
+    _detailHeightMaskG character/texture/cd_texturelayer_dragon_0001_disp.dds
+    _detailMaterialMaskG character/texture/cd_texturelayer_dragon_0001_sp.dds
+    _detailDiffuseMaskB character/texture/cd_texturelayer_dragon_0003.dds
+    _detailNormalMaskB character/texture/cd_texturelayer_dragon_0003_n.dds
+    _detailHeightMaskB character/texture/cd_texturelayer_dragon_0003_disp.dds
+    _detailMaterialMaskB character/texture/cd_texturelayer_dragon_0003_sp.dds
+
+cd_m0004_00_dragon_head_0001
+  material : SkinnedMeshBlendHeight
+  variants : 2
+  _baseColorTexture    character/texture/cd_m0004_00_dragon_head_0001.dds
+  _normalTexture       character/texture/cd_m0004_00_dragon_head_0001_n.dds
+  _materialTexture     character/texture/cd_m0004_00_dragon_head_0001_sp.dds
+  _heightTexture       character/texture/cd_m0004_00_dragon_head_0001_disp.dds
+  _maskTexture         character/texture/cd_m0004_00_dragon_head_0001_m.dds
+  detail/extra:
+    _detailDiffuseMaskR character/texture/cd_texturelayer_dragon_0002.dds
+    _detailNormalMaskR character/texture/cd_texturelayer_dragon_0002_n.dds
+    _detailHeightMaskR character/texture/cd_texturelayer_dragon_0002_disp.dds
+    _detailMaterialMaskR character/texture/cd_texturelayer_dragon_0002_sp.dds
+    _detailDiffuseMaskG character/texture/cd_texturelayer_dragon_0001.dds
+    _detailNormalMaskG character/texture/cd_texturelayer_dragon_0001_n.dds
+    _detailHeightMaskG character/texture/cd_texturelayer_dragon_0001_disp.dds
+    _detailMaterialMaskG character/texture/cd_texturelayer_dragon_0001_sp.dds
+    _detailDiffuseMaskB character/texture/cd_texturelayer_dragon_0002.dds
+    _detailNormalMaskB character/texture/cd_texturelayer_dragon_0002_n.dds
+    _detailHeightMaskB character/texture/cd_texturelayer_dragon_0002_disp.dds
+    _detailMaterialMaskB character/texture/cd_texturelayer_dragon_0002_sp.dds
+
+Files To Replace First
+----------------------
+- character/texture/cd_m0004_00_dragon_eye_0001.dds
+- character/texture/cd_m0004_00_dragon_eye_0001_n.dds
+- character/texture/cd_m0004_00_dragon_body_0001.dds
+- character/texture/cd_m0004_00_dragon_body_0001_n.dds
+- character/texture/cd_m0004_00_dragon_back_0001.dds
+- character/texture/cd_m0004_00_dragon_back_0001_n.dds
+- character/texture/cd_m0004_00_dragon_leg_0001.dds
+- character/texture/cd_m0004_00_dragon_leg_0001_n.dds
+- character/texture/cd_m0004_00_dragon_wing_0001.dds
+- character/texture/cd_m0004_00_dragon_wing_0001_n.dds
+- character/texture/cd_m0004_00_dragon_head_0001.dds
+- character/texture/cd_m0004_00_dragon_head_0001_n.dds
+
+Files To Keep CD For First Pass
+-------------------------------
+- character/texture/cd_m0004_00_dragon_eye_0001_sp.dds
+- character/texture/cd_m0004_00_dragon_body_0001_sp.dds
+- character/texture/cd_m0004_00_dragon_body_0001_disp.dds
+- character/texture/cd_m0004_00_dragon_body_0001_m.dds
+- character/texture/cd_m0004_00_dragon_back_0001_sp.dds
+- character/texture/cd_m0004_00_dragon_back_0001_disp.dds
+- character/texture/cd_m0004_00_dragon_back_0001_m.dds
+- character/texture/cd_m0004_00_dragon_leg_0001_sp.dds
+- character/texture/cd_m0004_00_dragon_leg_0001_disp.dds
+- character/texture/cd_m0004_00_dragon_leg_0001_m.dds
+- character/texture/cd_m0004_00_dragon_wing_0001_sp.dds
+- character/texture/cd_m0004_00_dragon_wing_0001_disp.dds
+- character/texture/cd_m0004_00_dragon_wing_0001_m.dds
+- character/texture/cd_m0004_00_dragon_head_0001_sp.dds
+- character/texture/cd_m0004_00_dragon_head_0001_disp.dds
+- character/texture/cd_m0004_00_dragon_head_0001_m.dds
+
+Shared Detail Layers
+--------------------
+- These are referenced by multiple body regions. Leave them alone at first.
+- character/texture/cd_texturelayer_dragon_0002.dds
+- character/texture/cd_texturelayer_dragon_0002_n.dds
+- character/texture/cd_texturelayer_dragon_0002_disp.dds
+- character/texture/cd_texturelayer_dragon_0002_sp.dds
+- character/texture/cd_texturelayer_dragon_0001.dds
+- character/texture/cd_texturelayer_dragon_0001_n.dds
+- character/texture/cd_texturelayer_dragon_0001_disp.dds
+- character/texture/cd_texturelayer_dragon_0001_sp.dds
+- character/texture/cd_texturelayer_dragon_0003.dds
+- character/texture/cd_texturelayer_dragon_0003_n.dds
+- character/texture/cd_texturelayer_dragon_0003_disp.dds
+- character/texture/cd_texturelayer_dragon_0003_sp.dds

@@ -1,0 +1,27 @@
+Segmented Bake OBJ
+==================
+
+input_pac     : C:\Users\user\crimson-desert-got-dragon-mod\output\dragon_drogon_segmented.pac
+manifest      : C:\Users\user\crimson-desert-got-dragon-mod\output\reverse_drogon_runtime_targets_segmented\manifest.json
+output_obj    : C:\Users\user\crimson-desert-got-dragon-mod\output\dragon_drogon_segmented_bake.obj
+
+Included submeshes
+------------------
+Body_02
+  vertices : 2013
+  triangles: 2664
+back
+  vertices : 3307
+  triangles: 5669
+Body
+  vertices : 2736
+  triangles: 4460
+Leg
+  vertices : 4624
+  triangles: 7488
+Wing
+  vertices : 6724
+  triangles: 11634
+Head
+  vertices : 10258
+  triangles: 17060
