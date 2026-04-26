@@ -1,0 +1,157 @@
+# CD Dragon Anim Format — Research Notes
+
+Living document for the anim-retarget project. Append findings here as we go;
+the Phase 2+ plan will be written against this file's state.
+
+## Confirmed (2026-04-26, design phase)
+
+- Format: Havok TAGFILE, magic `TAG0`, `SDKV20240200` (Havok SDK build 2024-02)
+- Dragon skeleton hkx: `dragon-extract/character/cd_m0004_00_dragon.hkx` (505,220 bytes)
+- Dragon cooked skeleton: `dragon-extract/character/cd_m0004_00_dragon.pab` (88,950 bytes)
+- Dragon mesh PAZ: `0009/3.paz` @ offset `0x2DEEB8D0` (5,208,284 bytes)
+
+## Open
+
+- Whether the override mechanism (JMM) intercepts anim files at all
+- `.paa` binary format internals (header layout beyond `PAR ` magic, keyframe encoding) — full reverse engineer needed
+- The role of the 2-byte `f0 03` prefix on full-detail `.paa` clips (LOD variants don't have it)
+- Whether `.paa_metabin` is required alongside the `.paa` for the engine to load a clip
+- Whether `.motionblending` graphs reference clips by name or by some hash
+
+## Phase 0 findings
+
+### PAZ format learned (Task 2)
+
+PAZ files are raw binary blobs with no internal structure — they are opaque without their sibling `0.pamt` index. Each numbered subdirectory (`0009/`, etc.) contains one `0.pamt` alongside its `.paz` files; the PAMT is the sole directory for all PAZ files in that folder and is small enough to load in full.
+
+PAMT binary layout (little-endian):
+- `[0:4]` self-CRC of `data[12:]` (PaChecksum, not verified during listing)
+- `[4:8]` `paz_count` (u32) — number of PAZ files in this directory
+- `[8:16]` 8-byte padding/hash
+- PAZ table: `paz_count × (u32 checksum + u32 size)` with a u32 separator between entries (NOT after the last)
+- Folder section: u32 size-prefix, then `(u32 parent, u8 slen, name bytes)` entries; parent `0xFFFFFFFF` marks the root folder prefix
+- Node section: same `(u32 parent, u8 slen, name bytes)` structure; entries indexed by relative byte offset for cross-reference
+- Folder records block: `u32 folder_count + u32 hash + folder_count × 16 bytes`
+- File records: 20 bytes each — `u32 node_ref, u32 paz_offset, u32 comp_size, u32 orig_size, u32 flags`; `flags & 0xFF` = paz_index (added to pamt_stem to derive the PAZ filename number, e.g. stem 0 + index 3 → `3.paz`)
+
+To list a specific PAZ, load its sibling `0.pamt`, parse all file records, and filter by `(pamt_stem + paz_index) == target_paz_stem`. No PAZ payload bytes are read.
+
+### PAZ inventory (Task 1)
+
+- Path: `C:\Program Files (x86)\Steam\steamapps\common\Crimson Desert`
+- Structure: numbered subdirectories (`0000`–`0036`, 34 dirs, no root-level paz files)
+- Count: 174 `.paz` archives across 34 subdirectories
+- Total size: 126 GB
+- Largest 5:
+  1. `0008/0.paz` — 915 MB (959,641,488 bytes)
+  2. `0012/3.paz` — 911 MB (955,071,280 bytes)
+  3. `0000/21.paz` — 907 MB (951,223,600 bytes)
+  4. `0004/0.paz` — 904 MB (948,341,408 bytes)
+  5. `0008/1.paz` — 901 MB (944,812,624 bytes)
+- Most-populated subdirs: `0015` (53 files), `0009` (37 files), `0000` (34 files)
+- Mesh PAZ confirmed location: `C:\Program Files (x86)\Steam\steamapps\common\Crimson Desert\0009\3.paz` — 874 MB (sanity-check PASSED)
+
+### Anim PAZ candidates (Task 3)
+
+- Top PAZ: `0009/20.paz` with 921 scored entries, 74 entries for `cd_dragon_basic` specifically
+- Filename pattern observed: names ARE fully descriptive — e.g. `cd_dragon_basic_00_00_air_move_fly_run_f_land_end_00.paa`, `cd_dragon_basic_00_00_nor_move_fly_run_break_00.paa`; state + direction + action encoded in path
+- **CRITICAL FINDING: animation clips use `.paa` extension, NOT `.hkx`**. Zero `.hkx` files exist in the anim PAZ. The 45 `.hkx` files in `0009/35.paz` are all skeleton / ragdoll / physics-body assets (e.g. `cd_m0004_00_dragon_ub_00_0001.hkx`, `cd_m0004_00_dragon_tail_00_0001.hkx`) — not per-clip animations.
+- Other PAZs with dragon-related content:
+  - `0009/35.paz` — 45 `.hkx` skeleton/ragdoll files for m0004 creatures (dragon, wyvern, golemdragon, …)
+  - `0009/36.paz` — 96 `.paa` entries, wyvern + rider anims (top score 3 via `fly`+`land`)
+  - `0010/0.paz` — 715 `.paa_metabin` actionchart entries; 87 for `cd_dragon_basic` (mirror of 0009/20.paz anims as action-chart sidecars)
+  - `0009/0.paz` — 323 `.motionblending` entries (motion-blending graphs; score 2 via `walk`)
+- Total candidate clip count (across all PAZs): 2,741 scored entries across 29 PAZs; ~74 primary dragon (`cd_dragon_basic`) `.paa` clips in `0009/20.paz` plus ~87 matching actionchart sidecars in `0010/0.paz`
+- `.paa` size range (dragon_basic only): 654 – 149,584 bytes; median ~5 KB — clearly standalone per-clip files, not monoliths
+- Scan stats: 174 PAZs scanned, 29 with at least one score ≥ 2 entry; runtime ~2 minutes
+
+**Phase 0 verdict: PROCEED — pivot from `.hkx` to `.paa`**
+
+921 standalone per-clip files exist in `0009/20.paz`, including 74 dragon-specific (`cd_dragon_basic_*.paa`). The original kill criterion fired strictly because the clips are `.paa` not `.hkx`, but the underlying concern — that no per-clip injection units exist — is false. The 45 `.hkx` files found in `0009/35.paz` are skeleton/ragdoll/physics assets, not animation clips. Phase 1 override spike continues on a `.paa` file with no plan changes other than file extension. Phase 2 decode of `.paa` will be a new, harder project (Pearl Abyss proprietary format, no community tooling) — to be brainstormed separately when we get there.
+
+### Pivot from .hkx to .paa (decision 2026-04-26)
+
+The kill criterion as written ("no PAZ has more than 1 dragon `.hkx`") was a proxy for per-clip file existence. That proxy fired, but the underlying premise of the project — that standalone per-clip files exist which we can override — is fully intact: `0009/20.paz` contains 921 scored entries, 74 of them `cd_dragon_basic_*.paa`, clearly one file per animation state.
+
+All future tasks (4–8) operate on `.paa` files instead of `.hkx`. The Havok TAGFILE assumption from the spec is dead for clip data; it remains correct for the skeleton (`cd_m0004_00_dragon.hkx` is genuinely Havok format).
+
+Companion formats also discovered during the scan: `.paa_metabin` (87 dragon-specific entries in `0010/0.paz`, likely action-chart sidecars that accompany each `.paa` clip) and `.motionblending` (323 entries in `0009/0.paz`, motion-blending graphs that stitch clips together at runtime).
+
+### Extracted anim files (Task 4)
+
+- Source PAZ: `0009/20.paz` (top-ranked by total summed score across all entries)
+- Files extracted: 915 total entries from `0009/20.paz` to `dragon-anim-extract/character/`
+- Dragon-specific (`cd_dragon_*`) count: 174 files (74 full-detail + matching `_lod` low-detail variants)
+- `.paa` magic bytes: ASCII `PAR ` (0x50 0x41 0x52 0x20 = "PAR<space>") — likely "Pearl Abyss aRchive" or similar Pearl Abyss tag
+- **Two-tier header pattern observed:**
+  - **LOD variants** (small, ~1.5–2.2 KB): start cleanly with `PAR ` at offset 0
+  - **Full-detail clips** (large, ~12–120 KB): start with a 2-byte prefix `f0 03` THEN `PAR ` at offset 2. The bytes after the `PAR ` magic are byte-identical between the two variant types, so the prefix is a wrapper, not part of the format header proper. Could be a chunk-count, an LZ4-style frame indicator, or a Pearl Abyss container shell. Needs decode work in Phase 2 to confirm.
+- Across 74 sampled `cd_dragon_basic_*.paa` files: 54 start with `PAR` at offset 0 (the LOD set), 20 start with `f0 03` then `PAR ` at offset 2 (the full-detail set). 100% of files contain the `PAR ` magic somewhere in the first 4 bytes.
+- Size range (full-detail dragon clips, non-LOD): 11,704 – 119,892 bytes
+- **Best Phase 1 spike candidate: `cd_dragon_basic_01_00_air_stand_hover_idle_00.paa`** — explicitly named "air stand hover idle"; this is the dragon hovering stationary in air. Loops continuously when the dragon is mid-air idle, so any override change is immediately visible. Will confirm exact file size and pre-test inspection during Phase 1.
+- Largest dragon clip: `cd_dragon_basic_00_00_nor_move_fly_run_ing_00.paa` (119,892 bytes)
+- Smallest non-LOD dragon clips: `cd_dragon_basic_00_00_nor_move_fly_run_driftr_ing_00.paa` (11,704 bytes), `..._driftl_ing_00.paa` (11,768 bytes)
+- Other clips of interest for donor-swap testing: `cd_dragon_basic_00_00_air_move_fly_land_ing_00.paa` (landing motion, visually distinct from idle-hover)
+
+## Phase 1 findings
+
+### Sub-test A — clone-of-self baseline (Task 5, 2026-04-26)
+
+- Test clip: `cd_dragon_basic_01_00_air_stand_hover_idle_00.paa` (33,698 bytes, dragon air-stand-hover-idle)
+- JMM mod path (input): `…/CD JSON Mod Manager/mods/Drogon-AnimSpike-Phase1/files/character/cd_dragon_basic_01_00_air_stand_hover_idle_00.paa`
+- File hash before/after copy: `a9cb0fcdefa65acd453bc21857cbf9e944e9caf67a8f6522f2e2cae3fec60d23` (sha256, identical — byte-exact clone)
+- **Result: PASS — dragon hovers identically to vanilla, anims look perfect.**
+- Implication: byte-identical file produces byte-identical behaviour. JMM is not corrupting our file in transit. Whether JMM is actually overriding (vs silently ignoring our mod and the engine still reads vanilla bytes from `0009/20.paz`) is not yet discriminated — Test B (zero bytes) will tell.
+
+### JMM mechanism learned (during Task 6 apply, 2026-04-26)
+
+JMM does NOT patch the original PAZ where vanilla files live. Instead, on `Apply`:
+
+1. Auto-discovery scan indexes all 1,492,619 game files across 33 groups, building a VFS map
+2. Resolves our naive `files/character/<filename>` to the deep VFS path: `character/motion/2_mon/cd_m0004_00_dragon/cd_m0004_00_dragon/00_mon/<filename>` (note the doubled `cd_m0004_00_dragon` segment — likely entity-id-twice for category + variant)
+3. Writes a NEW overlay PAZ + PAMT pair into a new group, e.g. `0036/0.paz` (144 bytes) + `0036/0.pamt` (227 bytes)
+4. Updates `meta/0.papgt` (the master VFS routing table) atomically to redirect lookups for our file path to the new overlay PAZ instead of the vanilla one
+5. Game restart required to re-read `meta/0.papgt`
+
+The vanilla `0009/20.paz` is untouched — overlays in `0036/` win on lookup priority.
+
+JMM compresses our raw input file before writing to the overlay PAZ (apply log shows `[compress+write, flags=0x0002]`). The flag 0x0002 likely identifies the compression scheme (probably the same wrapper observed on full-detail vanilla `.paa` clips — `0xf0 0x03` prefix before `PAR ` magic). For our zero-byte test, compressed zeros still decompress to zeros; the test premise holds.
+
+### Anim VFS path structure (discovered 2026-04-26)
+
+Dragon anim clips live at: `character/motion/2_mon/cd_m0004_00_dragon/cd_m0004_00_dragon/00_mon/<clip>.paa`
+
+Path segments decoded:
+- `character/motion/` — anim root
+- `2_mon/` — monsters category (vs presumably `1_pc/` for player characters etc.)
+- `cd_m0004_00_dragon/` — entity ID (appears twice — variant + monsterscope?)
+- `00_mon/` — sub-category
+- `<clip>.paa` — the actual clip file
+
+Implication for future modding: when authoring a mod folder, the `files/` subdirectory only needs to contain the clip filename — JMM auto-resolves to the full VFS path during apply. No need to manually mirror the deep path structure.
+
+### Sub-test B — zero-byte override (Task 6, 2026-04-26)
+
+- Same clip slot, contents replaced with 33,698 bytes of `0x00`
+- File hash post-zero: `f98c481f591147a4aaa2159ddf3723bfeef01b8ff37ad66cc36373082d6a6b74`
+- JMM Apply log confirms compress+write into overlay `0036/0.paz` (144 bytes), `0036/0.pamt` (227 bytes), `meta/0.papgt` updated atomically
+- Game restarted, hover-idle observed for 30 sec
+- **Result: NO CHANGE** — dragon hovered identically to vanilla
+- Interpretation at the time: ambiguous between (a) JMM not reaching engine, (b) engine validating magic and falling back, (c) wrong clip-state mapping. Test C designed to discriminate.
+
+### Sub-test C — donor swap (Task 7, 2026-04-26) — **PHASE 1 KILL**
+
+- Same clip slot, contents replaced with 28,938 bytes of valid donor: `cd_dragon_basic_00_00_air_move_fly_land_ing_00.paa` (landing clip — visually distinct from idle hover: folded wings, descending pose)
+- File hash post-swap: `e8f614318d430dfb8923775999b0ea13dac27f7dc1499732713c95632d2a6222`
+- JMM re-apply confirmed by user (overlay regenerated; size 33,698 → 28,938 not specifically logged but apply triggered)
+- Full game restart, hover-idle observed
+- **Result: NO CHANGE** — dragon hovered identically to vanilla, NO landing-pose characteristics visible
+- Interpretation: JMM's overlay PAZ mechanism does NOT reach the engine's anim load path. The engine ignores the redirect entirely for `.paa` files. Possible deeper causes (none yet verified):
+  - Anim clips batch-loaded into memory at game launch and never re-read
+  - `.motionblending` graphs reference clips by some path/hash that bypasses `meta/0.papgt`
+  - Engine has a separate anim-resolution layer that takes priority over `meta/0.papgt`
+  - Anim PAZ has integrity-check / checksum validation against a master table
+
+**Phase 1 verdict: STOP — JMM-based override does not affect anim clips.**
+
+Project pauses for a Phase 2 brainstorm to design a different injection mechanism. The JMM-based pipeline that worked for V11 (mesh PAC + textures + cooked PAB) does NOT work for anim `.paa` files. Whatever injection path we use for anims must operate at a layer JMM doesn't touch.

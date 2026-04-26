@@ -1,0 +1,101 @@
+============================================================
+BUILD PAC v10 — Palette-aware hybrid
+  Bone indices: CD dragon (correct palette encoding)
+  Bone weights: Blender (hand-painted, palette-translated)
+============================================================
+
+  Loading bone palette...
+  Palette: 227 entries
+  Original PAC: 5,208,284 bytes
+  CD bbox: (-7.98,-0.01,-3.64) -> (7.98,3.10,6.38)
+
+[1] Reading OBJ...
+  30112 verts, 18892 UVs, 26551 normals, 36569 faces
+  Loading bone weights from C:\Users\waelj\crimson-desert-got-dragon-mod\output\drogon_weights_v9_30k.json...
+  Loaded 30112 vertex bone weights
+
+[2] Transforming to game space...
+  Scale: 0.202137 (x1.0)
+
+[3] Assigning vertices to 8 submeshes (topology-aware)...
+
+  Phase 1 — Seed assignment (CD-spatial):
+    Eyeright    :      0 (target    225)
+    Eyeleft     :      0 (target    225)
+    Body_02     :   1409 (target   2013)
+    back        :   2647 (target   3307)
+    Body        :   8668 (target   2736)
+    Leg         :   2867 (target   4624)
+    Wing        :   3410 (target   6724)
+    Head        :  11111 (target  10258)
+  Initial cross-boundary faces: 3387
+    Iteration 1: moved 1294 vertices, 1237 cross-boundary faces remain
+    Iteration 2: moved 177 vertices, 986 cross-boundary faces remain
+    Iteration 3: moved 42 vertices, 914 cross-boundary faces remain
+    Iteration 4: moved 6 vertices, 898 cross-boundary faces remain
+    Iteration 5: moved 0 vertices, 898 cross-boundary faces remain
+  Phase 2 — Stable at 898 cross-boundary faces (no more moves possible)
+
+  Phase 3 — Pre-rebalance counts:
+    Eyeright    :      0 (target    225, diff -225)
+    Eyeleft     :      0 (target    225, diff -225)
+    Body_02     :   1255 (target   2013, diff -758)
+    back        :   2660 (target   3307, diff -647)
+    Body        :   8898 (target   2736, diff +6162)
+    Leg         :   2770 (target   4624, diff -1854)
+    Wing        :   3401 (target   6724, diff -3323)
+    Head        :  11128 (target  10258, diff +870)
+
+  Final assignment:
+    Eyeright    :    225 (target    225, diff +0)
+    Eyeleft     :    225 (target    225, diff +0)
+    Body_02     :   2013 (target   2013, diff +0)
+    back        :   3307 (target   3307, diff +0)
+    Body        :   5870 (target   2736, diff +3134)
+    Leg         :   3818 (target   4624, diff -806)
+    Wing        :   4396 (target   6724, diff -2328)
+    Head        :  10258 (target  10258, diff +0)
+
+  Cross-boundary faces: 11785
+  NOTE: 11785 cross-boundary faces remain (structurally unavoidable)
+  NOTE: 6268 vertex count mismatch — padding/truncation will handle remainder
+
+[3.5] Building global CD dragon lookup + transferring bone data...
+    Global KD-tree: 30112 CD dragon vertices
+    Eyeright    : avg=0.247, max=0.462
+    Eyeleft     : avg=0.213, max=0.423
+    Body_02     : avg=0.166, max=0.418
+    back        : avg=0.142, max=0.468
+    Body        : avg=0.191, max=0.647
+    Leg         : avg=0.259, max=0.704
+    Wing        : avg=0.442, max=1.596
+    Head        : avg=0.213, max=0.702
+    Overall: avg=0.237, max=1.596
+
+[3.6] Computing normals + tangents...
+  Normals: 29919 vertices
+  Tangents: 30112 vertices
+
+[4] Building submesh vertex + index data (CORRECT layout)...
+  Eyeright    :    225 verts,      0 real faces
+  Eyeleft     :    225 verts,      0 real faces
+  Body_02     :   2013 verts,   1011 real faces
+  back        :   3307 verts,   2799 real faces
+  Body        :   2736 verts,    929 real faces
+  Leg         :   4624 verts,   4177 real faces
+  Wing        :   6724 verts,   5123 real faces
+  Head        :  10258 verts,  10335 real faces
+
+[5] Patching LOD0...
+  Wrote 1,204,480 bytes of vertex data
+  Wrote 298,842 bytes of index data
+
+[6] Patching LOD1-3...
+  LOD1: wrote 27059 verts, 132876 indices
+  LOD2: wrote 24117 verts, 118311 indices
+  LOD3: wrote 22562 verts, 112149 indices
+
+  PAC written: C:\Users\waelj\crimson-desert-got-dragon-mod\output\drogon_v10.pac
+  Size: 5,208,284 (original: 5,208,284)
+
+  Add --deploy to write to game files.
