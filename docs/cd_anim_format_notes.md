@@ -15,8 +15,10 @@ the Phase 2+ plan will be written against this file's state.
 - Which PAZ holds dragon anim clips
 - File extension(s) for anim clips (`.hkx` likely, but unverified)
 - Naming convention for clips (does filename indicate which gameplay state?)
-- Whether anim files are standalone or aggregated into one container
 - Whether the override mechanism (JMM) intercepts anim files at all
+- `.paa` binary format internals (magic bytes, header layout, keyframe encoding) — full reverse engineer needed
+- Whether `.paa_metabin` is required alongside the `.paa` for the engine to load a clip
+- Whether `.motionblending` graphs reference clips by name or by some hash
 
 ## Phase 0 findings
 
@@ -65,11 +67,17 @@ To list a specific PAZ, load its sibling `0.pamt`, parse all file records, and f
 - `.paa` size range (dragon_basic only): 654 – 149,584 bytes; median ~5 KB — clearly standalone per-clip files, not monoliths
 - Scan stats: 174 PAZs scanned, 29 with at least one score ≥ 2 entry; runtime ~2 minutes
 
-**Phase 0 verdict: STOP — animation clips are `.paa` format, not `.hkx`**
+**Phase 0 verdict: PROCEED — pivot from `.hkx` to `.paa`**
 
-The kill criterion "no PAZ has more than 1 dragon `.hkx` entry" is met in spirit: `0009/35.paz` has 10 dragon-named `.hkx` files but they are all skeleton/physics assets (zero contain animation clip data). The actual per-clip dragon animations are in `0009/20.paz` as `.paa` files — a proprietary CD format unrelated to Havok HKX.
+921 standalone per-clip files exist in `0009/20.paz`, including 74 dragon-specific (`cd_dragon_basic_*.paa`). The original kill criterion fired strictly because the clips are `.paa` not `.hkx`, but the underlying concern — that no per-clip injection units exist — is false. The 45 `.hkx` files found in `0009/35.paz` are skeleton/ragdoll/physics assets, not animation clips. Phase 1 override spike continues on a `.paa` file with no plan changes other than file extension. Phase 2 decode of `.paa` will be a new, harder project (Pearl Abyss proprietary format, no community tooling) — to be brainstormed separately when we get there.
 
-Consequence: the Havok-based anim-retarget plan (Tasks 4+) cannot proceed as written. We cannot convert Drogon GLTF → `.hkx` and drop it in, because the game does not use `.hkx` for animation clips at all. The new spec must first reverse-engineer the `.paa` binary format before any retarget pipeline is possible.
+### Pivot from .hkx to .paa (decision 2026-04-26)
+
+The kill criterion as written ("no PAZ has more than 1 dragon `.hkx`") was a proxy for per-clip file existence. That proxy fired, but the underlying premise of the project — that standalone per-clip files exist which we can override — is fully intact: `0009/20.paz` contains 921 scored entries, 74 of them `cd_dragon_basic_*.paa`, clearly one file per animation state.
+
+All future tasks (4–8) operate on `.paa` files instead of `.hkx`. The Havok TAGFILE assumption from the spec is dead for clip data; it remains correct for the skeleton (`cd_m0004_00_dragon.hkx` is genuinely Havok format).
+
+Companion formats also discovered during the scan: `.paa_metabin` (87 dragon-specific entries in `0010/0.paz`, likely action-chart sidecars that accompany each `.paa` clip) and `.motionblending` (323 entries in `0009/0.paz`, motion-blending graphs that stitch clips together at runtime).
 
 ## Phase 1 findings
 
