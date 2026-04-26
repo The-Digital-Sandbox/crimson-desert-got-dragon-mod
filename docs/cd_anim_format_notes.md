@@ -51,6 +51,26 @@ To list a specific PAZ, load its sibling `0.pamt`, parse all file records, and f
 - Most-populated subdirs: `0015` (53 files), `0009` (37 files), `0000` (34 files)
 - Mesh PAZ confirmed location: `C:\Program Files (x86)\Steam\steamapps\common\Crimson Desert\0009\3.paz` — 874 MB (sanity-check PASSED)
 
+### Anim PAZ candidates (Task 3)
+
+- Top PAZ: `0009/20.paz` with 921 scored entries, 74 entries for `cd_dragon_basic` specifically
+- Filename pattern observed: names ARE fully descriptive — e.g. `cd_dragon_basic_00_00_air_move_fly_run_f_land_end_00.paa`, `cd_dragon_basic_00_00_nor_move_fly_run_break_00.paa`; state + direction + action encoded in path
+- **CRITICAL FINDING: animation clips use `.paa` extension, NOT `.hkx`**. Zero `.hkx` files exist in the anim PAZ. The 45 `.hkx` files in `0009/35.paz` are all skeleton / ragdoll / physics-body assets (e.g. `cd_m0004_00_dragon_ub_00_0001.hkx`, `cd_m0004_00_dragon_tail_00_0001.hkx`) — not per-clip animations.
+- Other PAZs with dragon-related content:
+  - `0009/35.paz` — 45 `.hkx` skeleton/ragdoll files for m0004 creatures (dragon, wyvern, golemdragon, …)
+  - `0009/36.paz` — 96 `.paa` entries, wyvern + rider anims (top score 3 via `fly`+`land`)
+  - `0010/0.paz` — 715 `.paa_metabin` actionchart entries; 87 for `cd_dragon_basic` (mirror of 0009/20.paz anims as action-chart sidecars)
+  - `0009/0.paz` — 323 `.motionblending` entries (motion-blending graphs; score 2 via `walk`)
+- Total candidate clip count (across all PAZs): 2,741 scored entries across 29 PAZs; ~74 primary dragon (`cd_dragon_basic`) `.paa` clips in `0009/20.paz` plus ~87 matching actionchart sidecars in `0010/0.paz`
+- `.paa` size range (dragon_basic only): 654 – 149,584 bytes; median ~5 KB — clearly standalone per-clip files, not monoliths
+- Scan stats: 174 PAZs scanned, 29 with at least one score ≥ 2 entry; runtime ~2 minutes
+
+**Phase 0 verdict: STOP — animation clips are `.paa` format, not `.hkx`**
+
+The kill criterion "no PAZ has more than 1 dragon `.hkx` entry" is met in spirit: `0009/35.paz` has 10 dragon-named `.hkx` files but they are all skeleton/physics assets (zero contain animation clip data). The actual per-clip dragon animations are in `0009/20.paz` as `.paa` files — a proprietary CD format unrelated to Havok HKX.
+
+Consequence: the Havok-based anim-retarget plan (Tasks 4+) cannot proceed as written. We cannot convert Drogon GLTF → `.hkx` and drop it in, because the game does not use `.hkx` for animation clips at all. The new spec must first reverse-engineer the `.paa` binary format before any retarget pipeline is possible.
+
 ## Phase 1 findings
 
 (to be filled in)
