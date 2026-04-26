@@ -8,7 +8,7 @@ the Phase 2+ plan will be written against this file's state.
 - Format: Havok TAGFILE, magic `TAG0`, `SDKV20240200` (Havok SDK build 2024-02)
 - Dragon skeleton hkx: `dragon-extract/character/cd_m0004_00_dragon.hkx` (505,220 bytes)
 - Dragon cooked skeleton: `dragon-extract/character/cd_m0004_00_dragon.pab` (88,950 bytes)
-- Dragon mesh PAZ: `0009/3.paz` @ offset `0x2DCAD140` (5,208,284 bytes)
+- Dragon mesh PAZ: `0009/3.paz` @ offset `0x2DEEB8D0` (5,208,284 bytes)
 
 ## Open
 
@@ -19,6 +19,22 @@ the Phase 2+ plan will be written against this file's state.
 - Whether the override mechanism (JMM) intercepts anim files at all
 
 ## Phase 0 findings
+
+### PAZ format learned (Task 2)
+
+PAZ files are raw binary blobs with no internal structure — they are opaque without their sibling `0.pamt` index. Each numbered subdirectory (`0009/`, etc.) contains one `0.pamt` alongside its `.paz` files; the PAMT is the sole directory for all PAZ files in that folder and is small enough to load in full.
+
+PAMT binary layout (little-endian):
+- `[0:4]` self-CRC of `data[12:]` (PaChecksum, not verified during listing)
+- `[4:8]` `paz_count` (u32) — number of PAZ files in this directory
+- `[8:16]` 8-byte padding/hash
+- PAZ table: `paz_count × (u32 checksum + u32 size)` with a u32 separator between entries (NOT after the last)
+- Folder section: u32 size-prefix, then `(u32 parent, u8 slen, name bytes)` entries; parent `0xFFFFFFFF` marks the root folder prefix
+- Node section: same `(u32 parent, u8 slen, name bytes)` structure; entries indexed by relative byte offset for cross-reference
+- Folder records block: `u32 folder_count + u32 hash + folder_count × 16 bytes`
+- File records: 20 bytes each — `u32 node_ref, u32 paz_offset, u32 comp_size, u32 orig_size, u32 flags`; `flags & 0xFF` = paz_index (added to pamt_stem to derive the PAZ filename number, e.g. stem 0 + index 3 → `3.paz`)
+
+To list a specific PAZ, load its sibling `0.pamt`, parse all file records, and filter by `(pamt_stem + paz_index) == target_paz_stem`. No PAZ payload bytes are read.
 
 ### PAZ inventory (Task 1)
 

@@ -1,5 +1,6 @@
 """Tests for PAZ content listing (read-only inspection, no extraction)."""
 
+import pytest
 from pathlib import Path
 
 from tools.anim.paz_listing import list_paz_contents, PazEntry
@@ -13,8 +14,7 @@ def test_list_paz_contents_returns_dragon_pac_for_known_paz():
     )
     if not paz_path.exists():
         # Allow alternate install paths; the test owner updates this constant.
-        print(f"SKIP — PAZ not found: {paz_path}")
-        return  # skip — let the runner know via stdout
+        pytest.skip(f"PAZ not found: {paz_path}")
 
     entries = list_paz_contents(paz_path)
 
@@ -40,3 +40,5 @@ def test_list_paz_contents_returns_dragon_pac_for_known_paz():
     assert len(dragon_pac_entries) == 1, \
         f"expected exactly one dragon PAC entry, got {len(dragon_pac_entries)}"
     assert dragon_pac_entries[0].size == 5_208_284
+    # Pin offset so a game-patch that moves the file is immediately detected.
+    assert dragon_pac_entries[0].offset == 770_619_600  # 0x2DEEB8D0
