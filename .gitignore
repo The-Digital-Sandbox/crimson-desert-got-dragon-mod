@@ -13,3 +13,6 @@ __pycache__/
 
 # Local worktrees
 .worktrees/
+
+# Phase 0 anim extraction output (large binary, regeneratable)
+dragon-anim-extract/
