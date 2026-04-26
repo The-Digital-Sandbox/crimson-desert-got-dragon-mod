@@ -26,7 +26,6 @@ so listing is fast and uses constant memory regardless of archive size.
 
 from __future__ import annotations
 
-import os
 import struct
 from collections import namedtuple
 from pathlib import Path
@@ -71,8 +70,6 @@ def list_paz_contents(paz_path: Path) -> List[PazEntry]:
     if not paz_stem.isdigit():
         raise ValueError(f"PAZ filename must be numeric (got {paz_path.name!r})")
 
-    target_paz_num = int(paz_stem)
-
     # Parse the PAMT file
     data = pamt_path.read_bytes()
     entries = _parse_pamt(data, pamt_path, paz_dir)
@@ -81,7 +78,7 @@ def list_paz_contents(paz_path: Path) -> List[PazEntry]:
     paz_name = paz_path.name.lower()  # e.g. "3.paz"
     result: List[PazEntry] = []
     for path_str, offset, comp_size, orig_size, paz_file_path in entries:
-        if os.path.basename(paz_file_path).lower() == paz_name:
+        if Path(paz_file_path).name.lower() == paz_name:
             result.append(PazEntry(
                 filename=path_str,
                 offset=offset,
@@ -121,12 +118,15 @@ def _parse_pamt(
     # separated by a u32 separator between entries (not after the last).
     pamt_stem = int(pamt_path.stem)  # e.g. 0 for "0.pamt"
     paz_index_to_num: dict[int, int] = {}
-    for i in range(paz_count):
-        _checksum = struct.unpack_from("<I", data, off)[0]; off += 4
-        _size = struct.unpack_from("<I", data, off)[0]; off += 4
-        paz_index_to_num[i] = pamt_stem + i
-        if i < paz_count - 1:
-            off += 4  # separator u32 between entries
+    try:
+        for i in range(paz_count):
+            _checksum = struct.unpack_from("<I", data, off)[0]; off += 4
+            _size = struct.unpack_from("<I", data, off)[0]; off += 4
+            paz_index_to_num[i] = pamt_stem + i
+            if i < paz_count - 1:
+                off += 4  # separator u32 between entries
+    except struct.error as e:
+        raise ValueError(f"PAMT PAZ table truncated or paz_count corrupted: {e}") from e
 
     # Folder section
     if off + 4 > len(data):
@@ -145,6 +145,7 @@ def _parse_pamt(
         if parent == 0xFFFFFFFF:
             folder_prefix = name
         off += 5 + slen
+    off = folder_end  # snap to declared section end (guards against early break)
 
     # Node section
     if off + 4 > len(data):
@@ -163,6 +164,7 @@ def _parse_pamt(
         name = data[off + 5: off + 5 + slen].decode("utf-8", errors="replace")
         nodes[rel] = (parent, name)
         off += 5 + slen
+    off = node_start + node_size  # snap to declared section end (guards against early break)
 
     def build_path(node_ref: int) -> str:
         parts = []
