@@ -12,11 +12,9 @@ the Phase 2+ plan will be written against this file's state.
 
 ## Open
 
-- Which PAZ holds dragon anim clips
-- File extension(s) for anim clips (`.hkx` likely, but unverified)
-- Naming convention for clips (does filename indicate which gameplay state?)
 - Whether the override mechanism (JMM) intercepts anim files at all
-- `.paa` binary format internals (magic bytes, header layout, keyframe encoding) — full reverse engineer needed
+- `.paa` binary format internals (header layout beyond `PAR ` magic, keyframe encoding) — full reverse engineer needed
+- The role of the 2-byte `f0 03` prefix on full-detail `.paa` clips (LOD variants don't have it)
 - Whether `.paa_metabin` is required alongside the `.paa` for the engine to load a clip
 - Whether `.motionblending` graphs reference clips by name or by some hash
 
@@ -78,6 +76,22 @@ The kill criterion as written ("no PAZ has more than 1 dragon `.hkx`") was a pro
 All future tasks (4–8) operate on `.paa` files instead of `.hkx`. The Havok TAGFILE assumption from the spec is dead for clip data; it remains correct for the skeleton (`cd_m0004_00_dragon.hkx` is genuinely Havok format).
 
 Companion formats also discovered during the scan: `.paa_metabin` (87 dragon-specific entries in `0010/0.paz`, likely action-chart sidecars that accompany each `.paa` clip) and `.motionblending` (323 entries in `0009/0.paz`, motion-blending graphs that stitch clips together at runtime).
+
+### Extracted anim files (Task 4)
+
+- Source PAZ: `0009/20.paz` (top-ranked by total summed score across all entries)
+- Files extracted: 915 total entries from `0009/20.paz` to `dragon-anim-extract/character/`
+- Dragon-specific (`cd_dragon_*`) count: 174 files (74 full-detail + matching `_lod` low-detail variants)
+- `.paa` magic bytes: ASCII `PAR ` (0x50 0x41 0x52 0x20 = "PAR<space>") — likely "Pearl Abyss aRchive" or similar Pearl Abyss tag
+- **Two-tier header pattern observed:**
+  - **LOD variants** (small, ~1.5–2.2 KB): start cleanly with `PAR ` at offset 0
+  - **Full-detail clips** (large, ~12–120 KB): start with a 2-byte prefix `f0 03` THEN `PAR ` at offset 2. The bytes after the `PAR ` magic are byte-identical between the two variant types, so the prefix is a wrapper, not part of the format header proper. Could be a chunk-count, an LZ4-style frame indicator, or a Pearl Abyss container shell. Needs decode work in Phase 2 to confirm.
+- Across 74 sampled `cd_dragon_basic_*.paa` files: 54 start with `PAR` at offset 0 (the LOD set), 20 start with `f0 03` then `PAR ` at offset 2 (the full-detail set). 100% of files contain the `PAR ` magic somewhere in the first 4 bytes.
+- Size range (full-detail dragon clips, non-LOD): 11,704 – 119,892 bytes
+- **Best Phase 1 spike candidate: `cd_dragon_basic_01_00_air_stand_hover_idle_00.paa`** — explicitly named "air stand hover idle"; this is the dragon hovering stationary in air. Loops continuously when the dragon is mid-air idle, so any override change is immediately visible. Will confirm exact file size and pre-test inspection during Phase 1.
+- Largest dragon clip: `cd_dragon_basic_00_00_nor_move_fly_run_ing_00.paa` (119,892 bytes)
+- Smallest non-LOD dragon clips: `cd_dragon_basic_00_00_nor_move_fly_run_driftr_ing_00.paa` (11,704 bytes), `..._driftl_ing_00.paa` (11,768 bytes)
+- Other clips of interest for donor-swap testing: `cd_dragon_basic_00_00_air_move_fly_land_ing_00.paa` (landing motion, visually distinct from idle-hover)
 
 ## Phase 1 findings
 
