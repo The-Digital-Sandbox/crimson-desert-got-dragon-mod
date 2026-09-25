@@ -1,12 +1,35 @@
-# Large binary files excluded from repo
+# Game assets and extracted data never go in this repo
+*.pac
+*.pab
+*.pam
+*.paa
+*.paz
+*.pamt
+*.pixst
+*.pabc
+*.hkx
+*.dds
+*.prefab
+*.dxbc
+*.bin
+*.blend
+*.blend1
+*.obj
+*.mtl
+*.fbx
+*.glb
+*.png
+*.zip
+*.pkl
 resources.bin
 render_instances.csv
+dragon-extract/
+prefab/
+rip/
 
-# OS files
+# OS and Python
 Thumbs.db
 .DS_Store
 desktop.ini
-
-# Python
 __pycache__/
 *.pyc
